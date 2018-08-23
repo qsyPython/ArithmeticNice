@@ -6,7 +6,6 @@ var str = "Hello, playground"
 
 let nums0 = [1,3,6]
 let nums1 = [Int](repeating: 0, count: 6)
-
 var nums_mutable = [34,64,9,23]
 nums_mutable.append(77)
 nums_mutable.sort()
@@ -37,6 +36,9 @@ class Stack {
     }
 }
 
-
 let primeNums : Set = [3,23,6]
 let oddNums : Set = [34,64,29]
+
+
+
+
