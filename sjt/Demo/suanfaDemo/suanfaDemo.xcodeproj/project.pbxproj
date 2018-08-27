@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F6549E82133A6E300A92C00 /* ThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F6549E72133A6E300A92C00 /* ThreeViewController.m */; };
 		7FBC56B4212FA40700632EE2 /* TwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FBC56B3212FA40700632EE2 /* TwoViewController.m */; };
 		7FBC56B8212FA47400632EE2 /* two.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FBC56B6212FA47400632EE2 /* two.png */; };
 		7FBC56BC212FA5D800632EE2 /* OneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FBC56BB212FA5D800632EE2 /* OneViewController.m */; };
@@ -38,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7F6549E62133A6E300A92C00 /* ThreeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreeViewController.h; sourceTree = "<group>"; };
+		7F6549E72133A6E300A92C00 /* ThreeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreeViewController.m; sourceTree = "<group>"; };
 		7FBC56B2212FA40700632EE2 /* TwoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TwoViewController.h; sourceTree = "<group>"; };
 		7FBC56B3212FA40700632EE2 /* TwoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TwoViewController.m; sourceTree = "<group>"; };
 		7FBC56B6212FA47400632EE2 /* two.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = two.png; sourceTree = "<group>"; };
@@ -125,6 +128,8 @@
 				7FBC56BB212FA5D800632EE2 /* OneViewController.m */,
 				7FBC56B2212FA40700632EE2 /* TwoViewController.h */,
 				7FBC56B3212FA40700632EE2 /* TwoViewController.m */,
+				7F6549E62133A6E300A92C00 /* ThreeViewController.h */,
+				7F6549E72133A6E300A92C00 /* ThreeViewController.m */,
 				7FBC56B5212FA47400632EE2 /* zuoyePng */,
 				7FE0952D212E9B4100E1F498 /* Main.storyboard */,
 				7FE09530212E9B4300E1F498 /* Assets.xcassets */,
@@ -287,6 +292,7 @@
 				7FE0952C212E9B4100E1F498 /* ViewController.m in Sources */,
 				7FBC56BC212FA5D800632EE2 /* OneViewController.m in Sources */,
 				7FE09537212E9B4300E1F498 /* main.m in Sources */,
+				7F6549E82133A6E300A92C00 /* ThreeViewController.m in Sources */,
 				7FE09529212E9B4100E1F498 /* AppDelegate.m in Sources */,
 				7FBC56B4212FA40700632EE2 /* TwoViewController.m in Sources */,
 			);

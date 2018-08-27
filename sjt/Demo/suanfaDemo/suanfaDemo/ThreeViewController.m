@@ -1,26 +1,27 @@
 //
-//  ViewController.m
+//  ThreeViewController.m
 //  suanfaDemo
 //
-//  Created by sjt on 2018/8/23.
+//  Created by sjt on 2018/8/27.
 //  Copyright © 2018年 sjt. All rights reserved.
 //
 
-#import "ViewController.h"
-#import "TwoViewController.h"
-@interface ViewController ()
+#import "ThreeViewController.h"
+
+@interface ThreeViewController ()
 
 @end
 
-@implementation ViewController
+@implementation ThreeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSLog(@"大->小%@",[self toLowerCase:@"Hello My Some Peple, hah"]);
-    NSLog(@"小->大%@",[self toUpperCase:@"Hello My Some Peple, HHH!"]);
+    NSLog(@"大->小%@",[self toLowerCase:@"Hello My Some Peple  hah"]);
+    NSLog(@"小->大%@",[self toUpperCase:@"Hello My Some Peple  HH "]);
 }
 
-//将小写转为大写  type  0 是小写转大写  1是大写转小写
+
+//将小写转为大写  type
 - (NSString *)toLowerCase:(NSString *)str{
     for (NSInteger i=0; i<str.length; i++) {
         if ([str characterAtIndex:i]>='a'&[str characterAtIndex:i]<='z') {
@@ -46,11 +47,19 @@
     return str;
 }
 
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
+/*
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
 
 @end
