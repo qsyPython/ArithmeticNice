@@ -32,7 +32,7 @@
 def rotate_nums(originList,location):
     remainder = location % len(originList)
     if remainder!=0:
-        i = 0
+            i = 0
             new_value = originList[i]
             start = 0
             index = 0
