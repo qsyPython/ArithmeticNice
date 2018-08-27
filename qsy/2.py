@@ -25,14 +25,14 @@
 # O(n)：随着输入的n变化，运行时间成比例增加！
 # 空间复杂度：一个算法def在运行过程中临时占用存储空间大小的量度。
 # 递归算法就要有O(n)：每次返回都要存储返回信息！
-# O(1):不随被处理数据量n的大小而改变时,算法def在运行过程中临时占用存储空间大小为常量
-# for循环、递归都是内部再次执行func
+# O(1): 不随被处理数据量n的大小而改变时,算法def在运行过程中临时占用存储空间大小为常量
+# O(n): for循环list的n、递归都是内部再次执行func
 
 # (i+k)%n等于新i的思路，不过这次是每次调换一个元素，后一个元素的调换基于上一个的位置,O(1)
 def rotate_nums(originList,location):
     remainder = location % len(originList)
     if remainder!=0:
-        i = 0
+            i = 0
             new_value = originList[i]
             start = 0
             index = 0

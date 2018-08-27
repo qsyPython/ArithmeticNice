@@ -1,5 +1,5 @@
 '''
-1、题目：
+1、题目：两数之和
 
 给定一个整数数组和一个目标值，找出数组中和为目标值的两个数。
 
@@ -17,7 +17,7 @@ def twoSum( nums, target):
     rtype = []
     for i,value_i in enumerate(nums):
         for j,value_j in enumerate(nums):
-            if j>i and value_i + value_j == target:
+            if (j>i and value_i + value_j == target) and (i not in rtype and j not in rtype):
                 rtype.append(i)
                 rtype.append(j)
     rtype = list(set(rtype))

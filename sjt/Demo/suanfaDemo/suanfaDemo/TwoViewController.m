@@ -36,6 +36,9 @@
     NSInteger k = 3;
     NSMutableArray * sumArray=[self sendNumsArray:array withTarget:k];
     NSLog(@"%@",[sumArray description]);
+    
+    NSMutableArray * sumArray2=[self sendNumsArray2:array withTarget:k];
+    NSLog(@"%@",[sumArray2 description]);
 }
 
 
@@ -56,6 +59,37 @@
     [tempArray removeObjectsInArray:array];
     [tempArray addObjectsFromArray:array];
     return tempArray;
+}
+
+- (NSMutableArray *)sendNumsArray2:(NSArray *)numArray withTarget:(NSInteger)index{
+    NSMutableArray * tempArray=[NSMutableArray arrayWithCapacity:0];
+    [tempArray addObjectsFromArray:numArray];
+    NSInteger zuizhongIndex;//得到最终的前进位数
+    if (numArray.count<index) {
+        zuizhongIndex=index%numArray.count;//取余数
+    }else if (numArray.count==index){
+        zuizhongIndex=0;
+        return tempArray;//直接返回原数组
+    }else{
+        zuizhongIndex=index;
+    }
+    
+    [self sendArray:tempArray startIndex:0 withEnd:zuizhongIndex-1];//0-k对折
+    [self sendArray:tempArray startIndex:zuizhongIndex withEnd:numArray.count-1];//k-count 对折
+    [self sendArray:tempArray startIndex:0 withEnd:numArray.count-1];//整体对折
+    return tempArray;
+}
+
+//翻转数据
+- (void)sendArray:(NSMutableArray *)array startIndex:(NSInteger)start withEnd:(NSInteger)end{
+    NSString * temp=nil;
+    while (start<end) {
+        temp=array[start];
+        array[start]=array[end];
+        array[end]=temp;
+        start++;
+        end--;
+    }
 }
 
 - (void)didReceiveMemoryWarning {
