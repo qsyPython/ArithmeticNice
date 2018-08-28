@@ -13,50 +13,32 @@
 # 要求使用空间复杂度为 O(1) 的原地算法。
 # 空间复杂度O(1)：为常量。即不随被处理数据量n的大小而改变！
 
-#判断是否是正整数
-def positiveInteger(x):
-    try:
-        x=int(x)
-        return isinstance(x,int)
-    except ValueError:
-        return False
-
-
 # 一 创建临时数组，切片保存实现数组反转
 # def rotateArrayWithNode(array,k):
-#     if not positiveInteger(k):
-#         print("请输入正整数");
-#     else:
 #         tempArray = [];
 #         arrayLength = len(array);
 #         relk = k%arrayLength;
 #         tempArray.extend(array[0:arrayLength - relk])
-#         vernier = arrayLength - 1;
-#         while relk > 0:
-#             tempArray.insert(0,array[vernier])
-#             vernier = vernier - 1;
-#             relk = relk - 1;
+#         for a in array[arrayLength:arrayLength - relk - 1:-1]:
+#             tempArray.insert(0,a)
 #         print(tempArray);
-#
-# #二、 使用反转函数 reversed 排序函数 sorted 实现
+
+# # #二、 使用反转函数 reversed 排序函数 sorted 实现
 # def rotateArrayWithNode(array,k):
-#     jointArray = [];
 #     arrayLength = len(array);
 #     relk = k % arrayLength;
-#     jointArray.extend(array[0:arrayLength - relk])
-#    # jointArray = list(reversed(array[arrayLength - relk:arrayLength])) + jointArray;
-#     jointArray = sorted(array[arrayLength - relk:arrayLength], key=None, reverse=True) + jointArray;
+#     jointArray = list(reversed(array[arrayLength - relk:arrayLength])) + array[0:arrayLength - relk];
+#    # jointArray = sorted(array[arrayLength - relk:arrayLength], key=None, reverse=True) + array[0:arrayLength - relk];
 #     print(jointArray);
 
 
 #三、 使用栈、队列
 def rotateArrayWithNode(array,k):
-    stackArray = array;
-    for i in range(k):
-        node = stackArray.pop();
-        stackArray.insert(0,node)
-    print(stackArray);
-
+    relk = k % len(array);
+    for i in range(relk):
+        node = array.pop();
+        array.insert(0,node)
+    print(array);
 
 
 def main():

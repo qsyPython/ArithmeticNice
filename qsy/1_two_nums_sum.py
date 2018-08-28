@@ -17,6 +17,9 @@ def twoSum( nums, target):
     rtype = []
     for i,value_i in enumerate(nums):
         for j,value_j in enumerate(nums):
+#            所有符合的位置
+#            if j>i and value_i + value_j == target:
+#            满足同1元素只被使用1次时的条件
             if (j>i and value_i + value_j == target) and (i not in rtype and j not in rtype):
                 rtype.append(i)
                 rtype.append(j)
