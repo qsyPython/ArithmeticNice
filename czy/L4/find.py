@@ -17,14 +17,20 @@
 #  J 中的字符不重复。
 
 def gemAndStone(gem,stone):
-
-    if (gem.isalpha() and len(gem) <= 50) and (stone.isalpha() and len(stone) <= 50):
-        count = 0;
-        for c in gem:
-          count = stone.count(c, 0, len(stone))
-        print(count)
-    else:
+    try:
+        tempStringLength = len(''.join(set(gem)))
+        strCheck = lambda s: s.isalpha() and len(s) <= 50
+        if (tempStringLength == len(gem) and strCheck(gem) and strCheck(stone)):
+            count = 0;
+            for c in gem:
+                count = count + stone.count(c, 0, len(stone))
+            print(count)
+        else:
+            print("请输入正确的字符串")
+    except:
         print("请输入正确的字符串")
+
+
 
 #
 # 大的国家：
@@ -65,8 +71,8 @@ def openDb():
     print(rows)
 
 def main():
-    #gemAndStone("Ha","HHAssaHjj")
-    openDb()
+    gemAndStone("Ha","HHAssaHjj")
+    #openDb()
 
 if __name__ == '__main__':
     main()
