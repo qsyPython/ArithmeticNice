@@ -18,34 +18,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSLog(@"大->小%@",[self toLowerCase:@"Hello My Some Peple, hah"]);
-    NSLog(@"小->大%@",[self toUpperCase:@"Hello My Some Peple, HHH!"]);
+    NSString * str=@"AaHHSJSJjdksdhsldlks";
+    NSString * strJJ=@"As";
+    NSString * response=[self loadCountAllStr:str withAllStr:strJJ];
+    NSLog(@"%@",response);
 }
 
-//将小写转为大写  type  0 是小写转大写  1是大写转小写
-- (NSString *)toLowerCase:(NSString *)str{
-    for (NSInteger i=0; i<str.length; i++) {
-        if ([str characterAtIndex:i]>='a'&[str characterAtIndex:i]<='z') {
-            //A  65  a  97
-            char  temp=[str characterAtIndex:i]-32;
-            NSRange range=NSMakeRange(i, 1);
-            str=[str stringByReplacingCharactersInRange:range withString:[NSString stringWithFormat:@"%c",temp]];
+- (NSString *)loadCountAllStr:(NSString *)allStr withAllStr:(NSString *)str {
+    NSInteger index=0;
+    for (int i=0; i<allStr.length; i++) {
+        NSString * charStr= [allStr substringWithRange:NSMakeRange(i, 1)];
+        if ([str containsString:charStr]) {
+            index++;
         }
     }
-    return str;
-}
-
-//将大写转为小写
-- (NSString *)toUpperCase:(NSString *)str{
-    for (NSInteger i=0; i<str.length; i++) {
-        if ([str characterAtIndex:i]>='A'&[str characterAtIndex:i]<='Z') {
-            //A  65  a  97
-            char  temp=[str characterAtIndex:i]+32;
-            NSRange range=NSMakeRange(i, 1);
-            str=[str stringByReplacingCharactersInRange:range withString:[NSString stringWithFormat:@"%c",temp]];
-        }
-    }
-    return str;
+    return [NSString stringWithFormat:@"str == %ld个",index];
 }
 
 

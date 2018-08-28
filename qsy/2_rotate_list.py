@@ -85,5 +85,3 @@ print(rotate_nums([23,5,8,19,20],2))
 # print(rotateNums([23,5,8,19,19],1))
 
 
-
-
