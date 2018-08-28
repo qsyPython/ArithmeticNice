@@ -18,7 +18,7 @@
 
 def gemAndStone(gem,stone):
 
-    if (gem.isalpha() and len(gem) <= 50) or (stone.isalpha() and len(stone) <= 50):
+    if (gem.isalpha() and len(gem) <= 50) and (stone.isalpha() and len(stone) <= 50):
         count = 0;
         for c in gem:
           count = stone.count(c, 0, len(stone))
