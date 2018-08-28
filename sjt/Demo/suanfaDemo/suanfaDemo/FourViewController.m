@@ -66,6 +66,7 @@
     NSString * strJJ=@"As";
     NSString * response=[self loadCountAllStr:str withAllStr:strJJ];
     NSLog(@"%@",response);
+    [self wordMysql];
 }
 
 - (NSString *)loadCountAllStr:(NSString *)allStr withAllStr:(NSString *)str {
@@ -79,12 +80,9 @@
     return [NSString stringWithFormat:@"str == %ld个",index];
 }
 
-- (void)world{
-   NSArray * array=@[];//从数据库取出条件语句数据库
-   NSString *some=@"SELECT * FROM resultT WHERE area >300000 or population >25000000";
-   //得到筛选数据
-    //拿到只要的数据
-   
+- (void)wordMysql{
+   NSString *some=@"SELECT name, FROM,population,area resultT WHERE area >300000 or population >25000000";
+    NSLog(@"%@",some);
 }
 
 - (void)didReceiveMemoryWarning {
