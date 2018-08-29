@@ -14,7 +14,7 @@
 输入: "LOVELY"
 输出: "lovely"
 '''
-#  方法1：直接都转了； 方法2：遍历，遇到大写char，替换对应位置为小写
+#  方法1：直接都转了； 方法2：遍历，遇到大写char，替换对应位置为小写;  方法3：使用python的chr()和ord()
 def ToLowerCase(str):
     # str = str.lower()
     # return str
@@ -22,6 +22,6 @@ def ToLowerCase(str):
     for i,item in enumerate(str):
         if item.isupper():
             str = str.replace(item,item.lower(),i)
+            # str = str.replace(item,chr(ord(item)+32),i) # 小写ASCLL码 比 大写ASCLL码大32
     return str
-
 print(ToLowerCase('UUUi9998888TTT'))

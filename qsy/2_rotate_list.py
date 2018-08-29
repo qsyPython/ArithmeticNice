@@ -72,6 +72,8 @@ print(rotate_nums([23,5,8,19,20],2))
 #         end -= 1
 
 # print(rotate_nums([23,5,8,19,20],2))
+
+
 # 3.借用1个新数组: i 和 i+k%len(list) 位置对应，由于遍历次数随数据源变化，所以是O(n)
 # def rotateNums(originList,location):
 #     remainder = location%len(originList)
@@ -83,5 +85,15 @@ print(rotate_nums([23,5,8,19,20],2))
 #                 new_nums[(i+remainder)%len(originList)] = item
 #         return new_nums
 # print(rotateNums([23,5,8,19,19],1))
+
+# 4.顺序变化，可以借用 栈和队列 方式实现 O(n)
+def rotateNums(originList,location):
+    remainder = location%len(originList)
+    for i in range(remainder):
+        last_nums = originList.pop()
+        originList.insert(0,last_nums)
+    return originList
+
+print(rotateNums([2,3,5,8,11],5))
 
 

@@ -1,5 +1,7 @@
 '''
     sql:结构查询语言 语句大全
+    #🐷🐷 🐷 SQL语句的占位符是?，而MySQL的占位符是%s 🐷 🐷🐷
+
     1、structured query language
 
     2、insert into；delete；update；select
@@ -26,7 +28,7 @@
     select * from Persons where firstName = 'Thomas' and lastName = 'Carter'
     select * from Persons where firstName = 'Thomas' and lastName = 'Carter'
 
-    8、select * from Persons where lastName between 'Adams' and 'Carter'
+8、select * from Persons where lastName between 'Adams' and 'Carter'
     select * from Persons where lastName between 'Adams' and 'Carter'
     select * from Persons where lastName between 'Adams' and 'Carter'
 
@@ -45,18 +47,17 @@
     insert into Persons values('jimmy','jackson')
     insert into Persons values('jimmy','jackson')
 
-    12、insert into Persons(lastName) values('wilson')
-    insert into Persons(lastName) values('wilson')
-    insert into Persons(lastName) values('wilson')
+12、 insert into Persons(lastName,firstName) values('wilson','nihao')
+    insert into Persons(lastName,firstName) values('wilson','nihao')
+    insert into Persons(lastName,firstName) values('wilson','nihao')
 
-    13、update Persons set lastName ='Wilson' where lastName = 'Gates'
-    update Persons set lastName = 'Wilson' where lastName = 'Gates'
-    update Persons set lastName = 'Wilson' where lastName = 'Gates'
+13、 update Persons set lastName ='Wilson',firstName='www' where lastName = 'Gates'
+    update Persons set lastName ='Wilson',firstName='www' where lastName = 'Gates'
+    update Persons set lastName ='Wilson',firstName='www' where lastName = 'Gates'
 
-    14、
-    delete from Persons where firstName = 'Fred'
-    delete from Persons where firstName = 'Fred'
-    delete from Persons where firstName = 'Fred'
+14、delete from Persons where firstName = 'Fred',lastName='nishousha'
+    delete from Persons where firstName = 'Fred',lastName='nishousha'
+    delete from Persons where firstName = 'Fred',lastName='nishousha'
 
     15、select count(*) from Persons
     select count(*) from Persons
