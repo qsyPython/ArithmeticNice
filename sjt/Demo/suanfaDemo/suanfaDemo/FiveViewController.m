@@ -1,23 +1,26 @@
 //
-//  ViewController.m
+//  FiveViewController.m
 //  suanfaDemo
 //
-//  Created by sjt on 2018/8/23.
+//  Created by sjt on 2018/8/29.
 //  Copyright © 2018年 sjt. All rights reserved.
 //
+/**
+ TinyURL是一种URL简化服务， 比如：当你输入一个URL https://leetcode.com/problems/design-tinyurl 时，它将返回一个简化的URL http://tinyurl.com/4e9iAk.
+ 
+ 要求：设计一个 TinyURL 的加密 encode 和解密 encode 的方法。你的加密和解密算法如何设计和运作是没有限制的，你只需要保证一个URL可以被加密成一个TinyURL，并且这个TinyURL可以用解密方法恢复成原本的URL。
+ */
 
+#import "FiveViewController.h"
 
-
-#import "ViewController.h"
-#import "TwoViewController.h"
 #define LastUrlCount 6
-@interface ViewController ()
+@interface FiveViewController ()
 @property (nonatomic ,copy)NSString * headStr;
 @property (nonatomic ,strong)NSMutableDictionary * dic;
 @property (nonatomic ,strong)NSMutableArray * suijiArray;
 @end
 
-@implementation ViewController
+@implementation FiveViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -95,8 +98,22 @@
     return @"";
 }
 
+
+
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+/*
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
+
 @end
-
-
-
-
