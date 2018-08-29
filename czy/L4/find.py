@@ -30,8 +30,6 @@ def gemAndStone(gem,stone):
     except:
         print("请输入正确的字符串")
 
-
-
 #
 # 大的国家：
 # 这里有张 World 表
@@ -62,17 +60,36 @@ import os
 import sqlite3
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+
 def openDb():
     path = os.path.join(BASE_DIR, 'db.sqlite3')
     mydb = sqlite3.connect(path)
     cursor = mydb.cursor()
-    cursor.execute("SELECT * FROM word WHERE area > 3000000 or population > 25500000;")
-    rows = cursor.fetchall()
-    print(rows)
+    #不存在则创建表 id 自增型
+    # drop_and_create_table_sql = 'CREATE TABLE IF NOT EXISTS world (id INTEGER PRIMARY KEY NOT NULL,name varchar(100) NOT NULL,continent varchar(100) NOT NULL , \
+    #                              area INTEGER DEFAULT NULL , \
+    #                              population INTEGER DEFAULT NULL , \
+    #                              gdp INTEGER DEFAULT NULL)'
+    #
+    # cursor.execute(drop_and_create_table_sql)
+#插入数据
+    insert_sql = "INSERT INTO world (id,name,continent,area,population,gdp) VALUES (NULL,?,?,?,?,?)"
+    cursor.execute(insert_sql,("china","china1",960,13,10))
+
+    # data = [ (1, ' tom', '男', '广东省广州市', ),
+    #          (2, 'Tom', '男', 22, '美国旧金山',),
+    #          (3, 'Jake', '女', 18, '广东省广州市',),
+    #          (4, 'Cate', '女', 21, '广东省广州市',)]
+
+
+    # cursor.execute("SELECT name,population,area FROM word WHERE area > 3000000 or population > 25500000;")
+    # rows = cursor.fetchall()
+    #print(rows)
 
 def main():
-    gemAndStone("Ha","HHAssaHjj")
-    #openDb()
+    #gemAndStone("Ha","HHAssaHjj")
+    openDb()
 
 if __name__ == '__main__':
     main()

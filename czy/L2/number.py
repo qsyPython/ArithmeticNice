@@ -14,6 +14,40 @@
 # 空间复杂度O(1)：为常量。即不随被处理数据量n的大小而改变！
 
 # 一 创建临时数组，切片保存实现数组反转
+# 1、将后边K个元素倒置
+# 2、将前边len - K个元素倒置
+# 3、整体倒置
+# 4、空间复杂度O(1) 时间复杂度T(3n)
+def rotateArrayWithNode(array,k):
+    arrayLength = len(array);
+    rek = k%arrayLength;
+    reverse_array(array, arrayLength - rek, arrayLength - 1)
+    reverse_array(array, 0, arrayLength - rek - 1)
+    reverse_array(array, 0, arrayLength - 1)
+    print(array)
+
+def reverse_array(array,start,end):
+    while start < end:
+        temp = array[start]
+        array[start] = array[end]
+        array[end] = temp
+        start += 1
+        end -=1
+
+#将最后一个字符保存，前边的字符依次向后移动一位，循环K次
+#空间复杂度O(1) 时间复杂度T(n*n)
+# def rotateArrayWithNode(array,k):
+#     arrayLength = len(array);
+#     rek = k%arrayLength;
+#     for i in range(0,rek):
+#         temp = array[arrayLength- 1]
+#         for j in range(arrayLength - 2,-1,-1):
+#              array[j + 1] = array[j];
+#         array[0] = temp;
+#     print(array)
+
+# 一 创建临时数组，切片保存实现数组反转
+#空间复杂度O(n)
 # def rotateArrayWithNode(array,k):
 #         tempArray = [];
 #         arrayLength = len(array);
@@ -24,6 +58,7 @@
 #         print(tempArray);
 
 # # #二、 使用反转函数 reversed 排序函数 sorted 实现
+# 空间复杂度O(n)
 # def rotateArrayWithNode(array,k):
 #     arrayLength = len(array);
 #     relk = k % arrayLength;
@@ -33,12 +68,13 @@
 
 
 #三、 使用栈、队列
-def rotateArrayWithNode(array,k):
-    relk = k % len(array);
-    for i in range(relk):
-        node = array.pop();
-        array.insert(0,node)
-    print(array);
+# 空间复杂度O(n)
+# def rotateArrayWithNode(array,k):
+#     relk = k % len(array);
+#     for i in range(relk):
+#         node = array.pop();
+#         array.insert(0,node)
+#     print(array);
 
 
 def main():
