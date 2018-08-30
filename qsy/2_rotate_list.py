@@ -86,7 +86,7 @@ print(rotate_nums([23,5,8,19,20],2))
 #         return new_nums
 # print(rotateNums([23,5,8,19,19],1))
 
-# 4.顺序变化，可以借用 栈和队列 方式实现 O(n)
+# 4.顺序变化，可以借用 栈和队列 方式实现 O(1)
 def rotateNums(originList,location):
     remainder = location%len(originList)
     for i in range(remainder):
