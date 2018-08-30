@@ -3,15 +3,15 @@
 
 #交换排序 冒泡排序算法
 #传统方法 #时间复杂度 平均O(n^2) 最好情况 O(n) 最坏情况 O(n^2) 空间复杂度O(1)
-def bubbleSort(array):
-    length = len(array)
-    for i in range(length - 1):
-        for j in range(length - i - 1):
-            if array[j] > array[j + 1]:
-                temp = array[j]
-                array[j] = array[j + 1]
-                array[j + 1] = temp
-    return  array;
+# def bubbleSort(array):
+#     length = len(array)
+#     for i in range(length - 1):
+#         for j in range(length - i - 1):
+#             if array[j] > array[j + 1]:
+#                 temp = array[j]
+#                 array[j] = array[j + 1]
+#                 array[j + 1] = temp
+#     return  array;
 
 # 升级版冒泡排序法：通过从低到高选出最大的数放到后面，
 # 再从高到低选出最小的数放到前面，如此反复，直到左边界和右边界重合。
@@ -134,50 +134,50 @@ def bubbleSort(array):
 # 这里的排序应用递归来把数组分解成一个个小数组，直到小数组的数位有序，
 # 在把有序的小数组两两合并而成有序的大数组。
 ##时间复杂度 平均 O(nlogn) 最好情况 O(nlogn) 最坏情况 O(nlogn) 空间复杂度O(n)
-# def merge(array,left,mid,right):
-#     len = right - left + 1   #数组长度
-#     temp = []
-#     k = 0
-#     i = left  #前一数组的起始元素
-#     j = mid + 1  # 后一数组的起始元素
-#     while i <= mid and j <= right:
-#         if array[i] <= array[j]:
-#             temp[k] = array[i]
-#             i += 1
-#         else:
-#             temp[k] = array[j]
-#             j += 1
-#         k += 1
-#
-#
-#     while i <= mid:
-#         temp[k] = array[i]
-#         k += 1
-#         i += 1
-#     while j <= right:
-#         temp[k] = array[j]
-#         k += 1
-#         j += 1
-#     for z in range(len):
-#         array[left] = temp[z]
-#         left += 1
+def merge(array,left,mid,right):
+    len = right - left + 1   #数组长度
+    temp = [0] * len
+    k = 0
+    i = left  #前一数组的起始元素
+    j = mid + 1  # 后一数组的起始元素
+    while i <= mid and j <= right:
+        if array[i] <= array[j]:
+            temp[k] = array[i]
+            i += 1
+        else:
+            temp[k] = array[j]
+            j += 1
+        k += 1
 
-# def mergeSort(array,left,right):
-#     if left != right:
-#         mid = int((left + right)/2)
-#         mergeSort(array, left,mid)
-#         mergeSort(array, mid + 1, right)
-#         merge(array,left, mid, right)
+
+    while i <= mid:
+        temp[k] = array[i]
+        k += 1
+        i += 1
+    while j <= right:
+        temp[k] = array[j]
+        k += 1
+        j += 1
+    for z in range(len):
+        array[left] = temp[z]
+        left += 1
+
+def mergeSort(array,left,right):
+    if left != right:
+        mid = int((left + right)/2)
+        mergeSort(array, left,mid)
+        mergeSort(array, mid + 1, right)
+        merge(array,left, mid, right)
 
 def main():
-    array = [1,7,3,10,33,44,12]
-    print(bubbleSort([1,7,3,10,33,44,12]))
+    # array = [1,7,3,10,33,44,12]
+    # print(bubbleSort([1,7,3,10,33,44,12]))
    # quickSort(array,0,len(array) - 1)
    # insertSort(array)
    # shellSort(array)
    # selectsort(array)
-   # mergeSort(array,0,len(array)-1)
-   # print(array)
+    mergeSort(array,0,len(array)-1)
+    print(array)
 
 if __name__ == '__main__':
     main()
