@@ -1,39 +1,40 @@
 //
-//  ViewController.m
+//  SixViewController.m
 //  suanfaDemo
 //
-//  Created by sjt on 2018/8/23.
+//  Created by sjt on 2018/8/30.
 //  Copyright © 2018年 sjt. All rights reserved.
-//
+/***
+ *对下列数据进行升序排序：[12,34,7,9,1,90,27,46,93,61,52,40]
+ 要求：写5种以上的排序算法，并写出对应的时间和空间复杂度，（5种排序算法必须包含：快排排序法）
+ */
 
+#import "SixViewController.h"
 
-
-#import "ViewController.h"
-#import "TwoViewController.h"
-#define LastUrlCount 6
-@interface ViewController ()
+@interface SixViewController ()
 @property (nonatomic ,copy)NSString * headStr;
 @property (nonatomic ,strong)NSMutableDictionary * dic;
 @property (nonatomic ,strong)NSMutableArray * shujuArray;
+
 @end
 
-@implementation ViewController
+@implementation SixViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.shujuArray = [NSMutableArray arrayWithArray:@[@"12",@"34",@"1",@"9",@"11",@"53",@"22",@"40"]];
-//    NSArray * class1=[self class1:self.shujuArray];
-//    NSLog(@"%@",class1);
+    //    NSArray * class1=[self class1:self.shujuArray];
+    //    NSLog(@"%@",class1);
     
-//    NSArray * class2=[self class2:self.shujuArray];
-//    NSLog(@"%@",class2);
+    //    NSArray * class2=[self class2:self.shujuArray];
+    //    NSLog(@"%@",class2);
     
-//    NSArray * class3=[self class3:self.shujuArray];
-//    NSLog(@"%@",class3);
+    //    NSArray * class3=[self class3:self.shujuArray];
+    //    NSLog(@"%@",class3);
     
-//    NSArray * class4=[self class4:self.shujuArray];
-//    NSLog(@"%@",class4);
-
+    //    NSArray * class4=[self class4:self.shujuArray];
+    //    NSLog(@"%@",class4);
+    
 }
 
 - (NSArray *)class1:(NSMutableArray *)array{
@@ -69,7 +70,7 @@
 
 - (NSArray *)class3:(NSMutableArray *)array{
     for(int i=0;i<array.count-1;i++){
-
+        
         int minIndex = i; //假设最小的数为i
         for(int j=i+1;j<self.shujuArray.count;j++){
             if([array[j] integerValue]< [array[minIndex] integerValue]){//如果遇到更小的
