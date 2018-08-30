@@ -34,8 +34,13 @@
 //    NSArray * class4=[self class4:self.shujuArray];
 //    NSLog(@"%@",class4);
 
+    NSArray * class5=[self class5:self.shujuArray];
+    NSLog(@"%@",class5);
+    
+    
 }
 
+//O(n^n)
 - (NSArray *)class1:(NSMutableArray *)array{
     for (int i=0; i<array.count-1; i++) {
         for (NSInteger j = 0; j<array.count -1 -i; j++) {
@@ -50,6 +55,7 @@
     return array;
 }
 
+//O(n^n)
 - (NSArray *)class2:(NSMutableArray *)array
 {
     NSString * temp;
@@ -69,7 +75,7 @@
 
 - (NSArray *)class3:(NSMutableArray *)array{
     for(int i=0;i<array.count-1;i++){
-
+        
         int minIndex = i; //假设最小的数为i
         for(int j=i+1;j<self.shujuArray.count;j++){
             if([array[j] integerValue]< [array[minIndex] integerValue]){//如果遇到更小的
@@ -124,6 +130,20 @@
     //得到之后还要把两边的找到
     [self changePaixu:start withEnd:a-1];//左边
     [self changePaixu:a+1 withEnd:end];//右边
+}
+
+
+- (NSArray *)class5:(NSMutableArray *)array{
+    NSInteger j;
+    NSString * c;
+    for (NSInteger i=1; i< array.count; i++) {
+        //如果第i个元素小于第j个，则第j个向后移动
+        for (c=array[i],j=i-1; j>=0&&([c integerValue]<[array[j] integerValue]); j--){
+            array[j+1]=array[j];
+        }
+        array[j+1]=c;
+    }
+    return array;
 }
 
 
