@@ -41,15 +41,17 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 path = os.path.join(BASE_DIR,'4_1_test.sqlite3')
 conn = sqlite3.connect(path)
 cusor = conn.cursor()
-if table_exists(cusor,'Person'):
+
+if table_exists(cusor,'Person'):# 存在，删除重建
     sql_table = 'drop table if exists Person'
     cusor.execute(sql_table)
 
 # 建表
-create_table_sql = 'create table Person'\
-                   '(id varchar(50) primary key NOT NULL, email varchar(50) DEFAULT NULL)'
+create_table_sql = 'create table if not exists Person(id varchar(50) primary key  not NULL ,email varchar (50) default NULL )'
 cusor.execute(create_table_sql)
 
+
+# 少：处理数据时，不用每条都commit，commit后会统一把所有语句执行打包
 # 添加:
 insert_sql = 'insert into Person (id,email) values (?,?)'
 for i in range(6):
@@ -65,13 +67,11 @@ cusor.execute(update_sql,['1129331903@qq.com',3])
 cusor.execute(update_sql,['1129331903@qq.com',4])
 cusor.execute(update_sql,['1129331902@qq.com',5])
 
-
 # 查找
 search_sql = 'select email from Person group by email having count(email)>1 '
 cusor.execute(search_sql)
 values = cusor.fetchall()
 print('获取查询重复的邮件:%s' % values)
-
 cusor.close()
 conn.commit()
 conn.close()
