@@ -18,9 +18,9 @@
 +---------+
 | a@b.com |
 +---------+
-说明：所有电子邮箱都是小写字母。
+说明：所有电子邮箱都是小写字母
 '''
-# 查询到重复邮件的 sql 语句：select email from Person group by email having count(email)>1
+# 查询到重复邮件的 sql 语句：select email from Person group by email having count(*)>1
 
 import os,re,sqlite3
 
@@ -55,20 +55,20 @@ cusor.execute(create_table_sql)
 # 添加:
 insert_sql = 'insert into Person (id,email) values (?,?)'
 for i in range(6):
-    cusor.execute(insert_sql,[i+1,'1129331905@qq.com'])
+    cusor.execute(insert_sql,(i+1,'1129331905@qq.com'))
 
 #删除:删除最后1组
 del_sql = 'delete from Person where id=?'
-cusor.execute(del_sql,[6])
+cusor.execute(del_sql,(6,))# python解释器会把(6)当作一个算数表达式来处理的，它的结果就是一个int型对象！所以加,
 
 # 更改
 update_sql = 'update Person set email=? where id = ?'
-cusor.execute(update_sql,['1129331903@qq.com',3])
-cusor.execute(update_sql,['1129331903@qq.com',4])
-cusor.execute(update_sql,['1129331902@qq.com',5])
+cusor.execute(update_sql,('1129331903@qq.com',3))
+cusor.execute(update_sql,('1129331903@qq.com',4))
+cusor.execute(update_sql,('1129331902@qq.com',5))
 
 # 查找
-search_sql = 'select email from Person group by email having count(email)>1 '
+search_sql = 'select id,email from Person group by email having count(*)>1 '
 cusor.execute(search_sql)
 values = cusor.fetchall()
 print('获取查询重复的邮件:%s' % values)
