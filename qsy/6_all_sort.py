@@ -18,7 +18,7 @@
 
 '''
 import random
-# num_t = 0
+
 # 冒泡排序：内循环 相邻数据比较后移位。
 # 时间复杂度：O(N2)
 # 空间复杂度为O(1)：额外空间是tmp开辟的空间。
@@ -77,12 +77,6 @@ def quick_sort(origin_list,left,right): #递归内部不能调用含有变量的
     if left < right:
         # pivot = pivot_last_sort(origin_list,left,right)
         # pivot = pivot_first_sort(original_list,left,right)
-        # if num_t == 0:
-        #     random_location = random.choice(range(len(original_list)))
-        #     tmp = original_list[random_location]
-        #     original_list[random_location] = original_list[left]
-        #     original_list[left] = tmp
-        #     num_t = 1
         pivot = pivot_first_sort(origin_list, left, right)
         quick_sort(origin_list,left,pivot-1)
         quick_sort(origin_list,pivot+1,right)
