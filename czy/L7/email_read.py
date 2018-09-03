@@ -54,7 +54,7 @@ def openDb():
         update_sql = "UPDATE Person SET Email = ? WHERE id = ?"
         cursor.execute(update_sql,item)
         mydb.commit()
-    #查询数据
+    #查询重复数据
     filter_sql = "SELECT Email FROM Person group BY Email HAVING COUNT(*) > 1;"
     cursor.execute(filter_sql)
     rows = cursor.fetchall()

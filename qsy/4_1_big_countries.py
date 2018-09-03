@@ -55,7 +55,7 @@ if table_exists(cusor,'World'): #若表存在，删除旧表
     cusor.execute(sql_del)
 
 # 建表
-create_table_sql = 'create table World'\
+create_table_sql = 'create table if not exists World'\
                    '(id varchar(50) primary key NOT NULL, name varchar(50) DEFAULT NULL,'\
                    'continent integer (50) DEFAULT NULL, area integer(50) DEFAULT NULL,' \
                    'population integer(50) DEFAULT NULL, gdp integer (50) DEFAULT NULL )'
@@ -64,22 +64,22 @@ cusor.execute(create_table_sql)
 # 添加:
 insert_sql = 'insert into World (id,name,continent,area,population,gdp) values (?,?,?,?,?,?)'
 for i in range(6):
-    cusor.execute(insert_sql,[i+1,'Afghanistan', 'Asia',652230,25500100,20343000])
+    cusor.execute(insert_sql,(i+1,'Afghanistan', 'Asia',652230,25500100,20343000))
 
 #删除:最后1组数据
 delete_sql = 'delete from World where id=?'
-cusor.execute(delete_sql,[6])
+cusor.execute(delete_sql,(6,))
 
 # 更新:
 update_sql = 'update World set name=?,continent=?,area=?,population=?,gdp=? where id=?'
-cusor.execute(update_sql,['Albania','Europe',28748,2831741,12960000,2])
-cusor.execute(update_sql,['Algeria','Africa',2381741,37100000,188681000,3])
-cusor.execute(update_sql,['Andorra','Europe',468,78115,3712000,4])
-cusor.execute(update_sql,['Angola','Africa',1246700,20609294,100990000,5])
+cusor.execute(update_sql,('Albania','Europe',28748,2831741,12960000,2))
+cusor.execute(update_sql,('Algeria','Africa',2381741,37100000,188681000,3))
+cusor.execute(update_sql,('Andorra','Europe',468,78115,3712000,4))
+cusor.execute(update_sql,('Angola','Africa',1246700,20609294,100990000,5))
 
 # 查询
 search_sql = 'select name,population,area from World where population>? or area>?'
-cusor.execute(search_sql,[25000000,3000000])
+cusor.execute(search_sql,(25000000,3000000))
 values = cusor.fetchall()
 print('获取当前光标所触发sql条件的数据：%s' % values)
 cusor.close()
