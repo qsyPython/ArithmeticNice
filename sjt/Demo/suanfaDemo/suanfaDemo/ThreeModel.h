@@ -9,8 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface ThreeModel : NSObject
-- (instancetype)initWithName:(NSString *)name withLeftJiedian:(ThreeModel *)leftJiedian withRightJiedian:(ThreeModel *)rightJiedian;
-@property (nonatomic, strong)ThreeModel * leftJiedian;
-@property (nonatomic, strong)ThreeModel * rightJiedian;
-@property (nonatomic, copy)NSString * name;
+@property (nonatomic, assign)NSInteger currentJiedian;
+@property (nonatomic, assign)NSInteger father;
 @end

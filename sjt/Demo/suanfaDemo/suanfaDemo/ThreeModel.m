@@ -10,12 +10,9 @@
 
 @implementation ThreeModel
 
-- (instancetype)initWithName:(NSString *)name withLeftJiedian:(ThreeModel *)leftJiedian withRightJiedian:(ThreeModel *)rightJiedian
-{
+- (instancetype)init{
     if (self=[super init]) {
-        self.name=name;
-        self.leftJiedian=leftJiedian;
-        self.rightJiedian=rightJiedian;
+        self.father=0;
     }
     return self;
 }
