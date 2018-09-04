@@ -1,20 +1,37 @@
+
 //
-//  ViewController.m
+//  NineViewController.m
 //  suanfaDemo
 //
-//  Created by sjt on 2018/8/23.
+//  Created by sjt on 2018/9/4.
 //  Copyright © 2018年 sjt. All rights reserved.
 //
+/***
+ 给定一个二叉树，检查它是否是镜像对称的。
+ 
+ 例如，二叉树 [1,2,2,3,4,4,3] 是对称的。
+ 
+ 1
+ / \
+ 2   2
+ / \ / \
+ 3  4 4  3
+ 但是下面这个 [1,2,2,null,3,null,3] 则不是镜像对称的:
+ 
+ 1
+ / \
+ 2   2
+ \   \
+ 3    3
+ */
 
+#import "NineViewController.h"
 
+@interface NineViewController ()
 
-#import "ViewController.h"
-#import "TwoViewController.h"
-#import "ThreeModel.h"
-@interface ViewController ()
 @end
 
-@implementation ViewController
+@implementation NineViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -39,11 +56,11 @@
         length=pow(2, i-1);
         linshiArray = [array subarrayWithRange:NSMakeRange(star, length)];
         if (![self isDuicheng:linshiArray]) {
-         
+            
             return NO;
         }
     }
-
+    
     return YES;
 }
 

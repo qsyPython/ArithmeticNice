@@ -11,4 +11,5 @@
 @interface ThreeModel : NSObject
 @property (nonatomic, assign)NSInteger currentJiedian;
 @property (nonatomic, assign)NSInteger father;
+@property (nonatomic, strong)ThreeModel * left;
 @end
