@@ -170,7 +170,7 @@ class Tree(object):
         self.root = None
 
     def add(self,item):
-        '''添加节点'''
+        ''' 添加节点 '''
         node = Node(item)
         # 判断当前树根是否为空
         if self.root is None:
@@ -181,31 +181,30 @@ class Tree(object):
             # 采用队列存放, 先将根节点放入队列中,取出,看是否有左子树和右子树,有就放入并且循环回来看子树的子树,没有则添加
             while queue:
                 temp = queue.pop(0)
-                if temp.left is None and node.item is not '':
+                if temp.left is None:
                     temp.left = node
                     break
-                elif temp.right is None and node.item is not '':
+                elif temp.right is None:
                     temp.right = node
                     break
-                # 都不为空 / 1个不为空，同时node.item为空,将左节点和右节点放入队列
+                # 都不为空,将左节点和右节点放入队列!!! #少：修正同时处理异常null时list情况
                 else:
-                    if temp.left is not None and temp.right is not None:
+                    if temp.left.item is not '':
                         queue.append(temp.left)
-                        queue.append(temp.right)
-                    elif node.item is '' and temp.left is not None:
-                        queue.append(temp.left)
-                    elif node.item is '' and temp.right is not None:
+                    if temp.right.item is not '':
                         queue.append(temp.right)
 
 # 处理二叉树的root
 class Solution(object):
     def print_tree(self,root):
+
         # 获取二叉树所处深度
         def depth(root):
-            if root:
+            if root and root.item is not '':#少：修正异常二叉树的情况 -> root 存在; 且root.item不为空
                 return max(depth(root.left),depth(root.right))+1
             else:
                 return 0
+
 
         height = depth(root)
         width = pow(2,height)-1
@@ -214,20 +213,22 @@ class Solution(object):
 
         # 打印树: res为待修改的结果；root为当前节点；h为当前节点的处在的列；pos为所在的位置
         def print_tree(res,root,h,pos):
-            if root:
+            if root and root.item is not '': #少：修正异常二叉树的情况 -> root 存在; 且root.item不为空
                 # 修改res
                 res[h-1][pos] = '%d' % root.item
                 step = pow(2,height-h-1)
                 print_tree(res,root.left,h+1,pos-step)
                 print_tree(res,root.right,h+1,pos+step)
         print_tree(res,root,1,int(width/2))
+
         return res
 
-if __name__ == '__main__':# '' 表示list中的 空节点
-    origin_list = [1,2,'','',3,'','','','',4,5,6]
+if __name__ == '__main__':# python中 None就是null空对象；'' 还得考虑list中有 空节点
+    origin_list = [1,2,5]
     # 创建二叉树并添加节点
     tree = Tree()
     for item in origin_list:
+        print('查看当前:',item)
         tree.add(item)
     # 获取二叉树的root
     binary_root  = tree.root

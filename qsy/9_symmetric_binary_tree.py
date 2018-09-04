@@ -50,9 +50,11 @@ class Tree(object):
                 elif temp.right is None:
                     temp.right = node
                     break
-                else: # 都不为空,将左节点和右节点放入队列，等待新1轮的迭代
-                    queue.append(temp.left)
-                    queue.append(temp.right)
+                else: # 都不为空,将左节点和右节点放入队列，等待新1轮的迭代; 新增异常nul时list的判断处理
+                    if temp.left.item is not '':
+                        queue.append(temp.left)
+                    if temp.right.item is not '':
+                        queue.append(temp.right)
 
 # 处理root
 def is_symmetric(root):
@@ -67,8 +69,8 @@ def isSymmetric(root_left,root_right):
         return False
     return isSymmetric(root_left.left,root_right.right) and isSymmetric(root_left.right,root_right.left)
 
-if __name__ == '__main__':
-    origin_list = [1,2,2,3,5]
+if __name__ == '__main__':# python中 None就是null,这个空对象；以''代表list中有 空节点
+    origin_list = [1,2,2,3,3,'']
     tree = Tree()
     for item in origin_list:
         tree.add_node(item)
