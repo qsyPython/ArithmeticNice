@@ -57,7 +57,7 @@
 # 没有键值相等的节点
 # 思路 -> 二重向量：行数为m为深度 和 列数为n为，实际上是2^节点数 -1
 
-# 二叉树节点: 可根据节点闯将二叉树
+# 二叉树节点: 可根据节点创建二叉树
 # class Node(object):
 #     def __init__(self,item):
 #         super(Node,self).__init__()
@@ -172,7 +172,7 @@ class Tree(object):
     def add(self,item):
         '''添加节点'''
         node = Node(item)
-        # 判断当前树是否为空
+        # 判断当前树根是否为空
         if self.root is None:
             self.root = node
         else:
@@ -181,16 +181,22 @@ class Tree(object):
             # 采用队列存放, 先将根节点放入队列中,取出,看是否有左子树和右子树,有就放入并且循环回来看子树的子树,没有则添加
             while queue:
                 temp = queue.pop(0)
-                if temp.left is None:
+                if temp.left is None and node.item is not '':
                     temp.left = node
                     break
-                elif temp.right is None:
+                elif temp.right is None and node.item is not '':
                     temp.right = node
                     break
-                # 都不为空,将左节点和右节点放入队列
+                # 都不为空 / 1个不为空，同时node.item为空,将左节点和右节点放入队列
                 else:
-                    queue.append(temp.left)
-                    queue.append(temp.right)
+                    if temp.left is not None and temp.right is not None:
+                        queue.append(temp.left)
+                        queue.append(temp.right)
+                    elif node.item is '' and temp.left is not None:
+                        queue.append(temp.left)
+                    elif node.item is '' and temp.right is not None:
+                        queue.append(temp.right)
+
 # 处理二叉树的root
 class Solution(object):
     def print_tree(self,root):
@@ -205,16 +211,20 @@ class Solution(object):
         width = pow(2,height)-1
         # 初始化 返回结果
         res = [["" for j in range(width)] for i in range(height)]
+
+        # 打印树: res为待修改的结果；root为当前节点；h为当前节点的处在的列；pos为所在的位置
         def print_tree(res,root,h,pos):
             if root:
+                # 修改res
                 res[h-1][pos] = '%d' % root.item
-                print_tree(res,root.left,h+1,pos-pow(2,height-h-1))
-                print_tree(res,root.right,h+1,pos+pow(2,height-h-1))
+                step = pow(2,height-h-1)
+                print_tree(res,root.left,h+1,pos-step)
+                print_tree(res,root.right,h+1,pos+step)
         print_tree(res,root,1,int(width/2))
         return res
 
-if __name__ == '__main__':
-    origin_list = [1,2,3,4,5,6]
+if __name__ == '__main__':# '' 表示list中的 空节点
+    origin_list = [1,2,'','',3,'','','','',4,5,6]
     # 创建二叉树并添加节点
     tree = Tree()
     for item in origin_list:
