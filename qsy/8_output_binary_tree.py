@@ -12,7 +12,7 @@
 使用相同的规则输出子树。
 示例 1:
 
-输入:
+输入: m2 n3
      1
     /
    2
@@ -55,19 +55,115 @@
 # 若右子树不空，则右子树上所有结点的值均大于它的根结点的值。
 # 左、右子树也分别为二叉排序树
 # 没有键值相等的节点
-# 2、二重向量：行数为m 和 列数为n，实际上是2^节点数 -1
+# 思路 -> 二重向量：行数为m为深度 和 列数为n为，实际上是2^节点数 -1
 
 # 二叉树节点: 可根据节点闯将二叉树
+# class Node(object):
+#     def __init__(self,item):
+#         super(Node,self).__init__()
+#         self.item = item
+#         self.left_child = None
+#         self.right_child = None
+#     def __str__(self):
+#         return str(self.value)
+#
+# # 二叉树类
+# class Tree(object):
+#     def __init__(self):
+#         super(Tree,self).__init__()
+#         self.root = None
+#
+#     def add(self,item):
+#         '''添加节点'''
+#         node = Node(item)
+#         # 判断当前树是否为空
+#         if self.root is None:
+#             self.root = node
+#         else:
+#             queue =[]
+#             queue.append(self.root)
+#             # 采用队列存放, 先将根节点放入队列中,取出,看是否有左子树和右子树,有就放入并且循环回来看子树的子树,没有则添加
+#             while queue:
+#                 temp = queue.pop(0)
+#                 if temp.left_child is None:
+#                     temp.left_child = node
+#                     break
+#                 elif temp.right_child is None:
+#                     temp.right_child = node
+#                     break
+#                 # 都不为空,将左节点和右节点放入队列
+#                 else:
+#                     queue.append(temp.left_child)
+#                     queue.append(temp.right_child)
+#
+#
+#     def wide_travel(self):
+#         '''深度遍历-广序遍历:从上到下,从左到右，利用队列'''
+#         if self.root is None:
+#             return
+#         else:
+#             queue = []
+#             queue.append(self.root)
+#             while queue:
+#                 temp = queue.pop(0)
+#                 print(temp.item, end=" ")
+#                 # 如果有左孩子则放入队列
+#                 if temp.left_child is not None:
+#                     queue.append(temp.left_child)
+#                 # 如果有右孩子则放入队列
+#                 if temp.right_child is not None:
+#                     queue.append(temp.right_child)
+#
+#
+#     def preorder(self,node):
+#         '''深度遍历-先序遍历'''
+#         if node is None:
+#             return
+#         print(node.item, end=" ")
+#         self.preorder(node.left_child)
+#         self.preorder(node.right_child)
+#
+#     def inorder(self, node):
+#         """深度遍历-中序遍历(左子树-根节点-右子树)"""
+#         if node is None:
+#             return
+#         self.inorder(node.left_child)
+#         print(node.item, end=" ")
+#         self.inorder(node.right_child)
+#
+#     def posorder(self, node):
+#         """深度遍历-后序遍历(左子树-右子树-根节点)"""
+#         if node is None:
+#             return
+#         self.posorder(node.left_child)
+#         self.posorder(node.right_child)
+#         print(node.item, end=" ")
+#
+# if __name__ == '__main__':
+#     tree = Tree()
+#     origin_list = ['A','B','C','D','E','F','G']
+#     for c in origin_list:
+#         tree.add(c)
+#     print("先序遍历:")
+#     tree.preorder(tree.root)
+#     print("\n中序遍历:")
+#     tree.inorder(tree.root)
+#     print("\n后序遍历:")
+#     tree.posorder(tree.root)
+#     print("\n广度遍历:")
+#     tree.wide_travel()
+
+# 定义二叉树节点
 class Node(object):
     def __init__(self,item):
-        super(Node,self).__init__()
+        super(Node, self).__init__()
         self.item = item
-        self.left_child = None
-        self.right_child = None
+        self.left = None
+        self.right = None
     def __str__(self):
-        return str(self.value)
+        return str(self.item)
 
-# 二叉树类
+# 定义二叉树类：包括添加节点
 class Tree(object):
     def __init__(self):
         super(Tree,self).__init__()
@@ -85,70 +181,51 @@ class Tree(object):
             # 采用队列存放, 先将根节点放入队列中,取出,看是否有左子树和右子树,有就放入并且循环回来看子树的子树,没有则添加
             while queue:
                 temp = queue.pop(0)
-                if temp.left_child is None:
-                    temp.left_child = node
+                if temp.left is None:
+                    temp.left = node
                     break
-                elif temp.right_child is None:
-                    temp.right_child = node
+                elif temp.right is None:
+                    temp.right = node
                     break
                 # 都不为空,将左节点和右节点放入队列
                 else:
-                    queue.append(temp.left_child)
-                    queue.append(temp.right_child)
+                    queue.append(temp.left)
+                    queue.append(temp.right)
+# 处理二叉树的root
+class Solution(object):
+    def print_tree(self,root):
+        # 获取二叉树所处深度
+        def depth(root):
+            if root:
+                return max(depth(root.left),depth(root.right))+1
+            else:
+                return 0
 
-
-    def wide_travel(self):
-        '''深度遍历-广序遍历:从上到下,从左到右，利用队列'''
-        if self.root is None:
-            return
-        else:
-            queue = []
-            queue.append(self.root)
-            while queue:
-                temp = queue.pop(0)
-                print(temp.item, end=" ")
-                # 如果有左孩子则放入队列
-                if temp.left_child is not None:
-                    queue.append(temp.left_child)
-                # 如果有右孩子则放入队列
-                if temp.right_child is not None:
-                    queue.append(temp.right_child)
-            print()
-
-    def preorder(self,node):
-        '''深度遍历-先序遍历'''
-        if node is None:
-            return
-        print(node.item, end=" ")
-        self.preorder(node.left_child)
-        self.preorder(node.right_child)
-
-    def inorder(self, node):
-        """深度遍历-中序遍历(左子树-根节点-右子树)"""
-        if node is None:
-            return
-        self.inorder(node.left_child)
-        print(node.item, end=" ")
-        self.inorder(node.right_child)
-
-    def posorder(self, node):
-        """深度遍历-后序遍历(左子树-右子树-根节点)"""
-        if node is None:
-            return
-        self.posorder(node.left_child)
-        self.posorder(node.right_child)
-        print(node.item, end=" ")
+        height = depth(root)
+        width = pow(2,height)-1
+        # 初始化 返回结果
+        res = [["" for j in range(width)] for i in range(height)]
+        def print_tree(res,root,h,pos):
+            if root:
+                res[h-1][pos] = '%d' % root.item
+                print_tree(res,root.left,h+1,pos-pow(2,height-h-1))
+                print_tree(res,root.right,h+1,pos+pow(2,height-h-1))
+        print_tree(res,root,1,int(width/2))
+        return res
 
 if __name__ == '__main__':
+    origin_list = [1,2,3,4,5,6]
+    # 创建二叉树并添加节点
     tree = Tree()
-    origin_list = ['A','B','C','D','E','F','G']
-    for c in origin_list:
-        tree.add(c)
-    print("先序遍历:")
-    tree.preorder(tree.root)
-    print("\n中序遍历:")
-    tree.inorder(tree.root)
-    print("\n后序遍历:")
-    tree.posorder(tree.root)
-    print("\n广度遍历:")
-    tree.wide_travel()
+    for item in origin_list:
+        tree.add(item)
+    # 获取二叉树的root
+    binary_root  = tree.root
+    # 处理root
+    s = Solution()
+    result = s.print_tree(binary_root)
+    print(result)
+
+
+
+
