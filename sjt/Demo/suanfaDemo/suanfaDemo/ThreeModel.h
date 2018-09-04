@@ -9,7 +9,13 @@
 #import <Foundation/Foundation.h>
 
 @interface ThreeModel : NSObject
+
+- (instancetype)initwithJiedian:(NSString *)jiedian;
 @property (nonatomic, assign)NSInteger currentJiedian;
 @property (nonatomic, assign)NSInteger father;
-@property (nonatomic, strong)ThreeModel * left;
+@property (nonatomic, strong)ThreeModel * leftJiedian;
+@property (nonatomic, strong)ThreeModel * rightJiedian;
+@property (nonatomic, assign)BOOL isStop;
+@property (nonatomic, copy)NSString  * jiedian;
+
 @end
