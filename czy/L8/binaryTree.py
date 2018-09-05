@@ -102,7 +102,6 @@ def depth(root = Node):
 if __name__ == '__main__':
     # 实例化根节点
     root_node = Node('a')
-    #root_node.set_data('a')
     # 实例化左子节点
     left_node = Node('b')
     # 实例化右子节点
