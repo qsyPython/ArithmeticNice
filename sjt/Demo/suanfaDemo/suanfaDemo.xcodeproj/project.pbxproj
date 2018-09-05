@@ -13,6 +13,7 @@
 		7F538D1C213E56B3007AAAA6 /* NineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F538D1B213E56B3007AAAA6 /* NineViewController.m */; };
 		7F6549E82133A6E300A92C00 /* ThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F6549E72133A6E300A92C00 /* ThreeViewController.m */; };
 		7F7389FE21368A63004AB820 /* FiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F7389FD21368A63004AB820 /* FiveViewController.m */; };
+		7F957511213F9CD9006FB414 /* TenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F957510213F9CD9006FB414 /* TenViewController.m */; };
 		7F9D037C213924600025366C /* SevenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F9D037B213924600025366C /* SevenViewController.m */; };
 		7FB08CE32137E8E700F37F19 /* SixViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FB08CE22137E8E700F37F19 /* SixViewController.m */; };
 		7FBC56B4212FA40700632EE2 /* TwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FBC56B3212FA40700632EE2 /* TwoViewController.m */; };
@@ -58,6 +59,8 @@
 		7F6549E72133A6E300A92C00 /* ThreeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreeViewController.m; sourceTree = "<group>"; };
 		7F7389FC21368A63004AB820 /* FiveViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FiveViewController.h; sourceTree = "<group>"; };
 		7F7389FD21368A63004AB820 /* FiveViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FiveViewController.m; sourceTree = "<group>"; };
+		7F95750F213F9CD9006FB414 /* TenViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TenViewController.h; sourceTree = "<group>"; };
+		7F957510213F9CD9006FB414 /* TenViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TenViewController.m; sourceTree = "<group>"; };
 		7F9D037A213924600025366C /* SevenViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SevenViewController.h; sourceTree = "<group>"; };
 		7F9D037B213924600025366C /* SevenViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SevenViewController.m; sourceTree = "<group>"; };
 		7FB08CE12137E8E700F37F19 /* SixViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SixViewController.h; sourceTree = "<group>"; };
@@ -163,6 +166,8 @@
 				7F08DA85213D0C57001C3331 /* EightViewController.m */,
 				7F538D1A213E56B3007AAAA6 /* NineViewController.h */,
 				7F538D1B213E56B3007AAAA6 /* NineViewController.m */,
+				7F95750F213F9CD9006FB414 /* TenViewController.h */,
+				7F957510213F9CD9006FB414 /* TenViewController.m */,
 				7F08DA87213D0C8F001C3331 /* ThreeModel.h */,
 				7F08DA88213D0C8F001C3331 /* ThreeModel.m */,
 				7FBC56B5212FA47400632EE2 /* zuoyePng */,
@@ -324,6 +329,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F957511213F9CD9006FB414 /* TenViewController.m in Sources */,
 				7F7389FE21368A63004AB820 /* FiveViewController.m in Sources */,
 				7FB08CE32137E8E700F37F19 /* SixViewController.m in Sources */,
 				7F36B64D213501B8000B719E /* FourViewController.m in Sources */,

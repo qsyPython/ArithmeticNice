@@ -16,6 +16,7 @@
  2   2
  / \ / \
  3  4 4  3
+ 5 6 7 8 8 7 6 5
  但是下面这个 [1,2,2,null,3,null,3] 则不是镜像对称的:
  
  1
@@ -24,11 +25,13 @@
  \   \
  3    3
  */
+#import "ThreeModel.h"
 
 #import "NineViewController.h"
 
 @interface NineViewController ()
-
+@property (nonatomic , strong)ThreeModel * rootModel;
+@property (nonatomic , assign)BOOL isDuicheng;
 @end
 
 @implementation NineViewController
@@ -36,13 +39,87 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    if ([self isDuichengArray:@[@"1",@"2",@"2",@"3",@"4",@"",@"3"]]) {
-        NSLog(@"对称");
-    }else{
-        NSLog(@"不对称");
+    [self sendArray:@[@"1",@"2",@"2",@"3",@"4",@"4",@"3"]];
+}
+
+- (void)sendArray:(NSArray *)array{
+    
+    for (NSString * str in array) {
+        [self addJiedian:str];
+    }
+    
+    if (self.rootModel) {//root 存在
+        [self isDuicheng:self.rootModel.leftJiedian withRightModel:self.rootModel.rightJiedian];
+        if  (_isDuicheng) {
+            NSLog(@"对称");
+        }else{
+            NSLog(@"不对称");
+        }
     }
 }
 
+- (void)isDuicheng:(ThreeModel *)leftModel withRightModel:(ThreeModel *)rightModel{
+    
+    
+    if (leftModel==nil&&leftModel==nil) {
+        return ;//结束
+    }else if ((leftModel&&rightModel==nil)||(rightModel&&leftModel==nil)){
+        _isDuicheng=NO;
+        return;
+    }
+    
+    if ([leftModel.jiedian isEqualToString:rightModel.jiedian]) {
+        
+    }else{
+        _isDuicheng =NO;
+    }
+    
+    
+    [self isDuicheng:leftModel.leftJiedian withRightModel:rightModel.rightJiedian];
+    [self isDuicheng:leftModel.rightJiedian withRightModel:rightModel.leftJiedian];
+    
+    
+}
+
+
+- (void)addJiedian:(NSString *)str{
+    ThreeModel * model=[[ThreeModel alloc]initwithJiedian:str];
+    if (str.length==0) {
+        model.isStop=YES;
+    }
+    
+    if (self.rootModel==nil) {
+        self.rootModel=model;
+    }else{
+        NSMutableArray * array=[NSMutableArray arrayWithCapacity:0];
+        [array addObject:self.rootModel];
+        while (array.count) {
+            ThreeModel * tempModel=[array firstObject];
+            [array removeObjectAtIndex:0];
+            
+            if (tempModel.isStop==YES) {
+                break;
+            }
+            
+            if (!tempModel.leftJiedian) {
+                tempModel.leftJiedian=model;
+                break;
+            }else if (!tempModel.rightJiedian){
+                tempModel.rightJiedian=model;
+                break;
+            }else{
+                [array addObject:tempModel.leftJiedian];
+                [array addObject:tempModel.rightJiedian];
+            }
+        }
+    }
+}
+
+
+
+
+
+#pragma mark ----ahhahah
 - (BOOL)isDuichengArray:(NSArray *)array{
     NSInteger m = log2(array.count+1);//计算2的深度
     if (m<2) {
@@ -74,9 +151,6 @@
     }
     return YES;
 }
-
-
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

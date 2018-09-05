@@ -16,4 +16,13 @@
     }
     return self;
 }
+
+- (instancetype)initwithJiedian:(NSString *)jiedian{
+    if (self==[super init]) {
+        self.jiedian=jiedian;
+        
+    }
+    return self;
+}
+
 @end

@@ -1,26 +1,22 @@
 //
-//  ViewController.m
+//  TenViewController.m
 //  suanfaDemo
 //
-//  Created by sjt on 2018/8/23.
+//  Created by sjt on 2018/9/5.
 //  Copyright © 2018年 sjt. All rights reserved.
 //
 
-
-
-#import "ViewController.h"
-#import "TwoViewController.h"
+#import "TenViewController.h"
 #import "ThreeModel.h"
-@interface ViewController ()
+
+@interface TenViewController ()
 @property (nonatomic , strong)ThreeModel * rootModel;
-@property (nonatomic , assign)BOOL isDuicheng;
 @end
 
-@implementation ViewController
+@implementation TenViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
 
     [self sendArray:@[@"1",@"2",@"2",@"3",@"4",@"5",@"6"]];
 }
