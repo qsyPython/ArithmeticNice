@@ -50,14 +50,12 @@
     
     if (self.rootModel) {//root 存在
         [self isDuicheng:self.rootModel.leftJiedian withRightModel:self.rootModel.rightJiedian];
-        
         if  (_isDuicheng) {
             NSLog(@"对称");
         }else{
             NSLog(@"不对称");
         }
     }
-    
 }
 
 - (void)isDuicheng:(ThreeModel *)leftModel withRightModel:(ThreeModel *)rightModel{
