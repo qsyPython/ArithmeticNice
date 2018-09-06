@@ -24,8 +24,8 @@
 # 而是leftN->left , rightN->right , leftN->right ,rightN->left，为什么？因为我们要判断的是对称，
 # 所以leftN->left 对应rightN->right，leftN->right 对应rightN->left，它们的入栈顺序理应如此。
 class Node():
-    def __init__(self, data=None):
-        self._data = data;
+    def __init__(self):
+        self._data = None;
         self._left = None;
         self._right = None;
 
@@ -62,81 +62,100 @@ def isSymmetric(root = Node):
         return  True
     return symmetric(root.get_left(),root.get_right())
 
-#通过迭代判断
-#定义一个栈
-class Stack(object):
-    """栈"""
-    def __init__(self):
-         self.items = []
+# #通过迭代判断
+# #定义一个栈
+# class Stack(object):
+#     """栈"""
+#     def __init__(self):
+#          self.items = []
+#
+#     def is_empty(self):
+#         """判断是否为空"""
+#         return self.items == []
+#
+#     def push(self, item):
+#         """加入元素"""
+#         self.items.append(item)
+#
+#     def pop(self):
+#         """弹出元素"""
+#         return self.items.pop()
+#
+#     def peek(self):
+#         """返回栈顶元素"""
+#         return self.items[len(self.items)-1]
+#
+#     def size(self):
+#         """返回栈的大小"""
+#         return len(self.items)
+#
+# def isSymmetric(root = Node):
+#     if not root:
+#         return True
+#     s= Stack()
+#     leftN = root.get_left()
+#     rightN = root.get_right()
+#
+#     s.push(leftN)
+#     s.push(rightN)
+#
+#     while not s.is_empty():
+#         leftN = s.peek()
+#         s.pop()
+#
+#         rightN = s.peek()
+#         s.pop()
+#
+#         if (not leftN) and (not rightN):
+#             continue
+#         if (not leftN) or (not rightN):
+#             return False
+#         if leftN.get_data() != rightN.get_data():
+#             return False
+#
+#         s.push(leftN.get_left())
+#         s.push(rightN.get_right())
+#         s.push(leftN.get_right())
+#         s.push(rightN.get_left())
+#
+#     return True
 
-    def is_empty(self):
-        """判断是否为空"""
-        return self.items == []
 
-    def push(self, item):
-        """加入元素"""
-        self.items.append(item)
+def arrayToBiTree(array):
+    if (not array is None) or len(array) == 0:
+        length = len(array)
+        #创建数据结构体
+        pRoot = []
+        for i in range(length):
+            pRoot.append(Node())
+            pRoot[i].set_data(array[i])
+            pRoot[i].set_left(None)
+            pRoot[i].set_right(None)
 
-    def pop(self):
-        """弹出元素"""
-        return self.items.pop()
+        #父节点与左右孩子关联 length/2 - 1 是深度
+        for k in range(int(length/2)):
+            if 2*k + 1 < length:
+                pRoot[k].set_left(pRoot[2 * k + 1])
+            if 2*k + 2 < length:
+                pRoot[k].set_right(pRoot[2 * k + 2])
 
-    def peek(self):
-        """返回栈顶元素"""
-        return self.items[len(self.items)-1]
+    return pRoot
 
-    def size(self):
-        """返回栈的大小"""
-        return len(self.items)
+#前序遍历
+def arrayPrePrint(array = list,root = Node):
+    if (not array is  None) and (not root is None):
+        array.append(root.get_data())
+        arrayPrePrint(array,root.get_left())
+        arrayPrePrint(array,root.get_right())
 
-def isSymmetric(root = Node):
-    if not root:
-        return True
-    s= Stack()
-    leftN = root.get_left()
-    rightN = root.get_right()
-
-    s.push(leftN)
-    s.push(rightN)
-
-    while not s.is_empty():
-        leftN = s.peek()
-        s.pop()
-
-        rightN = s.peek()
-        s.pop()
-
-        if (not leftN) and (not rightN):
-            continue
-        if (not leftN) or (not rightN):
-            return False
-        if leftN.get_data() != rightN.get_data():
-            return False
-
-        s.push(leftN.get_left())
-        s.push(rightN.get_right())
-        s.push(leftN.get_right())
-        s.push(rightN.get_left())
-
-    return True
 
 if __name__ == '__main__':
+    array = [1,2,2,3,4,4,3]
+    print(array)
+    list = arrayToBiTree(array)
+    pArray = []
+    arrayPrePrint(pArray,list[0])
+    print(pArray)
+    print(isSymmetric(list[0]))
 
-    # 实例化根节点 [1,2,2,3,4,4,3]
-    root_node = Node(1)
-    left_node = Node(2)
-    left_node_1 = Node(3)
-    right_node_1 = Node(4)
-    left_node.set_left(left_node_1)
-    left_node.set_right(right_node_1)
-    right_node = Node(2)
-    left_node_2 = Node(4)
-    right_node_3 = Node(3)
-    right_node.set_left(left_node_2)
-    right_node.set_right(right_node_3)
-    root_node.set_left(left_node)
-    root_node.set_right(right_node)
-
-
-    print(isSymmetric(root_node))
 
