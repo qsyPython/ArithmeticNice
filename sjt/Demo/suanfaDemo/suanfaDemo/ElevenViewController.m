@@ -1,22 +1,55 @@
 //
-//  ViewController.m
+//  ElevenViewController.m
 //  suanfaDemo
 //
-//  Created by sjt on 2018/8/23.
+//  Created by sjt on 2018/9/6.
 //  Copyright © 2018年 sjt. All rights reserved.
-//
+/***
+ *
+ 给定二叉树根结点 root ，此外树的每个结点的值要么是 0，要么是 1。
+ 
+ 返回移除了所有不包含 1 的子树的原二叉树。
+ 
+ ( 节点 X 的子树为 X 本身，以及所有 X 的后代。)
+ 
+ 示例1:
+ 输入: [1,null,0,0,1]
+ 输出: [1,null,0,null,1]
+ 
+ 解释:
+ 只有红色节点满足条件“所有不包含 1 的子树”。
+ 右图为返回的答案。
+ 
+ 
+ 示例2:
+ 输入: [1,0,1,0,0,0,1]
+ 输出: [1,null,1,null,1]
+ 
+ 
+ 
+ 示例3:
+ 输入: [1,1,0,1,1,0,1,0]
+ 输出: [1,1,0,1,1,null,1]
+        1
+      1      0
+   1    1   0   1
 
+ 
+ 
+ 说明:
+ 
+ 给定的二叉树最多有 100 个节点。
+ 每个节点的值只会为 0 或 1 。
+ */
 
-
-#import "ViewController.h"
-#import "TwoViewController.h"
+#import "ElevenViewController.h"
 #import "ThreeModel.h"
-@interface ViewController ()
+@interface ElevenViewController ()
 @property (nonatomic , strong)ThreeModel * rootModel;
 @property (nonatomic , strong)NSMutableArray * array;
 @end
 
-@implementation ViewController
+@implementation ElevenViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -43,7 +76,7 @@
     NSMutableArray * tempArray=[NSMutableArray arrayWithCapacity:0];
     [tempArray addObject:self.rootModel];
     NSMutableArray * nextCengArray=[NSMutableArray arrayWithCapacity:0];
-
+    
     while (tempArray.count) {
         [nextCengArray removeAllObjects];
         for (NSInteger i=0; i<tempArray.count; i++) {
@@ -53,23 +86,23 @@
             if (model.isKong==YES) {
                 continue;
             }
-
+            
             if (model.leftJiedian) {
                 if (!(model.leftJiedian.isKong==YES&&(model.rightJiedian==nil||(model.rightJiedian&&model.rightJiedian.isKong==YES)))) {
-                      [nextCengArray addObject:model.leftJiedian];
+                    [nextCengArray addObject:model.leftJiedian];
                 }
             }
             
             if (model.rightJiedian) {
                 if (!(model.rightJiedian.isKong==YES&&(model.leftJiedian==nil||(model.leftJiedian&&model.leftJiedian.isKong==YES)))) {
-                     [nextCengArray addObject:model.rightJiedian];
+                    [nextCengArray addObject:model.rightJiedian];
                 }
             }
         }
         [tempArray removeAllObjects];
         [tempArray addObjectsFromArray:nextCengArray];
     }
-  
+    
 }
 
 - (void)addJiedian:(NSString *)str{

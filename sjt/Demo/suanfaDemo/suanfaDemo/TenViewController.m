@@ -18,7 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    [self sendArray:@[@"1",@"2",@"2",@"3",@"4",@"5",@"6"]];
+    [self sendArray:@[@"1",@"2",@"2",@"3",@"4",@"",@"6"]];
 }
 
 
@@ -65,7 +65,7 @@
             [array removeObjectAtIndex:0];
             
             if (tempModel.isStop==YES) {
-                break;
+                continue;
             }
             
             if (!tempModel.leftJiedian) {
