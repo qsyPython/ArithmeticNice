@@ -49,8 +49,11 @@ class Tree(object):
                     temp.right = node
                     break
                 else:
-                    queue.append(temp.left)
-                    queue.append(temp.right)
+                    # 都不为空,将左节点和右节点放入队列!!! #少：修正同时处理异常null时list情况
+                    if temp.left.item is not None:
+                        queue.append(temp.left)
+                    if temp.right.item is not None:
+                        queue.append(temp.right)
 
     def wide_travel(self):
         result = []
@@ -80,7 +83,7 @@ class Tree(object):
         return root
 
 if __name__ == '__main__':
-    list = [1,3,5,7,None,9]
+    list = [1,None,3,5,7,9]
     tree = Tree()
     for item in list:
         tree.add(item)

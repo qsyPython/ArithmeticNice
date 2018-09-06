@@ -52,8 +52,10 @@ class Tree(object):
                     temp.right = node
                     break
                 else: # 都不为空,将左节点和右节点放入队列，等待新1轮的迭代; 新增异常nul时list的判断处理
-                    queue.append(temp.left)
-                    queue.append(temp.right)
+                    if temp.left.item is not None:
+                        queue.append(temp.left)
+                    if temp.right.item is not None:
+                        queue.append(temp.right)
 
     def wide_travel(self):
         result = []

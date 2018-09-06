@@ -63,8 +63,11 @@ class Tree(object):
                    temp.right = node
                    break
                else:
-                   queue.append(temp.left)
-                   queue.append(temp.right)
+                   # 新增异常判断
+                   if temp.left.item is not None:
+                    queue.append(temp.left)
+                   if temp.right.item is not None:
+                    queue.append(temp.right)
 
     def wide_travel(self):
         ''' 深度遍历-广序遍历:从上到下,从左到右，利用队列 '''
@@ -84,17 +87,15 @@ class Tree(object):
     # 二叉树分支切掉: 后续遍历
     def cut_tree(self,root):
         if root is not None:
-            root_left = self.cut_tree(root.left)
-            root_right = self.cut_tree(root.right)
-            root.left = root_left
-            root.right = root_right
+            root.left = self.cut_tree(root.left)
+            root.right = self.cut_tree(root.right)
             # 判断当前节点是否要删除, 如果左右子树都是返回NULL并且当前节点的值为0, 就表明以当前节点为根节点的树里面的值全部为0,所以应该删除此节点,反之不用删除
-            if (root_left is None and root_right is None and root.item == 0):
+            if root.left is None and root.right is None and root.item == 0:
                 return None
         return root
 
 if __name__ == '__main__':
-    origin_list = [1,None,0,0,1]
+    origin_list = [1,0,1,0,0,0,1]
     tree = Tree()
     for item in origin_list:
         tree.add(item)

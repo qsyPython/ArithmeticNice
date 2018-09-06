@@ -187,10 +187,12 @@ class Tree(object):
                 elif temp.right is None:
                     temp.right = node
                     break
-                # 都不为空,将左节点和右节点放入队列!!! #少：修正同时处理异常null时list情况
                 else:
-                    queue.append(temp.left)
-                    queue.append(temp.right)
+                    # 都不为空,将左节点和右节点放入队列!!! #少：修正同时处理异常null时list情况
+                    if temp.left.item is not None:
+                        queue.append(temp.left)
+                    if temp.right.item is not None:
+                        queue.append(temp.right)
 
     def wide_travel(self):
         result = []
@@ -235,7 +237,7 @@ class Solution(object):
         return res
 
 if __name__ == '__main__':
-    origin_list = [1,2,5]
+    origin_list = [1,None,2,5]
     tree = Tree()
     for item in origin_list:
         print('查看当前:',item)
