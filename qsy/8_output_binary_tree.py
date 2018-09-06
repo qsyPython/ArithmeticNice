@@ -57,7 +57,7 @@
 # 没有键值相等的节点
 # 思路 -> 二重向量：行数为m为深度 和 列数为n为，实际上是2^节点数 -1
 
-# 二叉树节点: 可根据节点创建二叉树
+# # 二叉树节点: 可根据节点创建二叉树
 # class Node(object):
 #     def __init__(self,item):
 #         super(Node,self).__init__()
@@ -95,8 +95,8 @@
 #                 else:
 #                     queue.append(temp.left_child)
 #                     queue.append(temp.right_child)
-#
-#
+# #
+# #
 #     def wide_travel(self):
 #         '''深度遍历-广序遍历:从上到下,从左到右，利用队列'''
 #         if self.root is None:
@@ -106,15 +106,15 @@
 #             queue.append(self.root)
 #             while queue:
 #                 temp = queue.pop(0)
-#                 print(temp.item, end=" ")
+#                 print('广序排序：%s' % temp.item, end=" ")
 #                 # 如果有左孩子则放入队列
 #                 if temp.left_child is not None:
 #                     queue.append(temp.left_child)
 #                 # 如果有右孩子则放入队列
 #                 if temp.right_child is not None:
 #                     queue.append(temp.right_child)
-#
-#
+# #
+# #
 #     def preorder(self,node):
 #         '''深度遍历-先序遍历'''
 #         if node is None:
@@ -138,19 +138,19 @@
 #         self.posorder(node.left_child)
 #         self.posorder(node.right_child)
 #         print(node.item, end=" ")
-#
+# #
 # if __name__ == '__main__':
 #     tree = Tree()
 #     origin_list = ['A','B','C','D','E','F','G']
 #     for c in origin_list:
 #         tree.add(c)
-#     print("先序遍历:")
+#     print("先序遍历:") # A B D E C F G
 #     tree.preorder(tree.root)
-#     print("\n中序遍历:")
+#     print("\n中序遍历:") # D B E A F C G
 #     tree.inorder(tree.root)
-#     print("\n后序遍历:")
+#     print("\n后序遍历:") # D E B F G C A
 #     tree.posorder(tree.root)
-#     print("\n广度遍历:")
+#     print("\n广度遍历:") # A B C D E F G
 #     tree.wide_travel()
 
 # 定义二叉树节点
@@ -189,10 +189,22 @@ class Tree(object):
                     break
                 # 都不为空,将左节点和右节点放入队列!!! #少：修正同时处理异常null时list情况
                 else:
-                    if temp.left.item is not '':
-                        queue.append(temp.left)
-                    if temp.right.item is not '':
-                        queue.append(temp.right)
+                    queue.append(temp.left)
+                    queue.append(temp.right)
+
+    def wide_travel(self):
+        result = []
+        if self.root is not None:
+            queue = []
+            queue.append(self.root)
+            while queue:
+                temp = queue.pop(0)
+                result.append(temp.item)
+                if temp.left is not None:
+                    queue.append(temp.left)
+                if temp.right is not None:
+                    queue.append(temp.right)
+        return result
 
 # 处理二叉树的root
 class Solution(object):
@@ -200,11 +212,10 @@ class Solution(object):
 
         # 获取二叉树所处深度
         def depth(root):
-            if root and root.item is not '':#少：修正异常二叉树的情况 -> root 存在; 且root.item不为空
+            if root and root.item is not None: #少：修正异常二叉树的情况 -> root 存在; 且root.item不为空
                 return max(depth(root.left),depth(root.right))+1
             else:
                 return 0
-
 
         height = depth(root)
         width = pow(2,height)-1
@@ -213,7 +224,7 @@ class Solution(object):
 
         # 打印树: res为待修改的结果；root为当前节点；h为当前节点的处在的列；pos为所在的位置
         def print_tree(res,root,h,pos):
-            if root and root.item is not '': #少：修正异常二叉树的情况 -> root 存在; 且root.item不为空
+            if root and root.item is not None: #少：修正异常二叉树的情况 -> root 存在; 且root.item不为空
                 # 修改res
                 res[h-1][pos] = '%d' % root.item
                 step = pow(2,height-h-1)
@@ -223,18 +234,14 @@ class Solution(object):
 
         return res
 
-if __name__ == '__main__':# python中 None就是null空对象；'' 还得考虑list中有 空节点
+if __name__ == '__main__':
     origin_list = [1,2,5]
-    # 创建二叉树并添加节点
     tree = Tree()
     for item in origin_list:
         print('查看当前:',item)
         tree.add(item)
-    # 获取二叉树的root
-    binary_root  = tree.root
-    # 处理root
     s = Solution()
-    result = s.print_tree(binary_root)
+    result = s.print_tree(tree.root)
     print(result)
 
 
