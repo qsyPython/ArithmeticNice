@@ -55,6 +55,8 @@ def hammingDistance(x = int,y = int):
             if listX[i] != listY[i]:
                 total += 1
         return total
+    else:
+        return 0
 
 #整数转成二进制数组
 def toBinaryList(a,bin_list):
@@ -65,10 +67,9 @@ def toBinaryList(a,bin_list):
             toBinaryList(a,bin_list)
         return  bin_list
 
-
 if __name__ == '__main__':
 
-        print(hammingDistance(0,230))
+        print(hammingDistance(1,230))
 
 
 
