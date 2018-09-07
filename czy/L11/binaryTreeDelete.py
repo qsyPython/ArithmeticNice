@@ -131,7 +131,6 @@ if __name__ == '__main__':
         # 实例化根节点 [4, 2, 7, 1, 3, 6, 9]
         #数组转化成节点数组
         array = [1, 1, 0, 1, 1, 0, 1, 0]
-
         print(array)
         list = arrayToBiTree(array)
         root = pruneTree(list[0])
