@@ -39,7 +39,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self sendArray:@[@"1",@"2",@"2",@"3",@"4",@"4",@"3"]];
+    [self sendArray:@[@"1",@"0",@"1",@"1",@"0",@"1",@"0"]];
 }
 
 - (void)sendArray:(NSArray *)array{
@@ -78,7 +78,6 @@
     [self isDuicheng:leftModel.leftJiedian withRightModel:rightModel.rightJiedian];
     [self isDuicheng:leftModel.rightJiedian withRightModel:rightModel.leftJiedian];
     
-    
 }
 
 
@@ -98,7 +97,7 @@
             [array removeObjectAtIndex:0];
             
             if (tempModel.isStop==YES) {
-                break;
+                continue;
             }
             
             if (!tempModel.leftJiedian) {

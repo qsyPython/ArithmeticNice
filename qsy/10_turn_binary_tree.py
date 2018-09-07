@@ -49,28 +49,47 @@ class Tree(object):
                     temp.right = node
                     break
                 else:
-                    if temp.left.item is not '':
+                    # 都不为空,将左节点和右节点放入队列!!! #少：修正同时处理异常null时list情况
+                    if temp.left.item is not None:
                         queue.append(temp.left)
-                    if temp.right.item is not '':
+                    if temp.right.item is not None:
                         queue.append(temp.right)
+
+    def wide_travel(self):
+        result = []
+        if self.root is not None:
+            queue = []
+            queue.append(self.root)
+            while queue:
+                temp = queue.pop(0)
+                result.append(temp.item)
+                if temp.left is not None:
+                    queue.append(temp.left)
+                if temp.right is not None:
+                    queue.append(temp.right)
+        return  result
+
+    # 翻转二叉树：根据root递归获取到left和right分支；然后对左右分支进行交换
     def turn_tree(self,root):
-        if root is None:
-            return root
-        # 递归二叉树的左右子树
-        root.left = self.turn_tree(root.left)
-        root.right = self.turn_tree(root.right)
-        # 将左右子树交换
-        tmp = root.left
-        root.left = root.right
-        root.right = tmp
+        if root is not None:
+            # 递归二叉树的左右子树
+            root.left = self.turn_tree(root.left)
+            root.right = self.turn_tree(root.right)
+
+            # 将左右子树交换
+            tmp = root.left
+            root.left = root.right
+            root.right = tmp
         return root
 
 if __name__ == '__main__':
+    list = [1,None,3,5,7,9]
     tree = Tree()
-    list = [1,3,5,7,'',9]
     for item in list:
         tree.add(item)
-    new_root = tree.turn_tree(tree.root)
+    tree.turn_tree(tree.root)
+    result_list = tree.wide_travel()
+    print('查看翻转二叉树的最终结果：%s' % result_list)
 
 
 
