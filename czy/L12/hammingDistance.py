@@ -37,27 +37,37 @@
 #方法二
 #暴力计算，将整数转换成二进制，相同位比较，不同则个数加1
 def hammingDistance(x = int,y = int):
+
     if x >= 0 and y < 231:
-        listX = list(bin(x)[2:])
-        listY = list(bin(y)[2:])
+        listX = toBinaryList(x,[])
+        listY = toBinaryList(y,[])
         lenX = len(listX)
         lenY = len(listY)
         maxLen = max(lenX,lenY)
         if lenX > lenY:
             for i in range(lenY,lenX):
-                listY.insert(0,"0")
+                listY.insert(0,0)
         elif lenX < lenY:
             for i in range(lenX,lenY):
-                listX.insert(0,"0")
-
+                listX.insert(0,0)
         total = 0
         for i in range(maxLen):
             if listX[i] != listY[i]:
                 total += 1
         return total
 
+#整数转成二进制数组
+def toBinaryList(a,bin_list):
+        digit = a%2
+        bin_list.insert(0,digit)
+        a = a//2
+        if a != 0:
+            toBinaryList(a,bin_list)
+        return  bin_list
+
 
 if __name__ == '__main__':
+
         print(hammingDistance(0,230))
 
 
