@@ -12,8 +12,8 @@
 #import "TwoViewController.h"
 #import "ThreeModel.h"
 @interface ViewController ()
-@property (nonatomic , strong)ThreeModel * rootModel;
-@property (nonatomic , strong)NSMutableArray * array;
+@property (nonatomic ,strong)NSMutableArray * array;
+@property (nonatomic ,assign)NSInteger num;
 @end
 
 @implementation ViewController
@@ -21,131 +21,62 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.array=[NSMutableArray arrayWithCapacity:0];
-    [self sendArray:@[@"1",@"1",@"0",@"1",@"1",@"0",@"1",@"0"]];
+    _num=0;
+    [self sendNumberx:1 widthY:4];
 }
 
-
-- (void)sendArray:(NSArray *)array{
-    
-    for (NSString * str in array) {
-        [self addJiedian:str];
-    }
-    
-    if (self.rootModel) {//root 存在
-        [self shanxuan:self.rootModel];
-        [self changeThreeModel:self.rootModel];
-        NSLog(@"%@",[self.array description]);
-    }
-}
-
-
-- (void)changeThreeModel:(ThreeModel *)model{
-    NSMutableArray * tempArray=[NSMutableArray arrayWithCapacity:0];
-    [tempArray addObject:self.rootModel];
-    NSMutableArray * nextCengArray=[NSMutableArray arrayWithCapacity:0];
-
-    while (tempArray.count) {
-        [nextCengArray removeAllObjects];
-        for (NSInteger i=0; i<tempArray.count; i++) {
-            ThreeModel * model=tempArray[i];
-            
-            [self.array addObject:model.jiedian];
-            if (model.isKong==YES) {
-                continue;
-            }
-
-            if (model.leftJiedian) {
-                if (!(model.leftJiedian.isKong==YES&&(model.rightJiedian==nil||(model.rightJiedian&&model.rightJiedian.isKong==YES)))) {
-                      [nextCengArray addObject:model.leftJiedian];
-                }
-            }
-            
-            if (model.rightJiedian) {
-                if (!(model.rightJiedian.isKong==YES&&(model.leftJiedian==nil||(model.leftJiedian&&model.leftJiedian.isKong==YES)))) {
-                     [nextCengArray addObject:model.rightJiedian];
-                }
+- (void)sendNumberx:(NSInteger)x widthY:(NSInteger)y{
+    if (x>=0&&x<231&&y>=0&&y<231) {
+        //得到x的二进制
+        [self loadNumber:x];
+        NSMutableArray * xarray=[NSMutableArray arrayWithArray:self.array];
+        [self.array removeAllObjects];
+        //得到y的二进制
+        [self loadNumber:y];
+        NSMutableArray * yArray=[NSMutableArray arrayWithArray:self.array];
+        [self.array removeAllObjects];
+        //得到两个二进制的最大长度
+        NSInteger maxCount = xarray.count>=yArray.count?xarray.count:yArray.count;
+        
+        xarray=[self loadMaxArray:xarray withMax:maxCount];
+        yArray=[self loadMaxArray:yArray withMax:maxCount];
+        
+        for (NSInteger i=0; i<maxCount; i++) {
+            NSString * xstr=xarray[i];
+            NSString * ystr=yArray[i];
+            if (![ystr isEqualToString:xstr]) {
+                _num++;
             }
         }
-        [tempArray removeAllObjects];
-        [tempArray addObjectsFromArray:nextCengArray];
-    }
-  
-}
-
-- (void)addJiedian:(NSString *)str{
-    ThreeModel * model=[[ThreeModel alloc]initwithJiedian:str];
-    if (str.length==0) {
-        model.isStop=YES;
-    }
-    
-    if (self.rootModel==nil) {
-        self.rootModel=model;
+        NSLog(@"%ld和%ld****距离:%ld",x,y,_num);
     }else{
-        NSMutableArray * array=[NSMutableArray arrayWithCapacity:0];
-        [array addObject:self.rootModel];
-        while (array.count) {
-            ThreeModel * tempModel=[array firstObject];
-            [array removeObjectAtIndex:0];
-            
-            if (tempModel.isStop==YES) {
-                continue;
-            }
-            
-            if (!tempModel.leftJiedian) {
-                tempModel.leftJiedian=model;
-                break;
-            }else if (!tempModel.rightJiedian){
-                tempModel.rightJiedian=model;
-                break;
-            }else{
-                [array addObject:tempModel.leftJiedian];
-                [array addObject:tempModel.rightJiedian];
-            }
-        }
-    }
-}
-
-
-- (void)shanxuan:(ThreeModel *)model{
-    if (model==nil) {
         return;
     }
-    ThreeModel * leftJiedian=model.leftJiedian;
-    ThreeModel * rightJiedian = model.rightJiedian;
-    
-    if (leftJiedian==nil&&rightJiedian==nil) {
-        if (![model.jiedian isEqualToString:@"1"]) {//如果当前model没有子节点 且本身不为"1",那么本节点为 "";
-            model.jiedian=@"";
-            model.isKong=YES;
-        }
-    }else{
-        [self shanxuan:leftJiedian];
-        [self shanxuan:rightJiedian];
-        BOOL isleftKong=NO;
-        BOOL isrightKong=NO;
-        if (leftJiedian) {
-            if (leftJiedian.isKong==YES) {
-                isleftKong=YES;
-            }
-        }else{
-            isleftKong=YES;
-        }
-        
-        if (rightJiedian) {
-            if (rightJiedian.isKong==YES) {
-                isrightKong=YES;
-            }
-        }else{
-            isrightKong=YES;
-        }
-        
-        if (isleftKong&&isrightKong) {//同时为空
-            if (![model.jiedian isEqualToString:@"1"]) {//如果当前model没有子节点 且本身不为"1",那么本节点为 "";
-                model.jiedian=@"";
-                model.isKong=YES;
-            }
-        }
+}
+
+
+- (NSMutableArray *)loadMaxArray:(NSMutableArray *)array withMax:(NSInteger)max{
+    NSInteger tempIndex = max-array.count;
+    if (tempIndex==0) {
+        return array;
     }
+    
+    for (NSInteger i =0; i<tempIndex; i++) {
+        [array insertObject:@"0" atIndex:0];
+    }
+    
+    return array;
+}
+
+//得到二进制数组
+- (void)loadNumber:(NSInteger)index{
+    if (index==0) {
+        return;
+    }
+    NSInteger shang = index/2;
+    NSInteger yushu = index%2;
+    [self.array insertObject:[NSString stringWithFormat:@"%ld",yushu] atIndex:0];
+    [self loadNumber:shang];
 }
 
 - (void)didReceiveMemoryWarning {
