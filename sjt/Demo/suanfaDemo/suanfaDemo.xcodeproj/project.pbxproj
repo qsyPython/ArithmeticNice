@@ -10,6 +10,8 @@
 		7F01D5EB21421CF2003DE8AC /* TwelveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F01D5EA21421CF2003DE8AC /* TwelveViewController.m */; };
 		7F08DA86213D0C57001C3331 /* EightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F08DA85213D0C57001C3331 /* EightViewController.m */; };
 		7F08DA89213D0C8F001C3331 /* ThreeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F08DA88213D0C8F001C3331 /* ThreeModel.m */; };
+		7F344CF9214655670082CBA0 /* Thirteen ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F344CF8214655670082CBA0 /* Thirteen ViewController.m */; };
+		7F344CFC21465A020082CBA0 /* TreeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F344CFB21465A020082CBA0 /* TreeModel.m */; };
 		7F36B64D213501B8000B719E /* FourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F36B64C213501B8000B719E /* FourViewController.m */; };
 		7F538D1C213E56B3007AAAA6 /* NineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F538D1B213E56B3007AAAA6 /* NineViewController.m */; };
 		7F6549E82133A6E300A92C00 /* ThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F6549E72133A6E300A92C00 /* ThreeViewController.m */; };
@@ -55,6 +57,10 @@
 		7F08DA85213D0C57001C3331 /* EightViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EightViewController.m; sourceTree = "<group>"; };
 		7F08DA87213D0C8F001C3331 /* ThreeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreeModel.h; sourceTree = "<group>"; };
 		7F08DA88213D0C8F001C3331 /* ThreeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreeModel.m; sourceTree = "<group>"; };
+		7F344CF7214655670082CBA0 /* Thirteen ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Thirteen ViewController.h"; sourceTree = "<group>"; };
+		7F344CF8214655670082CBA0 /* Thirteen ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Thirteen ViewController.m"; sourceTree = "<group>"; };
+		7F344CFA21465A020082CBA0 /* TreeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TreeModel.h; sourceTree = "<group>"; };
+		7F344CFB21465A020082CBA0 /* TreeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TreeModel.m; sourceTree = "<group>"; };
 		7F36B64B213501B8000B719E /* FourViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FourViewController.h; sourceTree = "<group>"; };
 		7F36B64C213501B8000B719E /* FourViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FourViewController.m; sourceTree = "<group>"; };
 		7F538D1A213E56B3007AAAA6 /* NineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NineViewController.h; sourceTree = "<group>"; };
@@ -178,8 +184,12 @@
 				7F65F6012140C9AB00D4923F /* ElevenViewController.m */,
 				7F01D5E921421CF2003DE8AC /* TwelveViewController.h */,
 				7F01D5EA21421CF2003DE8AC /* TwelveViewController.m */,
+				7F344CF7214655670082CBA0 /* Thirteen ViewController.h */,
+				7F344CF8214655670082CBA0 /* Thirteen ViewController.m */,
 				7F08DA87213D0C8F001C3331 /* ThreeModel.h */,
 				7F08DA88213D0C8F001C3331 /* ThreeModel.m */,
+				7F344CFA21465A020082CBA0 /* TreeModel.h */,
+				7F344CFB21465A020082CBA0 /* TreeModel.m */,
 				7FBC56B5212FA47400632EE2 /* zuoyePng */,
 				7FE0952D212E9B4100E1F498 /* Main.storyboard */,
 				7FE09530212E9B4300E1F498 /* Assets.xcassets */,
@@ -346,6 +356,7 @@
 				7FE0952C212E9B4100E1F498 /* ViewController.m in Sources */,
 				7F08DA86213D0C57001C3331 /* EightViewController.m in Sources */,
 				7FBC56BC212FA5D800632EE2 /* OneViewController.m in Sources */,
+				7F344CFC21465A020082CBA0 /* TreeModel.m in Sources */,
 				7F01D5EB21421CF2003DE8AC /* TwelveViewController.m in Sources */,
 				7FE09537212E9B4300E1F498 /* main.m in Sources */,
 				7F9D037C213924600025366C /* SevenViewController.m in Sources */,
@@ -354,6 +365,7 @@
 				7F6549E82133A6E300A92C00 /* ThreeViewController.m in Sources */,
 				7FE09529212E9B4100E1F498 /* AppDelegate.m in Sources */,
 				7F538D1C213E56B3007AAAA6 /* NineViewController.m in Sources */,
+				7F344CF9214655670082CBA0 /* Thirteen ViewController.m in Sources */,
 				7FBC56B4212FA40700632EE2 /* TwoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
