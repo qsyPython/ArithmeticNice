@@ -97,8 +97,7 @@ class Tree(object):
 if __name__ == '__main__':
     origin_list = [1,0,1,0,0,0,1]
     tree = Tree()
-    for item in origin_list:
-        tree.add(item)
+    [tree.add(item) for item in origin_list]
     tree.cut_tree(tree.root)
     new_list = tree.wide_travel()
     print(new_list)

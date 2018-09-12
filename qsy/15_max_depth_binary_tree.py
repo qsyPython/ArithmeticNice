@@ -1,22 +1,20 @@
 '''
-    翻转二叉树: 这个题 homebrew 的编写者曾经面试google时，不会做，因此被拒
-    翻转一棵二叉树。
+    二叉树的最大深度：
+    给定一个二叉树，找出其最大深度。
+
+二叉树的深度为根节点到最远叶子节点的最长路径上的节点数。
+
+说明: 叶子节点是指没有子节点的节点。
+
 示例：
+给定二叉树 [3,9,20,null,null,15,7]，
 
-输入：
-
-     4
-   /   \
-  2     7
- / \   / \
-1   3 6   9
-输出：
-
-     4
-   /   \
-  7     2
- / \   / \
-9   6 3   1
+    3
+   / \
+  9  20
+    /  \
+   15   7
+返回它的最大深度 3 。
 '''
 
 class Node(object):
@@ -26,7 +24,8 @@ class Node(object):
         self.left = None
         self.right = None
     def __str__(self):
-        return str(self.item)
+        return  str(self.item)
+    __repr__ = __str__
 
 class Tree(object):
     def __init__(self):
@@ -49,7 +48,6 @@ class Tree(object):
                     temp.right = node
                     break
                 else:
-                    # 都不为空,将左节点和右节点放入队列!!! #少：修正同时处理异常null时list情况
                     if temp.left.item is not None:
                         queue.append(temp.left)
                     if temp.right.item is not None:
@@ -67,28 +65,23 @@ class Tree(object):
                     queue.append(temp.left)
                 if temp.right is not None:
                     queue.append(temp.right)
-        return  result
+        return result
 
-    # 翻转二叉树：根据root递归获取到left和right分支；然后对左右分支进行交换
-    def turn_tree(self,root):
-        if root is not None:
-            # 递归二叉树的左右子树
-            root.left = self.turn_tree(root.left)
-            root.right = self.turn_tree(root.right)
-
-            # 将左右子树交换
-            tmp = root.left
-            root.left = root.right
-            root.right = tmp
-        return root
+    def depth(self,root):
+        if root and root.item is not None:
+            return max(self.depth(root.left),self.depth(root.right)) + 1
+        else:
+            return 0
+    # 计算数的最大深度
+    def depth(self,root):
+        if root and root.item is not None:
+            return max(self.depth(root.left),self.depth(root.right)) + 1
+        else:
+            return  0
 
 if __name__ == '__main__':
-    list = [1,None,3,5,7,9]
+    origin_list = [3,9,20,None,None,15,7]
     tree = Tree()
-    [tree.add(item) for item in list]
-    tree.turn_tree(tree.root)
-    result_list = tree.wide_travel()
-    print('查看翻转二叉树的最终结果：%s' % result_list)
-
-
-
+    [tree.add(item) for item in origin_list]
+    max_depth = tree.depth(tree.root)
+    print(max_depth)
