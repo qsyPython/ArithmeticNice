@@ -88,7 +88,6 @@ def isSymmetric(root_left,root_right):
 if __name__ == '__main__':
     origin_list = [1,2,2,3,3,3,3,None]
     tree = Tree()
-    for item in origin_list:
-        tree.add_node(item)
+    [tree.add_node(item) for item in origin_list]
     print(is_symmetric(tree.root))
 

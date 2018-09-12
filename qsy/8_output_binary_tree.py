@@ -239,9 +239,7 @@ class Solution(object):
 if __name__ == '__main__':
     origin_list = [1,None,2,5]
     tree = Tree()
-    for item in origin_list:
-        print('查看当前:',item)
-        tree.add(item)
+    [tree.add(item) for item in origin_list]
     s = Solution()
     result = s.print_tree(tree.root)
     print(result)
