@@ -25,6 +25,8 @@
     <SUITE FILE_PATH="coverage/czy$find.coverage" NAME="find Coverage Results" MODIFIED="1535541672674" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/L4" />
     <SUITE FILE_PATH="coverage/czy$robotMove.coverage" NAME="robotMove Coverage Results" MODIFIED="1536646281567" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/L14" />
     <SUITE FILE_PATH="coverage/czy$sort.coverage" NAME="sort Coverage Results" MODIFIED="1535629840388" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/L6" />
+    <SUITE FILE_PATH="coverage/czy$peakI_index_in_mountain.coverage" NAME="peakI_index_in_mountain Coverage Results" MODIFIED="1536830484494" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/L17" />
+    <SUITE FILE_PATH="coverage/czy$ywm_1_3.coverage" NAME="ywm_1_3 Coverage Results" MODIFIED="1536839667821" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/L17" />
     <SUITE FILE_PATH="coverage/czy$lowerCase.coverage" NAME="lowerCase Coverage Results" MODIFIED="1535354833422" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/L3" />
     <SUITE FILE_PATH="coverage/czy$binaryTreeMirror.coverage" NAME="binaryTreeMirror Coverage Results" MODIFIED="1536131607076" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/L9" />
     <SUITE FILE_PATH="coverage/czy$BigNumCreatebinaryTree.coverage" NAME="BigNumCreatebinaryTree Coverage Results" MODIFIED="1536820573336" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/L13" />
@@ -34,8 +36,8 @@
       <file leaf-file-name="binaryTreeDelete.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/L11/binaryTreeDelete.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="136" column="24" lean-forward="true" selection-start-line="136" selection-start-column="7" selection-end-line="136" selection-end-column="24" />
+            <state relative-caret-position="2040">
+              <caret line="136" column="24" lean-forward="false" selection-start-line="136" selection-start-column="7" selection-end-line="136" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -44,7 +46,7 @@
       <file leaf-file-name="hammingDistance.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/L12/hammingDistance.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="488">
+            <state relative-caret-position="525">
               <caret line="35" column="14" lean-forward="false" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
               <folding />
             </state>
@@ -55,17 +57,7 @@
         <entry file="file://$PROJECT_DIR$/L13/BigNumCreatebinaryTree.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1740">
-              <caret line="116" column="0" lean-forward="true" selection-start-line="109" selection-start-column="0" selection-end-line="114" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="robotMove.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/L14/robotMove.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1080">
-              <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+              <caret line="116" column="0" lean-forward="false" selection-start-line="109" selection-start-column="0" selection-end-line="114" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -74,7 +66,7 @@
       <file leaf-file-name="binaryMatrixReversal.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/L14/binaryMatrixReversal.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="32">
+            <state relative-caret-position="360">
               <caret line="24" column="4" lean-forward="false" selection-start-line="24" selection-start-column="4" selection-end-line="27" selection-end-column="39" />
               <folding />
             </state>
@@ -84,18 +76,8 @@
       <file leaf-file-name="treeDeep.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/L15/treeDeep.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="326">
+            <state relative-caret-position="990">
               <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ywm_array_invert.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/L15/ywm_array_invert.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -104,28 +86,48 @@
       <file leaf-file-name="merge_trees.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/L16/merge_trees.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="111">
+            <state relative-caret-position="1710">
               <caret line="114" column="0" lean-forward="false" selection-start-line="114" selection-start-column="0" selection-end-line="123" selection-end-column="12" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ywm_1_2.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ywm_1_2.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/L16/ywm_1_2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+            <state relative-caret-position="326">
+              <caret line="44" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sort.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/L6/sort.py">
+      <file leaf-file-name="peakI_index_in_mountain.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/L17/peakI_index_in_mountain.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="14" lean-forward="false" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+            <state relative-caret-position="215">
+              <caret line="48" column="0" lean-forward="true" selection-start-line="48" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ywm_1_3.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/L17/ywm_1_3.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="55" column="16" lean-forward="true" selection-start-line="55" selection-start-column="16" selection-end-line="55" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="binaryTree.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/L8/binaryTree.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="352">
+              <caret line="103" column="25" lean-forward="false" selection-start-line="103" selection-start-column="25" selection-end-line="103" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -174,6 +176,9 @@
         <option value="$PROJECT_DIR$/L16/array.py" />
         <option value="$PROJECT_DIR$/L16/merge_trees.py" />
         <option value="$PROJECT_DIR$/L16/ywm_1_2.py" />
+        <option value="$PROJECT_DIR$/L17/Array.py" />
+        <option value="$PROJECT_DIR$/L17/peakI_index_in_mountain.py" />
+        <option value="$PROJECT_DIR$/L17/ywm_1_3.py" />
       </list>
     </option>
   </component>
@@ -184,7 +189,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-30" />
+    <option name="x" value="479" />
     <option name="y" value="23" />
     <option name="width" value="969" />
     <option name="height" value="648" />
@@ -259,6 +264,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -269,39 +276,22 @@
             <path>
               <item name="czy" type="b2602c69:ProjectViewProjectNode" />
               <item name="czy" type="462c0819:PsiDirectoryNode" />
-              <item name="L11" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="czy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="czy" type="462c0819:PsiDirectoryNode" />
-              <item name="L12" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="czy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="czy" type="462c0819:PsiDirectoryNode" />
-              <item name="L13" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="czy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="czy" type="462c0819:PsiDirectoryNode" />
-              <item name="L14" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="czy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="czy" type="462c0819:PsiDirectoryNode" />
-              <item name="L15" type="462c0819:PsiDirectoryNode" />
+              <item name="L8" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="czy" type="b2602c69:ProjectViewProjectNode" />
               <item name="czy" type="462c0819:PsiDirectoryNode" />
               <item name="L16" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="czy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="czy" type="462c0819:PsiDirectoryNode" />
+              <item name="L17" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -326,26 +316,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.ywm_1_2">
-    <configuration name="BigNumCreatebinaryTree" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="$USER_HOME$/venv/bin/python" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/L13" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="czy" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/L13/BigNumCreatebinaryTree.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
+  <component name="RunManager" selected="Python.ywm_1_3">
     <configuration name="array" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -384,6 +355,25 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="peakI_index_in_mountain" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/venv/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/L17" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="czy" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/L17/peakI_index_in_mountain.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="ywm_1_2" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -403,39 +393,39 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="ywm_array_invert" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="ywm_1_3" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="$USER_HOME$/venv/bin/python" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/L15" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/L17" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="czy" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/L15/ywm_array_invert.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/L17/ywm_1_3.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.BigNumCreatebinaryTree" />
-      <item index="1" class="java.lang.String" itemvalue="Python.ywm_array_invert" />
-      <item index="2" class="java.lang.String" itemvalue="Python.binaryTreeDelete" />
-      <item index="3" class="java.lang.String" itemvalue="Python.array" />
-      <item index="4" class="java.lang.String" itemvalue="Python.ywm_1_2" />
+      <item index="0" class="java.lang.String" itemvalue="Python.binaryTreeDelete" />
+      <item index="1" class="java.lang.String" itemvalue="Python.array" />
+      <item index="2" class="java.lang.String" itemvalue="Python.ywm_1_2" />
+      <item index="3" class="java.lang.String" itemvalue="Python.peakI_index_in_mountain" />
+      <item index="4" class="java.lang.String" itemvalue="Python.ywm_1_3" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.ywm_1_2" />
-        <item index="1" class="java.lang.String" itemvalue="Python.array" />
-        <item index="2" class="java.lang.String" itemvalue="Python.binaryTreeDelete" />
-        <item index="3" class="java.lang.String" itemvalue="Python.BigNumCreatebinaryTree" />
-        <item index="4" class="java.lang.String" itemvalue="Python.ywm_array_invert" />
+        <item index="0" class="java.lang.String" itemvalue="Python.ywm_1_3" />
+        <item index="1" class="java.lang.String" itemvalue="Python.peakI_index_in_mountain" />
+        <item index="2" class="java.lang.String" itemvalue="Python.ywm_1_2" />
+        <item index="3" class="java.lang.String" itemvalue="Python.array" />
+        <item index="4" class="java.lang.String" itemvalue="Python.binaryTreeDelete" />
       </list>
     </recent_temporary>
   </component>
@@ -456,16 +446,16 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-30" y="23" width="969" height="648" extended-state="0" />
+    <frame x="479" y="23" width="969" height="648" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36347198" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2585895" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3214671" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3279396" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -572,22 +562,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/L6/sort.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="14" lean-forward="true" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/L5/TinyUrl.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="52" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/L3/lowerCase.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -840,14 +814,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/L8/binaryTree.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1545">
-          <caret line="103" column="25" lean-forward="false" selection-start-line="103" selection-start-column="25" selection-end-line="103" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/L9/binaryTreeMirror.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -868,7 +834,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4800">
           <caret line="320" column="0" lean-forward="false" selection-start-line="320" selection-start-column="0" selection-end-line="320" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -898,7 +863,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/L15/treeDeep.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
+        <state relative-caret-position="990">
           <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
           <folding />
         </state>
@@ -906,7 +871,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/L14/binaryMatrixReversal.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
+        <state relative-caret-position="360">
           <caret line="24" column="4" lean-forward="false" selection-start-line="24" selection-start-column="4" selection-end-line="27" selection-end-column="39" />
           <folding />
         </state>
@@ -915,14 +880,14 @@
     <entry file="file://$PROJECT_DIR$/L13/BigNumCreatebinaryTree.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1740">
-          <caret line="116" column="0" lean-forward="true" selection-start-line="109" selection-start-column="0" selection-end-line="114" selection-end-column="12" />
+          <caret line="116" column="0" lean-forward="false" selection-start-line="109" selection-start-column="0" selection-end-line="114" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/L12/hammingDistance.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
+        <state relative-caret-position="525">
           <caret line="35" column="14" lean-forward="false" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
           <folding />
         </state>
@@ -930,15 +895,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/L11/binaryTreeDelete.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="136" column="24" lean-forward="true" selection-start-line="136" selection-start-column="7" selection-end-line="136" selection-end-column="24" />
+        <state relative-caret-position="2040">
+          <caret line="136" column="24" lean-forward="false" selection-start-line="136" selection-start-column="7" selection-end-line="136" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/L16/merge_trees.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
+        <state relative-caret-position="1710">
           <caret line="114" column="0" lean-forward="false" selection-start-line="114" selection-start-column="0" selection-end-line="123" selection-end-column="12" />
           <folding />
         </state>
@@ -946,8 +911,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/L16/ywm_1_2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        <state relative-caret-position="326">
+          <caret line="44" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/L8/binaryTree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="103" column="25" lean-forward="false" selection-start-line="103" selection-start-column="25" selection-end-line="103" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/L17/peakI_index_in_mountain.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="48" column="0" lean-forward="true" selection-start-line="48" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/L17/ywm_1_3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="55" column="16" lean-forward="true" selection-start-line="55" selection-start-column="16" selection-end-line="55" selection-end-column="16" />
           <folding />
         </state>
       </provider>
