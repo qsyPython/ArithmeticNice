@@ -46,8 +46,8 @@
 - (void)sendNumber:(NSInteger )num{
    
     for (NSInteger i = 1; i<=num; i++) {
-        NSInteger idx = [self jiecheng:i];
-        NSString * str=[NSString stringWithFormat:@"%ld",idx];
+        long long idx = [self jiecheng:i];
+        NSString * str=[NSString stringWithFormat:@"%lld",idx];
         if (str.length>40) {
             break;
         }
