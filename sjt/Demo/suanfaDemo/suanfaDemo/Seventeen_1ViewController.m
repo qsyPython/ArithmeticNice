@@ -132,7 +132,7 @@ typedef enum : NSUInteger {
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
 {
     
-    NSString *text = [textField text];
+//    NSString *text = [textField text];
     // 只能输入数字
     NSCharacterSet *characterSet = [NSCharacterSet characterSetWithCharactersInString:@"0123456789\b"];
     string = [string stringByReplacingOccurrencesOfString:@" "withString:@""];
