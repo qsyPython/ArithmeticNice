@@ -42,7 +42,6 @@ def sortArrayByParity(array):
 
 if __name__ == '__main__':
 
-    array =
     print(sortArrayByParity([3, 1, 2, 4]))
 
 
