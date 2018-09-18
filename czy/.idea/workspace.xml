@@ -14,7 +14,8 @@
     <SUITE FILE_PATH="coverage/czy$binaryTree.coverage" NAME="binaryTree Coverage Results" MODIFIED="1535951186772" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/L8" />
     <SUITE FILE_PATH="coverage/czy$TinyUrl.coverage" NAME="TinyUrl Coverage Results" MODIFIED="1535533011833" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/L5" />
     <SUITE FILE_PATH="coverage/czy$email_read.coverage" NAME="email_read Coverage Results" MODIFIED="1535634893666" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/L7" />
-    <SUITE FILE_PATH="coverage/czy$yanghui_sanjiao.coverage" NAME="yanghui_sanjiao Coverage Results" MODIFIED="1537173794041" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/L18" />
+    <SUITE FILE_PATH="coverage/czy$sort_array_parity.coverage" NAME="sort_array_parity Coverage Results" MODIFIED="1537239139933" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/L19" />
+    <SUITE FILE_PATH="coverage/czy$yanghui_sanjiao.coverage" NAME="yanghui_sanjiao Coverage Results" MODIFIED="1537176235794" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/L18" />
     <SUITE FILE_PATH="coverage/czy$binaryMatrixReversal.coverage" NAME="binaryMatrixReversal Coverage Results" MODIFIED="1536648182522" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/L14" />
     <SUITE FILE_PATH="coverage/czy$hammingDistance.coverage" NAME="hammingDistance Coverage Results" MODIFIED="1536314350616" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/L12" />
     <SUITE FILE_PATH="coverage/czy$array.coverage" NAME="array Coverage Results" MODIFIED="1536821783152" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/L16" />
@@ -24,6 +25,7 @@
     <SUITE FILE_PATH="coverage/czy$ywm_1_2.coverage" NAME="ywm_1_2 Coverage Results" MODIFIED="1536824252579" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/L16" />
     <SUITE FILE_PATH="coverage/czy$number.coverage" NAME="number Coverage Results" MODIFIED="1535521487879" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/L2" />
     <SUITE FILE_PATH="coverage/czy$morse.coverage" NAME="morse Coverage Results" MODIFIED="1537170071573" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/L18" />
+    <SUITE FILE_PATH="coverage/czy$magic_matrix.coverage" NAME="magic_matrix Coverage Results" MODIFIED="1537254378854" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/L19" />
     <SUITE FILE_PATH="coverage/czy$find.coverage" NAME="find Coverage Results" MODIFIED="1535541672674" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/L4" />
     <SUITE FILE_PATH="coverage/czy$robotMove.coverage" NAME="robotMove Coverage Results" MODIFIED="1536646281567" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/L14" />
     <SUITE FILE_PATH="coverage/czy$sort.coverage" NAME="sort Coverage Results" MODIFIED="1535629840388" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/L6" />
@@ -45,26 +47,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hammingDistance.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/L12/hammingDistance.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="35" column="14" lean-forward="false" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BigNumCreatebinaryTree.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/L13/BigNumCreatebinaryTree.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1740">
-              <caret line="116" column="0" lean-forward="false" selection-start-line="109" selection-start-column="0" selection-end-line="114" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="merge_trees.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/L16/merge_trees.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -79,7 +61,7 @@
         <entry file="file://$PROJECT_DIR$/L16/ywm_1_2.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="660">
-              <caret line="44" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+              <caret line="44" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -88,8 +70,8 @@
       <file leaf-file-name="peakI_index_in_mountain.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/L17/peakI_index_in_mountain.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="48" column="0" lean-forward="true" selection-start-line="48" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+            <state relative-caret-position="720">
+              <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -98,7 +80,7 @@
       <file leaf-file-name="ywm_1_3.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/L17/ywm_1_3.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
+            <state relative-caret-position="705">
               <caret line="47" column="38" lean-forward="false" selection-start-line="47" selection-start-column="29" selection-end-line="47" selection-end-column="38" />
               <folding />
             </state>
@@ -108,18 +90,38 @@
       <file leaf-file-name="morse.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/L18/morse.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
+            <state relative-caret-position="1635">
               <caret line="109" column="0" lean-forward="true" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="yanghui_sanjiao.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="yanghui_sanjiao.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/L18/yanghui_sanjiao.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="40" column="13" lean-forward="true" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
+            <state relative-caret-position="346">
+              <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sort_array_parity.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/L19/sort_array_parity.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="magic_matrix.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/L19/magic_matrix.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-543">
+              <caret line="23" column="26" lean-forward="false" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -183,6 +185,8 @@
         <option value="$PROJECT_DIR$/L17/ywm_1_3.py" />
         <option value="$PROJECT_DIR$/L18/morse.py" />
         <option value="$PROJECT_DIR$/L18/yanghui_sanjiao.py" />
+        <option value="$PROJECT_DIR$/L19/sort_array_parity.py" />
+        <option value="$PROJECT_DIR$/L19/magic_matrix.py" />
       </list>
     </option>
   </component>
@@ -193,10 +197,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="217" />
+    <option name="x" value="333" />
     <option name="y" value="23" />
-    <option name="width" value="956" />
-    <option name="height" value="676" />
+    <option name="width" value="996" />
+    <option name="height" value="698" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -268,6 +272,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -278,19 +284,12 @@
             <path>
               <item name="czy" type="b2602c69:ProjectViewProjectNode" />
               <item name="czy" type="462c0819:PsiDirectoryNode" />
-              <item name="L17" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="czy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="czy" type="462c0819:PsiDirectoryNode" />
-              <item name="L18" type="462c0819:PsiDirectoryNode" />
+              <item name="L19" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -315,7 +314,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.yanghui_sanjiao">
+  <component name="RunManager" selected="Python.magic_matrix">
+    <configuration name="magic_matrix" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/venv/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/L19" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="czy" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/L19/magic_matrix.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="morse" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -335,20 +353,20 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="peakI_index_in_mountain" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="sort_array_parity" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="$USER_HOME$/venv/bin/python" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/L17" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/L19" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="czy" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/L17/peakI_index_in_mountain.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/L19/sort_array_parity.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -368,25 +386,6 @@
       <module name="czy" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/L18/yanghui_sanjiao.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="ywm_1_2" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="$USER_HOME$/venv/bin/python" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/L16" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="czy" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/L16/ywm_1_2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -412,19 +411,19 @@
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.ywm_1_2" />
-      <item index="1" class="java.lang.String" itemvalue="Python.peakI_index_in_mountain" />
-      <item index="2" class="java.lang.String" itemvalue="Python.ywm_1_3" />
-      <item index="3" class="java.lang.String" itemvalue="Python.morse" />
-      <item index="4" class="java.lang.String" itemvalue="Python.yanghui_sanjiao" />
+      <item index="0" class="java.lang.String" itemvalue="Python.ywm_1_3" />
+      <item index="1" class="java.lang.String" itemvalue="Python.morse" />
+      <item index="2" class="java.lang.String" itemvalue="Python.yanghui_sanjiao" />
+      <item index="3" class="java.lang.String" itemvalue="Python.sort_array_parity" />
+      <item index="4" class="java.lang.String" itemvalue="Python.magic_matrix" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.yanghui_sanjiao" />
-        <item index="1" class="java.lang.String" itemvalue="Python.morse" />
-        <item index="2" class="java.lang.String" itemvalue="Python.ywm_1_3" />
-        <item index="3" class="java.lang.String" itemvalue="Python.peakI_index_in_mountain" />
-        <item index="4" class="java.lang.String" itemvalue="Python.ywm_1_2" />
+        <item index="0" class="java.lang.String" itemvalue="Python.magic_matrix" />
+        <item index="1" class="java.lang.String" itemvalue="Python.sort_array_parity" />
+        <item index="2" class="java.lang.String" itemvalue="Python.yanghui_sanjiao" />
+        <item index="3" class="java.lang.String" itemvalue="Python.morse" />
+        <item index="4" class="java.lang.String" itemvalue="Python.ywm_1_3" />
       </list>
     </recent_temporary>
   </component>
@@ -445,22 +444,22 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="217" y="23" width="956" height="676" extended-state="0" />
+    <frame x="333" y="23" width="996" height="698" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25645438" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25538972" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22757111" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23584905" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27022377" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26865673" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -557,13 +556,28 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/L18/yanghui_sanjiao.py</url>
-          <line>28</line>
+          <line>35</line>
           <option name="timeStamp" value="71" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/L18/yanghui_sanjiao.py</url>
-          <line>32</line>
+          <line>39</line>
           <option name="timeStamp" value="73" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/L18/yanghui_sanjiao.py</url>
+          <line>3</line>
+          <option name="timeStamp" value="76" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/L19/magic_matrix.py</url>
+          <line>67</line>
+          <option name="timeStamp" value="80" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/L19/magic_matrix.py</url>
+          <line>66</line>
+          <option name="timeStamp" value="85" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -573,47 +587,11 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="74" />
+      <option name="time" value="86" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/L7/email_read.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="930">
-          <caret line="62" column="11" lean-forward="true" selection-start-line="62" selection-start-column="11" selection-end-line="62" selection-end-column="11" />
-          <folding>
-            <element signature="e#276#285#0" expanded="true" />
-            <marker date="1535635000627" expanded="true" signature="527:614" ph="CREATE TABLE... IF" />
-            <marker date="1535635000627" expanded="true" signature="687:705" ph="DELETE FROM Person... " />
-            <marker date="1535635000627" expanded="true" signature="789:831" ph="INSERT INTO Person... " />
-            <marker date="1535635000627" expanded="true" signature="1091:1131" ph="UPDATE Person... " />
-            <marker date="1535635000627" expanded="true" signature="1225:1284" ph="SELECT Email... Person" />
-            <marker date="1535635000627" expanded="true" signature="1225:1285" ph="UPDATE Person... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/L4/find.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1545">
-          <caret line="103" column="0" lean-forward="false" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
-          <folding>
-            <element signature="e#1854#1863#0" expanded="false" />
-            <marker date="1535541707228" expanded="true" signature="2106:2224" ph="CREATE TABLE... IF" />
-            <marker date="1535541707228" expanded="true" signature="2106:2287" ph="CREATE TABLE... IF" />
-            <marker date="1535541707228" expanded="true" signature="2106:2356" ph="CREATE TABLE... IF" />
-            <marker date="1535541707228" expanded="true" signature="2106:2417" ph="CREATE TABLE... IF" />
-            <marker date="1535541707228" expanded="true" signature="2490:2507" ph="DELETE FROM world... " />
-            <marker date="1535541707228" expanded="true" signature="2501:2507" ph="DROP TABLE w... " />
-            <marker date="1535541707228" expanded="true" signature="2591:2667" ph="INSERT INTO COMPANY... " />
-            <marker date="1535541707228" expanded="true" signature="2591:2669" ph="INSERT INTO world... " />
-            <marker date="1535541707228" expanded="true" signature="3162:3245" ph="UPDATE world... " />
-            <marker date="1535541707228" expanded="true" signature="3339:3423" ph="SELECT * FRO... word" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/L5/TinyUrl.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="675">
@@ -863,7 +841,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="990">
           <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -871,7 +848,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="24" column="4" lean-forward="false" selection-start-line="24" selection-start-column="4" selection-end-line="27" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -910,7 +886,7 @@
     <entry file="file://$PROJECT_DIR$/L16/ywm_1_2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="660">
-          <caret line="44" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+          <caret line="44" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -925,15 +901,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/L17/peakI_index_in_mountain.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="48" column="0" lean-forward="true" selection-start-line="48" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+        <state relative-caret-position="720">
+          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/L17/ywm_1_3.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
+        <state relative-caret-position="705">
           <caret line="47" column="38" lean-forward="false" selection-start-line="47" selection-start-column="29" selection-end-line="47" selection-end-column="38" />
           <folding />
         </state>
@@ -941,7 +917,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/L18/morse.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
+        <state relative-caret-position="1635">
           <caret line="109" column="0" lean-forward="true" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
           <folding />
         </state>
@@ -949,8 +925,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/L18/yanghui_sanjiao.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="40" column="13" lean-forward="true" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
+        <state relative-caret-position="346">
+          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/L19/sort_array_parity.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/L19/magic_matrix.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-543">
+          <caret line="23" column="26" lean-forward="false" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
           <folding />
         </state>
       </provider>

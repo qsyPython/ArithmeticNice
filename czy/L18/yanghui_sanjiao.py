@@ -19,7 +19,6 @@ def triangle(k):
         a[j][j] = 1
 
         if j >= 2:
-
             z = 1
             while z <= j:
                 a[j][z] = a[j-1][z-1] + a[j-1][z]
