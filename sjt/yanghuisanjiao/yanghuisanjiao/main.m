@@ -32,6 +32,47 @@ void zifuchuan(int num , int max){
     }
 }
 
+void sendNum(int num){
+    num =5;
+    int n[num][num];
+    int count = num*num;
+    int i,j;//old坐标
+    int ii,jj;
+    if (num%2==1) {
+        i=1;j=num/2+1;
+        n[i][j]=1;
+        for (int k =2; k<=count; k++) {
+            ii=i-1;
+            jj=j+1;
+            if (ii<1) {
+                ii=num;
+            }
+            if (jj>num) {
+                jj=1;
+            }
+            if (0<n[ii][jj]&&n[ii][jj]<=count) {
+                ii=i+1;
+                jj=j;
+                if (ii<0) {
+                    ii=num;
+                }
+            }
+            n[ii][jj]=k;
+            i=ii;
+            j=jj;
+            
+        }
+    }else{
+        
+    }
+    for (i = 1; i <= num; i++) {
+        for (j = 1; j <= num; j++)
+            printf("%d\t",n[i][j]);
+        printf("\n");
+    }
+    
+}
+
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         int count = 9;
@@ -73,10 +114,13 @@ int main(int argc, const char * argv[]) {
             
         }
        
+        sendNum(5);
         
     }
     return 0;
 }
+
+
 
 
 
