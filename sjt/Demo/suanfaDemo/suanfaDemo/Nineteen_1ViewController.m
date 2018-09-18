@@ -46,9 +46,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    NSMutableString * ttt =[NSMutableString string];
     NSMutableArray * array =[self sendNumber:9];
-    NSLog(@"%@",[array description]);
+    for (NSArray * hangArray in  array) {
+        NSString * str= [hangArray componentsJoinedByString:@""];
+        [ttt appendString:@"\n"];
+        [ttt appendString:str];
+    }
+    NSLog(@"%@",ttt);
 }
 
 - (NSMutableArray *)sendNumber:(NSInteger)num{

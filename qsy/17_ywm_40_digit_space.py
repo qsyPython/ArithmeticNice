@@ -36,10 +36,11 @@ def factorial_ergodic(num):
     else:
         for i in range(1,num+1):
             result_num = get_digit_factorial(i)
+            print(type(result_num))
             if len(str(result_num)) <= 40:
                 print('%s!=%s' % (i,result_num))
             else:
-                return
+                break
 
 flag = 1
 while flag:
