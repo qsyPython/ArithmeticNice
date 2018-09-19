@@ -46,9 +46,7 @@
     NSArray * threeArray1=@[@[@[@"1"],@[@"2"],@[@"3"]],
                           @[@[@"4"],@[@"5"],@[@"6"]],
                           @[@[@"7"],@[@"8"],@[@"9"]]];
-    NSArray * threeArray2=@[@[@[@"11"],@[@"22"],@[@"33"]],
-                          @[@[@"44"],@[@"55"],@[@"66"]],
-                          @[@[@"77"],@[@"88"],@[@"99"]]];
+    NSArray * threeArray2=@[@[@[@"9"],@[@"8"]],@[@[@"6"],@[@"5"]]];
     
     NSMutableArray * threeArray=[self sendThreeArray1:threeArray1 withArray2:threeArray2];
     NSLog(@"结果:%@\n",[threeArray description]);
@@ -92,29 +90,29 @@
         NSMutableArray * twoarray1=nil;
         NSMutableArray * twoarray2=nil;
         twoMax=0;
-        if (i<array1.count) {
+        if (array1&&i<array1.count) {
             twoarray1=array1[i];
             twoMax=twoarray1.count;
         }
         
-        if (i<array2.count) {
+        if (array2&&i<array2.count) {
             twoarray2=array2[i];
             if (twoarray2.count>twoMax) {
                 twoMax=twoarray2.count;
             }
         }
         
-        for (NSInteger j =0 ; j<twoMax; j++) {
+        for (NSInteger j =0; j<twoMax; j++) {
             threeMax=0;
             NSMutableArray * threeTempArray=[NSMutableArray arrayWithCapacity:0];
             NSMutableArray * threearray1=nil;
             NSMutableArray * threearray2=nil;
-            if (i<twoarray1.count) {
+            if (twoarray1!=nil&&j<twoarray1.count) {
                 threearray1=twoarray1[j];
                 threeMax=threearray1.count;
             }
             
-            if (i<twoarray2.count) {
+            if (twoarray2!=nil&&j<twoarray2.count) {
                 threearray2=twoarray2[j];
                 if (threearray2.count>threeMax) {
                     threeMax=threearray2.count;
@@ -122,17 +120,22 @@
             }
             for (NSInteger k = 0; k<threeMax; k++) {
                 num =0;
-                if (k<threearray1.count) {
+                if (threearray1!=nil&&k<threearray1.count) {
                     num=[threearray1[k] integerValue];
                 }
-                if (k<threearray2.count) {
+                if (threearray2!=nil&&k<threearray2.count) {
                      num+=[threearray2[k] integerValue];
                 }
                 [threeTempArray addObject:[NSString stringWithFormat:@"%ld",num]];
             }
-            [twoTempArray addObject:threeTempArray];
+            if (threeTempArray.count>0) {
+                [twoTempArray addObject:threeTempArray];
+            }
+           
         }
-        [tempArray addObject:twoTempArray];
+        if (twoTempArray.count>0) {
+           [tempArray addObject:twoTempArray];
+        }
     }
     
     return tempArray;
