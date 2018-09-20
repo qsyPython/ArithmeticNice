@@ -79,59 +79,6 @@ if __name__ == '__main__':
     print(three_dimensional_add(a,b))
 
 
-    # leftLegth = len(a)
-    # rightLegth = len(b)
-    # max = leftLegth;
-    # if leftLegth > rightLegth:
-    #     max = leftLegth;
-    #     for i in range(rightLegth,leftLegth):
-    #         b.append([])
-    # elif leftLegth < rightLegth:
-    #     max = rightLegth;
-    #     for i in range(leftLegth,rightLegth):
-    #         a.append([])
-    #
-    # for i in range(max):
-    #     leftLegth = len(a[i])
-    #     rightLegth = len(b[i])
-    #     max = leftLegth;
-    #     if leftLegth > rightLegth:
-    #         max = leftLegth;
-    #         for j in range(rightLegth, leftLegth):
-    #             b[i].append([])
-    #     elif leftLegth < rightLegth:
-    #         max = rightLegth;
-    #         for j in range(leftLegth, rightLegth):
-    #             a[i].append([])
-    #
-    #     for j in range(max):
-    #         leftLegth = len(a[i][j])
-    #         rightLegth = len(b[i][j])
-    #         max = leftLegth
-    #         if leftLegth > rightLegth:
-    #             max = leftLegth
-    #             for k in range(rightLegth, leftLegth):
-    #                 b[i][j].append(0)
-    #         elif leftLegth < rightLegth:
-    #             max = rightLegth
-    #             for k in range(leftLegth, rightLegth):
-    #                 a[i][j].append(0)
-    #
-    # c = []
-    # for i in range(len(a)):
-    #     c.append([])
-    #     for j in range(len(a[i])):
-    #         c[i].append([])
-    #         for k in range(len(a[j])):
-    #             print(threeDimensional(a[i][j],b[i][j]))
-    #             c[i][j].append(list(threeDimensional(a[i][j],b[i][j])))
-    #
-    # print(a)
-    # print(b)
-    # print(c)
-
-
-
 
 
 
