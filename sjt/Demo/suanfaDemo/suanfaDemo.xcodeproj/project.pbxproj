@@ -31,6 +31,7 @@
 		7FAA958A214BB51D006A80BA /* Eighteen_1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FAA9589214BB51D006A80BA /* Eighteen_1ViewController.m */; };
 		7FB08CE32137E8E700F37F19 /* SixViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FB08CE22137E8E700F37F19 /* SixViewController.m */; };
 		7FB72DE8215348B400A0CA88 /* TwentyoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FB72DE7215348B400A0CA88 /* TwentyoneViewController.m */; };
+		7FB72DEB21537A2800A0CA88 /* Twentyone1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FB72DEA21537A2800A0CA88 /* Twentyone1ViewController.m */; };
 		7FBC56B4212FA40700632EE2 /* TwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FBC56B3212FA40700632EE2 /* TwoViewController.m */; };
 		7FBC56B8212FA47400632EE2 /* two.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FBC56B6212FA47400632EE2 /* two.png */; };
 		7FBC56BC212FA5D800632EE2 /* OneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FBC56BB212FA5D800632EE2 /* OneViewController.m */; };
@@ -110,6 +111,8 @@
 		7FB08CE22137E8E700F37F19 /* SixViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SixViewController.m; sourceTree = "<group>"; };
 		7FB72DE6215348B400A0CA88 /* TwentyoneViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TwentyoneViewController.h; sourceTree = "<group>"; };
 		7FB72DE7215348B400A0CA88 /* TwentyoneViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TwentyoneViewController.m; sourceTree = "<group>"; };
+		7FB72DE921537A2800A0CA88 /* Twentyone1ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Twentyone1ViewController.h; sourceTree = "<group>"; };
+		7FB72DEA21537A2800A0CA88 /* Twentyone1ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Twentyone1ViewController.m; sourceTree = "<group>"; };
 		7FBC56B2212FA40700632EE2 /* TwoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TwoViewController.h; sourceTree = "<group>"; };
 		7FBC56B3212FA40700632EE2 /* TwoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TwoViewController.m; sourceTree = "<group>"; };
 		7FBC56B6212FA47400632EE2 /* two.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = two.png; sourceTree = "<group>"; };
@@ -243,6 +246,8 @@
 				7FAA6348215221CC003AF9E3 /* Twenty_1ViewController.m */,
 				7FB72DE6215348B400A0CA88 /* TwentyoneViewController.h */,
 				7FB72DE7215348B400A0CA88 /* TwentyoneViewController.m */,
+				7FB72DE921537A2800A0CA88 /* Twentyone1ViewController.h */,
+				7FB72DEA21537A2800A0CA88 /* Twentyone1ViewController.m */,
 				7F08DA87213D0C8F001C3331 /* ThreeModel.h */,
 				7F08DA88213D0C8F001C3331 /* ThreeModel.m */,
 				7FBC56B5212FA47400632EE2 /* zuoyePng */,
@@ -430,6 +435,7 @@
 				7F538D1C213E56B3007AAAA6 /* NineViewController.m in Sources */,
 				7F344CF9214655670082CBA0 /* Thirteen ViewController.m in Sources */,
 				7FB72DE8215348B400A0CA88 /* TwentyoneViewController.m in Sources */,
+				7FB72DEB21537A2800A0CA88 /* Twentyone1ViewController.m in Sources */,
 				7F865AD421479ECD00B6CC6A /* FifteenViewController.m in Sources */,
 				7F7DF3C1214A33BD007AB36E /* SeventeenViewController.m in Sources */,
 				7FBC56B4212FA40700632EE2 /* TwoViewController.m in Sources */,
