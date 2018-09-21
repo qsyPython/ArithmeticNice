@@ -83,6 +83,8 @@
 - (void)wordMysql{
    NSString *some=@"SELECT name,population,area FROM resultT WHERE area >300000 or population >25000000";
     NSLog(@"%@",some);
+    
+  
 }
 
 - (void)didReceiveMemoryWarning {
