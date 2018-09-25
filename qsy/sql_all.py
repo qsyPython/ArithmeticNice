@@ -63,6 +63,18 @@
     select count(*) from Persons
     select count(*) from Persons
 
+
+# 👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇
+sql对大小写不敏感：
+create database
+alter database
+create table
+alter table
+drop table
+create index
+select lastName from Person
+
+
 '''
 # 1.SQL 指的是？
 # 您的回答：Structured Query Language
@@ -115,3 +127,9 @@
 # 您的回答：DELETE FROM Persons WHERE FirstName = 'Fred'
 # 20.通过 SQL，您如何返回 "Persons" 表中记录的数目？
 # 您的回答：SELECT COUNT(*) FROM Persons
+
+
+
+
+
+
