@@ -35,7 +35,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+  
+    NSLog(@"select id,name,sex (case when sex=='m' then 'f' else 'm' end), salary form biao ");
 }
 
 - (void)didReceiveMemoryWarning {
