@@ -24,3 +24,5 @@ update_sql = 'update salary set sex = if(sex = "m",'f',"m")'
 
 # 方式2
 # UPDATE salary SET sex  = (CASE WHEN sex = 'm' THEN 'f' ELSE 'm' END)
+
+
