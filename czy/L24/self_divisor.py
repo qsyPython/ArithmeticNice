@@ -15,3 +15,29 @@
 #
 # 每个输入参数的边界满足 1 <= left <= right <= 10000。
 
+def selfDiviser(array):
+
+    selfDiviserList = []
+    for index,value in enumerate(array):
+        isSelfDivisor = True
+        for i in range(len(value)):
+            ch = value[i]
+            result = int(value)%int(ch)
+            if result != 0:
+                isSelfDivisor = False
+
+        if isSelfDivisor:
+            selfDiviserList.append(value)
+
+    return selfDiviserList
+
+
+if __name__ == '__main__':
+
+    number = []
+    for num in range(10,129):
+        if '0' not in str(num):
+            number.append(str(num))
+    print(selfDiviser(number))
+
+
