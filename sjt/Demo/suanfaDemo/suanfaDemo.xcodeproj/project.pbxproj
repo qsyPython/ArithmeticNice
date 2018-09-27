@@ -10,6 +10,7 @@
 		7F01D5EB21421CF2003DE8AC /* TwelveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F01D5EA21421CF2003DE8AC /* TwelveViewController.m */; };
 		7F08DA86213D0C57001C3331 /* EightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F08DA85213D0C57001C3331 /* EightViewController.m */; };
 		7F08DA89213D0C8F001C3331 /* ThreeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F08DA88213D0C8F001C3331 /* ThreeModel.m */; };
+		7F1991BF215CB598002A4A73 /* TwenrtyfiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F1991BE215CB598002A4A73 /* TwenrtyfiveViewController.m */; };
 		7F344CF9214655670082CBA0 /* Thirteen ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F344CF8214655670082CBA0 /* Thirteen ViewController.m */; };
 		7F36B64D213501B8000B719E /* FourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F36B64C213501B8000B719E /* FourViewController.m */; };
 		7F4F4F0D2148F92400993AEF /* SixteenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F4F4F0C2148F92400993AEF /* SixteenViewController.m */; };
@@ -73,6 +74,8 @@
 		7F08DA85213D0C57001C3331 /* EightViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EightViewController.m; sourceTree = "<group>"; };
 		7F08DA87213D0C8F001C3331 /* ThreeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreeModel.h; sourceTree = "<group>"; };
 		7F08DA88213D0C8F001C3331 /* ThreeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreeModel.m; sourceTree = "<group>"; };
+		7F1991BD215CB598002A4A73 /* TwenrtyfiveViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TwenrtyfiveViewController.h; sourceTree = "<group>"; };
+		7F1991BE215CB598002A4A73 /* TwenrtyfiveViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TwenrtyfiveViewController.m; sourceTree = "<group>"; };
 		7F344CF7214655670082CBA0 /* Thirteen ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Thirteen ViewController.h"; sourceTree = "<group>"; };
 		7F344CF8214655670082CBA0 /* Thirteen ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Thirteen ViewController.m"; sourceTree = "<group>"; };
 		7F36B64B213501B8000B719E /* FourViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FourViewController.h; sourceTree = "<group>"; };
@@ -268,6 +271,8 @@
 				7F5D04C1215A23B1000A9343 /* Twenrtythree1ViewController.m */,
 				7FC3A481215B555B00468A79 /* TwenrtyfourViewController.h */,
 				7FC3A482215B555B00468A79 /* TwenrtyfourViewController.m */,
+				7F1991BD215CB598002A4A73 /* TwenrtyfiveViewController.h */,
+				7F1991BE215CB598002A4A73 /* TwenrtyfiveViewController.m */,
 				7F08DA87213D0C8F001C3331 /* ThreeModel.h */,
 				7F08DA88213D0C8F001C3331 /* ThreeModel.m */,
 				7FBC56B5212FA47400632EE2 /* zuoyePng */,
@@ -438,6 +443,7 @@
 				7FB08CE32137E8E700F37F19 /* SixViewController.m in Sources */,
 				7F36B64D213501B8000B719E /* FourViewController.m in Sources */,
 				7F865AD121479D5200B6CC6A /* FourteenViewController.m in Sources */,
+				7F1991BF215CB598002A4A73 /* TwenrtyfiveViewController.m in Sources */,
 				7FE0952C212E9B4100E1F498 /* ViewController.m in Sources */,
 				7FC3A483215B555B00468A79 /* TwenrtyfourViewController.m in Sources */,
 				7F08DA86213D0C57001C3331 /* EightViewController.m in Sources */,
