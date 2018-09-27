@@ -26,8 +26,8 @@
 +---------+-----------+--------------+-----------+
 '''
 
-# 'select * from cinema where description is not ? and id%2 != ? order by desc'
-
+# 'select * from cinema where description is not ? and id%2 != ? order by rating desc'
+# 'select * from cinema where description !=? and id%2=? order by rating by rating desc'
 
 import sqlite3,os,re
 

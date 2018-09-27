@@ -1,6 +1,6 @@
 '''
-    sql:结构查询语言 语句大全
-    #🐷🐷 🐷 SQL语句的占位符是?，而MySQL的占位符是%s 🐷 🐷🐷
+    sql: 结构查询语言 语句大全
+# 🐷🐷 🐷 SQL语句的占位符是?，而MySQL的占位符是%s 🐷 🐷🐷
 
     1、structured query language
 
@@ -127,6 +127,11 @@ select lastName from Person
 # 您的回答：DELETE FROM Persons WHERE FirstName = 'Fred'
 # 20.通过 SQL，您如何返回 "Persons" 表中记录的数目？
 # 您的回答：SELECT COUNT(*) FROM Persons
+
+
+
+
+
 
 
 
