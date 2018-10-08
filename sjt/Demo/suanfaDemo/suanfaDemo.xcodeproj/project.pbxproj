@@ -40,6 +40,7 @@
 		7FBC56B8212FA47400632EE2 /* two.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FBC56B6212FA47400632EE2 /* two.png */; };
 		7FBC56BC212FA5D800632EE2 /* OneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FBC56BB212FA5D800632EE2 /* OneViewController.m */; };
 		7FC3A483215B555B00468A79 /* TwenrtyfourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FC3A482215B555B00468A79 /* TwenrtyfourViewController.m */; };
+		7FD93E1F216B2B3C00F09B94 /* TwenrtySixViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD93E1E216B2B3C00F09B94 /* TwenrtySixViewController.m */; };
 		7FE09529212E9B4100E1F498 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE09528212E9B4100E1F498 /* AppDelegate.m */; };
 		7FE0952C212E9B4100E1F498 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE0952B212E9B4100E1F498 /* ViewController.m */; };
 		7FE0952F212E9B4100E1F498 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FE0952D212E9B4100E1F498 /* Main.storyboard */; };
@@ -133,6 +134,8 @@
 		7FBC56BB212FA5D800632EE2 /* OneViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OneViewController.m; sourceTree = "<group>"; };
 		7FC3A481215B555B00468A79 /* TwenrtyfourViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TwenrtyfourViewController.h; sourceTree = "<group>"; };
 		7FC3A482215B555B00468A79 /* TwenrtyfourViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TwenrtyfourViewController.m; sourceTree = "<group>"; };
+		7FD93E1D216B2B3C00F09B94 /* TwenrtySixViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TwenrtySixViewController.h; sourceTree = "<group>"; };
+		7FD93E1E216B2B3C00F09B94 /* TwenrtySixViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TwenrtySixViewController.m; sourceTree = "<group>"; };
 		7FE09524212E9B4100E1F498 /* suanfaDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = suanfaDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FE09527212E9B4100E1F498 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7FE09528212E9B4100E1F498 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -273,6 +276,8 @@
 				7FC3A482215B555B00468A79 /* TwenrtyfourViewController.m */,
 				7F1991BD215CB598002A4A73 /* TwenrtyfiveViewController.h */,
 				7F1991BE215CB598002A4A73 /* TwenrtyfiveViewController.m */,
+				7FD93E1D216B2B3C00F09B94 /* TwenrtySixViewController.h */,
+				7FD93E1E216B2B3C00F09B94 /* TwenrtySixViewController.m */,
 				7F08DA87213D0C8F001C3331 /* ThreeModel.h */,
 				7F08DA88213D0C8F001C3331 /* ThreeModel.m */,
 				7FBC56B5212FA47400632EE2 /* zuoyePng */,
@@ -459,6 +464,7 @@
 				7F08DA89213D0C8F001C3331 /* ThreeModel.m in Sources */,
 				7F65F6022140C9AB00D4923F /* ElevenViewController.m in Sources */,
 				7F6549E82133A6E300A92C00 /* ThreeViewController.m in Sources */,
+				7FD93E1F216B2B3C00F09B94 /* TwenrtySixViewController.m in Sources */,
 				7FE09529212E9B4100E1F498 /* AppDelegate.m in Sources */,
 				7F706D36214F71DA0033C069 /* NineteenViewController.m in Sources */,
 				7F4F4F0D2148F92400993AEF /* SixteenViewController.m in Sources */,
