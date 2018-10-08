@@ -4,49 +4,44 @@
   ，各算法的运行时间，问题规模n
   分别取10，50，100，150，200，300，400，500，10000，20000，50000，100000时绘制四种算法运行时间的比较图。
 '''
-
 import numpy as np
-import time
-import math
-import random
+import time,math,random
 
 n = [10,50,100,150,200,300,400,500]
-x = 1.2 #将多项式中x的值设为1.2
-Sum_time1 = []
-Sum_time2 = []
-Sum_time3 = []
-Sum_time4 = []
-for ele in n:
-    a =  np.random.random(ele)
+x = 1.2
+sum_time1 = []
+sum_time2 = []
+sum_time3 = []
+sum_time4 = []
+for item in n:
+    # polyval
+    a = np.random.random(item)
     p = np.poly1d(a)
     time_start = time.time()
     temp = np.polyval(p, x)
     time_end = time.time()
-    Sum_time1.append(time_end - time_start)
-
+    sum_time1.append(time_end - time_start)
+    # 遍历
     temp = float('Inf')
     time_start = time.time()
-    for i in range(0, ele, 1):
+    for i in range(0, item, 1):
         temp = temp + a[i] * x**i
     time_end = time.time()
-    Sum_time2.append(time_end - time_start)
+    sum_time2.append(time_end - time_start)
 
-   # temp = int()
+    #
     time_start = time.time()
     q = 1
-    for i in range(0, ele, 1):
+    for i in range(0, item, 1):
         q = q * x
         temp = temp + a[i] * q
     time_end = time.time()
-    Sum_time3.append(time_end - time_start)
+    sum_time3.append(time_end - time_start)
 
-    #temp = int()
+    #
     time_start = time.time()
-    for i in range(0, ele, 1):
-        temp = temp * x + a[ele - i - 1]
+    for i in range(0, item, 1):
+        temp = temp * x + a[item - i - 1]
     time_end = time.time()
-    Sum_time4.append(time_end - time_start)
-print(Sum_time1)
-print(Sum_time2)
-print(Sum_time3)
-print(Sum_time4)
+    sum_time4.append(time_end - time_start)
+print(sum_time1,'\n',sum_time2,'\n',sum_time3,'\n',sum_time4)

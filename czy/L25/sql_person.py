@@ -106,7 +106,6 @@ def openDb():
     print(rows)
 
 def main():
-    #gemAndStone("Ha","HHAssaHjj")
     openDb()
 
 if __name__ == '__main__':
