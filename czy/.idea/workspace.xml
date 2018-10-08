@@ -16,6 +16,7 @@
     <SUITE FILE_PATH="coverage/czy$binary_tree_search.coverage" NAME="binary_tree_search Coverage Results" MODIFIED="1537421822403" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/L21" />
     <SUITE FILE_PATH="coverage/czy$sort_array_parity.coverage" NAME="sort_array_parity Coverage Results" MODIFIED="1537239139933" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/L19" />
     <SUITE FILE_PATH="coverage/czy$binaryMatrixReversal.coverage" NAME="binaryMatrixReversal Coverage Results" MODIFIED="1536648182522" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/L14" />
+    <SUITE FILE_PATH="coverage/czy$multinomial_operate.coverage" NAME="multinomial_operate Coverage Results" MODIFIED="1538987603746" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/L26" />
     <SUITE FILE_PATH="coverage/czy$array.coverage" NAME="array Coverage Results" MODIFIED="1537428020578" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/L21" />
     <SUITE FILE_PATH="coverage/czy$American.coverage" NAME="American Coverage Results" MODIFIED="1537870034650" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/L23" />
     <SUITE FILE_PATH="coverage/czy$morse.coverage" NAME="morse Coverage Results" MODIFIED="1537170071573" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/L18" />
@@ -40,6 +41,7 @@
     <SUITE FILE_PATH="coverage/czy$number.coverage" NAME="number Coverage Results" MODIFIED="1535521487879" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/L2" />
     <SUITE FILE_PATH="coverage/czy$sql_person.coverage" NAME="sql_person Coverage Results" MODIFIED="1538038167331" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/L25" />
     <SUITE FILE_PATH="coverage/czy$find.coverage" NAME="find Coverage Results" MODIFIED="1535541672674" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/L4" />
+    <SUITE FILE_PATH="coverage/czy$matlab_reshape.coverage" NAME="matlab_reshape Coverage Results" MODIFIED="1538984850351" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/L26" />
     <SUITE FILE_PATH="coverage/czy$robotMove.coverage" NAME="robotMove Coverage Results" MODIFIED="1536646281567" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/L14" />
     <SUITE FILE_PATH="coverage/czy$sort.coverage" NAME="sort Coverage Results" MODIFIED="1535629840388" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/L6" />
     <SUITE FILE_PATH="coverage/czy$lowerCase.coverage" NAME="lowerCase Coverage Results" MODIFIED="1535354833422" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/L3" />
@@ -48,58 +50,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="sqlite_search.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/L22/sqlite_search.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="91" column="0" lean-forward="false" selection-start-line="91" selection-start-column="0" selection-end-line="92" selection-end-column="10" />
-              <folding>
-                <element signature="e#886#895#0" expanded="true" />
-                <marker date="1537444457938" expanded="true" signature="1138:1324" ph="CREATE TABLE... IF" />
-                <marker date="1537444457938" expanded="true" signature="1397:1415" ph="DELETE FROM cinema... " />
-                <marker date="1537444457938" expanded="true" signature="1499:1564" ph="INSERT INTO cinema... " />
-                <marker date="1537444457938" expanded="true" signature="1942:2010" ph="UPDATE cinema... " />
-                <marker date="1537444457938" expanded="true" signature="2104:2196" ph="SELECT movie... cinema" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="American.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/L23/American.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" column="38" lean-forward="false" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="38" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="exchange salary.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/L23/exchange salary.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="30" lean-forward="false" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="self_divisor.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/L24/self_divisor.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
+            <state relative-caret-position="510">
               <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="nim_game.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/L24/nim_game.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -108,52 +63,94 @@
       <file leaf-file-name="str_reverse.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/L25/str_reverse.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="17" column="9" lean-forward="true" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+            <state relative-caret-position="255">
+              <caret line="17" column="9" lean-forward="false" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sql_person.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="sql_person.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/L25/sql_person.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="88" column="37" lean-forward="true" selection-start-line="88" selection-start-column="37" selection-end-line="88" selection-end-column="37" />
+            <state relative-caret-position="383">
+              <caret line="107" column="0" lean-forward="true" selection-start-line="107" selection-start-column="0" selection-end-line="111" selection-end-column="10" />
               <folding>
                 <element signature="e#544#553#0" expanded="true" />
-                <marker date="1538038167323" expanded="true" signature="801:928" ph="CREATE TABLE... IF" />
-                <marker date="1538038167323" expanded="true" signature="801:929" ph="CREATE TABLE... IF" />
-                <marker date="1538038167323" expanded="true" signature="1031:1181" ph="CREATE TABLE... IF" />
-                <marker date="1538038167323" expanded="true" signature="1031:1182" ph="CREATE TABLE... IF" />
-                <marker date="1538038167323" expanded="true" signature="1263:1281" ph="DELETE FROM Person... " />
-                <marker date="1538038167323" expanded="true" signature="1370:1389" ph="DELETE FROM Address... " />
-                <marker date="1538038167323" expanded="true" signature="1473:1541" ph="INSERT INTO Address... " />
-                <marker date="1538038167323" expanded="true" signature="1685:1748" ph="INSERT INTO Person... " />
-                <marker date="1538038167323" expanded="true" signature="2302:2365" ph="UPDATE Person... " />
-                <marker date="1538038167323" expanded="true" signature="2494:2550" ph="UPDATE Address... " />
-                <marker date="1538038167323" expanded="true" signature="2645:2739" ph="SELECT Perso... " />
-                <marker date="1538038167323" expanded="true" signature="2645:2773" ph="SELECT Perso... Person" />
+                <marker date="1538038245752" expanded="true" signature="801:928" ph="CREATE TABLE... IF" />
+                <marker date="1538038245752" expanded="true" signature="801:929" ph="CREATE TABLE... IF" />
+                <marker date="1538038245752" expanded="true" signature="1031:1181" ph="CREATE TABLE... IF" />
+                <marker date="1538038245752" expanded="true" signature="1031:1182" ph="CREATE TABLE... IF" />
+                <marker date="1538038245752" expanded="true" signature="1263:1281" ph="DELETE FROM Person... " />
+                <marker date="1538038245752" expanded="true" signature="1370:1389" ph="DELETE FROM Address... " />
+                <marker date="1538038245752" expanded="true" signature="1473:1541" ph="INSERT INTO Address... " />
+                <marker date="1538038245752" expanded="true" signature="1685:1748" ph="INSERT INTO Person... " />
+                <marker date="1538038245752" expanded="true" signature="2302:2365" ph="UPDATE Person... " />
+                <marker date="1538038245752" expanded="true" signature="2494:2550" ph="UPDATE Address... " />
+                <marker date="1538038245752" expanded="true" signature="2645:2739" ph="SELECT Perso... " />
+                <marker date="1538038245752" expanded="true" signature="2645:2773" ph="SELECT Perso... Person" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hammingDistance.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/L12/hammingDistance.py">
+      <file leaf-file-name="matlab_reshape.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/L26/matlab_reshape.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-199">
-              <caret line="35" column="14" lean-forward="false" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
+            <state relative-caret-position="160">
+              <caret line="58" column="0" lean-forward="true" selection-start-line="58" selection-start-column="0" selection-end-line="64" selection-end-column="10" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="number.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/L2/number.py">
+      <file leaf-file-name="multinomial_operate.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/L26/multinomial_operate.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="34" selection-end-column="15" />
+            <state relative-caret-position="-249">
+              <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+              <folding>
+                <element signature="e#370#388#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="polynomial.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/venv/lib/python3.6/site-packages/numpy/lib/polynomial.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="246">
+              <caret line="680" column="0" lean-forward="false" selection-start-line="680" selection-start-column="0" selection-end-line="680" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="function_base.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/venv/lib/python3.6/site-packages/numpy/lib/function_base.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="2277" column="0" lean-forward="false" selection-start-line="2277" selection-start-column="0" selection-end-line="2277" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="shape_base.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/venv/lib/python3.6/site-packages/numpy/core/shape_base.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="268">
+              <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="numeric.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/venv/lib/python3.6/site-packages/numpy/core/numeric.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="186">
+              <caret line="142" column="0" lean-forward="false" selection-start-line="142" selection-start-column="0" selection-end-line="142" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -162,7 +159,7 @@
       <file leaf-file-name="find.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/L4/find.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
+            <state relative-caret-position="1005">
               <caret line="68" column="0" lean-forward="true" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
               <folding>
                 <marker date="1535541707228" expanded="true" signature="2106:2224" ph="CREATE TABLE... IF" />
@@ -245,6 +242,8 @@
         <option value="$PROJECT_DIR$/L24/nim_game.py" />
         <option value="$PROJECT_DIR$/L25/str_reverse.py" />
         <option value="$PROJECT_DIR$/L25/sql_person.py" />
+        <option value="$PROJECT_DIR$/L26/matlab_reshape.py" />
+        <option value="$PROJECT_DIR$/L26/multinomial_operate.py" />
       </list>
     </option>
   </component>
@@ -255,7 +254,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="60" />
+    <option name="x" value="439" />
     <option name="y" value="23" />
     <option name="width" value="1170" />
     <option name="height" value="678" />
@@ -330,6 +329,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -340,23 +340,17 @@
             <path>
               <item name="czy" type="b2602c69:ProjectViewProjectNode" />
               <item name="czy" type="462c0819:PsiDirectoryNode" />
-              <item name="L4" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="czy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="czy" type="462c0819:PsiDirectoryNode" />
-              <item name="L24" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="czy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="czy" type="462c0819:PsiDirectoryNode" />
               <item name="L25" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="czy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="czy" type="462c0819:PsiDirectoryNode" />
+              <item name="L26" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -383,21 +377,40 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.sql_person">
-    <configuration name="American" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.multinomial_operate">
+    <configuration name="matlab_reshape" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="$USER_HOME$/venv/bin/python" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/L23" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/L26" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="czy" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/L23/American.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/L26/matlab_reshape.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="multinomial_operate" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/venv/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/L26" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="czy" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/L26/multinomial_operate.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -417,25 +430,6 @@
       <module name="czy" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/L24/nim_game.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="self_divisor" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="$USER_HOME$/venv/bin/python" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/L24" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="czy" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/L24/self_divisor.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -480,19 +474,19 @@
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.American" />
-      <item index="1" class="java.lang.String" itemvalue="Python.self_divisor" />
-      <item index="2" class="java.lang.String" itemvalue="Python.nim_game" />
-      <item index="3" class="java.lang.String" itemvalue="Python.str_reverse" />
-      <item index="4" class="java.lang.String" itemvalue="Python.sql_person" />
+      <item index="0" class="java.lang.String" itemvalue="Python.nim_game" />
+      <item index="1" class="java.lang.String" itemvalue="Python.str_reverse" />
+      <item index="2" class="java.lang.String" itemvalue="Python.sql_person" />
+      <item index="3" class="java.lang.String" itemvalue="Python.matlab_reshape" />
+      <item index="4" class="java.lang.String" itemvalue="Python.multinomial_operate" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.sql_person" />
-        <item index="1" class="java.lang.String" itemvalue="Python.str_reverse" />
-        <item index="2" class="java.lang.String" itemvalue="Python.nim_game" />
-        <item index="3" class="java.lang.String" itemvalue="Python.self_divisor" />
-        <item index="4" class="java.lang.String" itemvalue="Python.American" />
+        <item index="0" class="java.lang.String" itemvalue="Python.multinomial_operate" />
+        <item index="1" class="java.lang.String" itemvalue="Python.matlab_reshape" />
+        <item index="2" class="java.lang.String" itemvalue="Python.sql_person" />
+        <item index="3" class="java.lang.String" itemvalue="Python.str_reverse" />
+        <item index="4" class="java.lang.String" itemvalue="Python.nim_game" />
       </list>
     </recent_temporary>
   </component>
@@ -513,21 +507,21 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="60" y="23" width="1170" height="678" extended-state="0" />
+    <frame x="439" y="23" width="1170" height="678" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18181819" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18181819" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3273453" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22429077" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22783688" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26586622" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39965695" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -653,6 +647,11 @@
           <line>25</line>
           <option name="timeStamp" value="98" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/L26/multinomial_operate.py</url>
+          <line>63</line>
+          <option name="timeStamp" value="105" />
+        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
@@ -661,17 +660,11 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="102" />
+      <option name="time" value="106" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/L1/number_1.py" />
-    <entry file="file://$PROJECT_DIR$/L4/zqxt_custom_fields_project/zqxt_custom_fields_project/wsgi.py" />
-    <entry file="file://$PROJECT_DIR$/L4/zqxt_custom_fields_project/zqxt_custom_fields_project/urls.py" />
-    <entry file="file://$PROJECT_DIR$/L4/zqxt_custom_fields_project/manage.py" />
-    <entry file="file://$PROJECT_DIR$/L4/zqxt_custom_fields_project/blog/fields.py" />
-    <entry file="file://$PROJECT_DIR$/L4/zqxt_custom_fields_project/blog/models.py" />
     <entry file="file://$PROJECT_DIR$/L4/zqxt_custom_fields_project/db.sqlite3" />
     <entry file="file://$PROJECT_DIR$/L4/zqxt_custom_fields_project/blog/views.py" />
     <entry file="file://$USER_HOME$/venv/lib/python3.6/site-packages/pymysql/__init__.py">
@@ -892,7 +885,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
           <caret line="31" column="16" lean-forward="false" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -900,7 +892,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1905">
           <caret line="127" column="0" lean-forward="false" selection-start-line="127" selection-start-column="0" selection-end-line="133" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -908,16 +899,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/L22/sqlite_search.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="1350">
           <caret line="91" column="0" lean-forward="false" selection-start-line="91" selection-start-column="0" selection-end-line="92" selection-end-column="10" />
           <folding>
-            <element signature="e#886#895#0" expanded="true" />
+            <element signature="e#886#895#0" expanded="false" />
             <marker date="1537444457938" expanded="true" signature="1138:1324" ph="CREATE TABLE... IF" />
             <marker date="1537444457938" expanded="true" signature="1397:1415" ph="DELETE FROM cinema... " />
             <marker date="1537444457938" expanded="true" signature="1499:1564" ph="INSERT INTO cinema... " />
@@ -945,15 +935,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/L24/nim_game.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+        <state relative-caret-position="450">
+          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/L12/hammingDistance.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-199">
+        <state relative-caret-position="525">
           <caret line="35" column="14" lean-forward="false" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
           <folding />
         </state>
@@ -961,7 +951,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/L2/number.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
+        <state relative-caret-position="420">
           <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="34" selection-end-column="15" />
           <folding />
         </state>
@@ -969,7 +959,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/L24/self_divisor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
+        <state relative-caret-position="510">
           <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
           <folding />
         </state>
@@ -979,21 +969,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="370">
           <caret line="308" column="0" lean-forward="false" selection-start-line="308" selection-start-column="0" selection-end-line="308" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/L25/str_reverse.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="17" column="9" lean-forward="true" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+        <state relative-caret-position="255">
+          <caret line="17" column="9" lean-forward="false" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/L4/find.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
+        <state relative-caret-position="1005">
           <caret line="68" column="0" lean-forward="true" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
           <folding>
             <marker date="1535541707228" expanded="true" signature="2106:2224" ph="CREATE TABLE... IF" />
@@ -1012,22 +1001,72 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/L25/sql_person.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="88" column="37" lean-forward="true" selection-start-line="88" selection-start-column="37" selection-end-line="88" selection-end-column="37" />
+        <state relative-caret-position="383">
+          <caret line="107" column="0" lean-forward="true" selection-start-line="107" selection-start-column="0" selection-end-line="111" selection-end-column="10" />
           <folding>
             <element signature="e#544#553#0" expanded="true" />
-            <marker date="1538038167323" expanded="true" signature="801:928" ph="CREATE TABLE... IF" />
-            <marker date="1538038167323" expanded="true" signature="801:929" ph="CREATE TABLE... IF" />
-            <marker date="1538038167323" expanded="true" signature="1031:1181" ph="CREATE TABLE... IF" />
-            <marker date="1538038167323" expanded="true" signature="1031:1182" ph="CREATE TABLE... IF" />
-            <marker date="1538038167323" expanded="true" signature="1263:1281" ph="DELETE FROM Person... " />
-            <marker date="1538038167323" expanded="true" signature="1370:1389" ph="DELETE FROM Address... " />
-            <marker date="1538038167323" expanded="true" signature="1473:1541" ph="INSERT INTO Address... " />
-            <marker date="1538038167323" expanded="true" signature="1685:1748" ph="INSERT INTO Person... " />
-            <marker date="1538038167323" expanded="true" signature="2302:2365" ph="UPDATE Person... " />
-            <marker date="1538038167323" expanded="true" signature="2494:2550" ph="UPDATE Address... " />
-            <marker date="1538038167323" expanded="true" signature="2645:2739" ph="SELECT Perso... " />
-            <marker date="1538038167323" expanded="true" signature="2645:2773" ph="SELECT Perso... Person" />
+            <marker date="1538038245752" expanded="true" signature="801:928" ph="CREATE TABLE... IF" />
+            <marker date="1538038245752" expanded="true" signature="801:929" ph="CREATE TABLE... IF" />
+            <marker date="1538038245752" expanded="true" signature="1031:1181" ph="CREATE TABLE... IF" />
+            <marker date="1538038245752" expanded="true" signature="1031:1182" ph="CREATE TABLE... IF" />
+            <marker date="1538038245752" expanded="true" signature="1263:1281" ph="DELETE FROM Person... " />
+            <marker date="1538038245752" expanded="true" signature="1370:1389" ph="DELETE FROM Address... " />
+            <marker date="1538038245752" expanded="true" signature="1473:1541" ph="INSERT INTO Address... " />
+            <marker date="1538038245752" expanded="true" signature="1685:1748" ph="INSERT INTO Person... " />
+            <marker date="1538038245752" expanded="true" signature="2302:2365" ph="UPDATE Person... " />
+            <marker date="1538038245752" expanded="true" signature="2494:2550" ph="UPDATE Address... " />
+            <marker date="1538038245752" expanded="true" signature="2645:2739" ph="SELECT Perso... " />
+            <marker date="1538038245752" expanded="true" signature="2645:2773" ph="SELECT Perso... Person" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/venv/lib/python3.6/site-packages/numpy/core/shape_base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/venv/lib/python3.6/site-packages/numpy/lib/function_base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="2277" column="0" lean-forward="false" selection-start-line="2277" selection-start-column="0" selection-end-line="2277" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/venv/lib/python3.6/site-packages/numpy/core/numeric.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="142" column="0" lean-forward="false" selection-start-line="142" selection-start-column="0" selection-end-line="142" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/venv/lib/python3.6/site-packages/numpy/lib/polynomial.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="680" column="0" lean-forward="false" selection-start-line="680" selection-start-column="0" selection-end-line="680" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/L26/matlab_reshape.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="58" column="0" lean-forward="true" selection-start-line="58" selection-start-column="0" selection-end-line="64" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/L26/multinomial_operate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-249">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding>
+            <element signature="e#370#388#0" expanded="true" />
           </folding>
         </state>
       </provider>
