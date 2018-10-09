@@ -120,32 +120,42 @@ class Linked_list(object): # 链表类：链表表头和链表长度
         self.head = None
         self.length = 0
 
-def getIntersectionNode(head_a,head_b):
+def get_intersection_node(head_a,head_b,head_a_length,head_b_length):
     if head_a is None or head_b is None:
         return None
-    temp_a,temp_b = head_a,head_b
-    len_a,len_b = temp_a.length,temp_b.length
+    long_a,short_b = head_a,head_b
+    len_a, len_b = head_a_length,head_b_length
+
     diff = len_a -len_b
-    if diff > 0:
 
+    if len_a < len_b:
+        diff = -diff
+        long_a = head_b
+        short_b = head_a
 
-
-
-
-
-
-
+    for i in range(diff):
+        long_a = long_a.next
+    while long_a and short_b and long_a != short_b:
+        long_a = long_a.next
+        short_b = short_b.next
+    return long_a
 
 if __name__ == '__main__':
-    list1 = ['a1','a2','c1','c2','c3']
-    list2 = ['b1','b2','c1','c2','c3']
+    list1 = ['a1','a2']
+    list2 = ['b1','b2']
+    common_list = ['c1','c2','c3']
     linked_list1 = Linked_list()
     linked_list2 = Linked_list()
+    # 创建公共的链表，拼接到其他2个链表后
+    linked_list_common = Linked_list()
+
     [linked_list1.add(item) for item in list1]
     [linked_list2.add(item) for item in list2]
-    print('')
-
-
+    [linked_list_common.add(item) for item in common_list]
+    linked_list1.head.next = linked_list_common.head
+    linked_list2.head.next = linked_list_common.head
+    result_head = get_intersection_node(linked_list1.head,linked_list2.head,linked_list1.length,linked_list2.length)
+    print(result_head)
 
 
 
