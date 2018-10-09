@@ -87,12 +87,6 @@
     return [NSMutableArray arrayWithArray:array];
 }
 
-- (void)sendMathArray:(NSArray *)array {
-    for (NSString * ele in array) {
-         
-    }
-    
-}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

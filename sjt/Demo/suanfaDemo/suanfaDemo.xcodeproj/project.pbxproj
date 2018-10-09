@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		7F01D5EB21421CF2003DE8AC /* TwelveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F01D5EA21421CF2003DE8AC /* TwelveViewController.m */; };
+		7F0804DF216C8C59004823F1 /* ChainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F0804DE216C8C59004823F1 /* ChainModel.m */; };
+		7F0804E2216C90DF004823F1 /* TwenrtySevenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F0804E1216C90DF004823F1 /* TwenrtySevenViewController.m */; };
 		7F08DA86213D0C57001C3331 /* EightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F08DA85213D0C57001C3331 /* EightViewController.m */; };
 		7F08DA89213D0C8F001C3331 /* ThreeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F08DA88213D0C8F001C3331 /* ThreeModel.m */; };
 		7F1991BF215CB598002A4A73 /* TwenrtyfiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F1991BE215CB598002A4A73 /* TwenrtyfiveViewController.m */; };
@@ -71,6 +73,10 @@
 /* Begin PBXFileReference section */
 		7F01D5E921421CF2003DE8AC /* TwelveViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TwelveViewController.h; sourceTree = "<group>"; };
 		7F01D5EA21421CF2003DE8AC /* TwelveViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TwelveViewController.m; sourceTree = "<group>"; };
+		7F0804DD216C8C59004823F1 /* ChainModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChainModel.h; sourceTree = "<group>"; };
+		7F0804DE216C8C59004823F1 /* ChainModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChainModel.m; sourceTree = "<group>"; };
+		7F0804E0216C90DF004823F1 /* TwenrtySevenViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TwenrtySevenViewController.h; sourceTree = "<group>"; };
+		7F0804E1216C90DF004823F1 /* TwenrtySevenViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TwenrtySevenViewController.m; sourceTree = "<group>"; };
 		7F08DA84213D0C57001C3331 /* EightViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EightViewController.h; sourceTree = "<group>"; };
 		7F08DA85213D0C57001C3331 /* EightViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EightViewController.m; sourceTree = "<group>"; };
 		7F08DA87213D0C8F001C3331 /* ThreeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreeModel.h; sourceTree = "<group>"; };
@@ -278,8 +284,12 @@
 				7F1991BE215CB598002A4A73 /* TwenrtyfiveViewController.m */,
 				7FD93E1D216B2B3C00F09B94 /* TwenrtySixViewController.h */,
 				7FD93E1E216B2B3C00F09B94 /* TwenrtySixViewController.m */,
+				7F0804E0216C90DF004823F1 /* TwenrtySevenViewController.h */,
+				7F0804E1216C90DF004823F1 /* TwenrtySevenViewController.m */,
 				7F08DA87213D0C8F001C3331 /* ThreeModel.h */,
 				7F08DA88213D0C8F001C3331 /* ThreeModel.m */,
+				7F0804DD216C8C59004823F1 /* ChainModel.h */,
+				7F0804DE216C8C59004823F1 /* ChainModel.m */,
 				7FBC56B5212FA47400632EE2 /* zuoyePng */,
 				7FE0952D212E9B4100E1F498 /* Main.storyboard */,
 				7FE09530212E9B4300E1F498 /* Assets.xcassets */,
@@ -439,6 +449,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F0804E2216C90DF004823F1 /* TwenrtySevenViewController.m in Sources */,
 				7F957511213F9CD9006FB414 /* TenViewController.m in Sources */,
 				7FAA6349215221CC003AF9E3 /* Twenty_1ViewController.m in Sources */,
 				7FAA9587214B8DB1006A80BA /* EighteenViewController.m in Sources */,
@@ -462,6 +473,7 @@
 				7FAA958A214BB51D006A80BA /* Eighteen_1ViewController.m in Sources */,
 				7F9D039B21509B4F0087818E /* TwentyViewController.m in Sources */,
 				7F08DA89213D0C8F001C3331 /* ThreeModel.m in Sources */,
+				7F0804DF216C8C59004823F1 /* ChainModel.m in Sources */,
 				7F65F6022140C9AB00D4923F /* ElevenViewController.m in Sources */,
 				7F6549E82133A6E300A92C00 /* ThreeViewController.m in Sources */,
 				7FD93E1F216B2B3C00F09B94 /* TwenrtySixViewController.m in Sources */,
