@@ -57,3 +57,71 @@ void dynamicMethodIMP(id self, SEL _cmd)
 
 
 二、列举出你项目中运用到的所有设计模式，并用代码简单实现
+
+1、原型
+原型模式使子类可以在客户端任意时刻进行复制，常见例如iOS的copy操作。
+
+
+2、单例
+保证一个类只有一个实例，并提供一个访问它的全局访问点
+多线程下使用得注意，可能会创建多次
+@interface Singleton: NSObject
++ (instancetype)shareInstance;
+@ end
+
+# import "Singleton.h"
+@implementation Singleton
+
+static Singleton * _instance = nil;
+
++(instancetype)shareInstance
+{
+static dispatch_once_t onceToken;
+dispatch_once( & onceToken, ^ {
+    _instance = [[self alloc] init];
+});
+
+return _instance;
+}
+
+@end
+
+3、工厂方法
+定义创建对象的接口，让子类决定实例化哪一个类。工厂方法使得一个类的实例化延迟到子类。
+例如：定制多种样式UITableViewCell
+
+@interface DZTableViewCellStyle1:UITableViewCell
+
+@end
+@ implementation DZTableViewCellStyle1
+
+创建方法
+
+@end
+
+@interface DZTableViewCellStyle2:UITableViewCell
+
+@end
+
+@ implementation DZTableViewCellStyle2
+
+创建方法
+
+@end
+
+@interface DZTableViewCellStyle3:UITableViewCell
+
+@end
+
+@ implementation DZTableViewCellStyle3
+
+创建方法
+
+@end
+
+4、抽象工厂
+抽象工厂提供一个固定的接口，用于创建一系列有关联或相依存的对象，而不必指定其具体类或其创建的细节。客户端与从工厂得到的具体对象之间没有耦合。
+
+例如 NSNumber类
+
+
