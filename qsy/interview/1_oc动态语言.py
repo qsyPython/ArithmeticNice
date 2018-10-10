@@ -9,10 +9,11 @@
 
 # 动态绑定：只有在运行时，才会确定执行什么方法。
 # 面向过程：传统的函数一般在编译时就已经把sel和IMP打包到编译后的源码中了
-# 面向对象中：OC最常使用的是消息机制objc_msgSend(id, SEL, ...)，调用一个实例的方法，所做的是向该实例的指针发送消息，实例在收到消息后，从自身的实现中寻找响应这条消息的方法
-# 动态绑定：在实例所属类确定后，将某些属性和相应的方法绑定到实例上，包括原来类实现的+ runtime实现的。
+# 面向对象中：OC最常使用的是消息机制objc_msgSend(id, SEL, ...)：调用1个实例的方法，所做的是向该实例的指针发送消息，实例在收到消息后，从自身的实现中寻找响应这条消息的方法
+# 动态绑定：在实例所属类确定后，将某些属性和相应的方法绑定到实例上，包括原来类已实现的 + 通过runtime实现的。
 # class_addMethod(添加方法)  和  method_setImplementation（交换实现）
 # 在Cocoa层，我们一般向一个NSObject对象发送-respondsToSelector:或者-instancesRespondToSelector:等来确定对象是否可以对某个SEL做出响应
+# 下面是决议，当该对应实例指针确定后，实例收到消息会，从自身实现中未找到对应的方法，就会走如下的决议:
 # void dynamicMethodIMP(id self, SEL _cmd){
 #     // do something
 # }

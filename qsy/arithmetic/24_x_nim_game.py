@@ -13,6 +13,12 @@ Nim游戏:
      因为无论你拿走 1 块、2 块 还是 3 块石头，最后一块石头总是会被你的朋友拿走。
 
 '''
+# 当我们的返回值为bool时，直接可以把if中的 condition 作为 返回值 来处理
+# def can_win_nim(n):
+#     if n % 4 == 0:
+#         return False
+#     else:
+#         return True
 
 def can_win_nim(n):
     return n%4 !=0
