@@ -26,3 +26,13 @@
 输出: 701
 '''
 
+# 获取每个元素，输出的值关系:对应元素*26的元素位置次幂 的+
+def serial_number(name):
+    name_list = list(reversed(list(name)))
+    name_length = len(name_list)
+    num = 0
+    for index in range(name_length):
+        num += (ord(name_list[index]) - 64)*(26**index)
+    return num
+print(serial_number('YYY'))
+

@@ -18,36 +18,33 @@
 每个输入参数的边界满足 1 <= left <= right <= 10000。
 '''
 
-def lowest_common(x,y):
-    des_list = []
-    if x == 0 or y == 0:
-        return 0
-    if x < y:
-        temp = x
-        x = y
-        y = temp
-    temp_x = x
-    temp_y = y
-    while y:
-        common = x % y
-        x = y
-        y = common
-    return temp_x * temp_y/x
+# 获取一个数各个位置上的数字,转为str后再强转为list
+def get_loc_num(num):
+    num_str = str(num)
+    loc_list = list(num_str)
+    return loc_list
 
-def selfDividingNumbers(left,right):
-    num = []
-    for index in range(left,right+1):
-        s = str(index)
-        for i in range(0,len(s)):
-            if i == 0:
-                temp = int(s[0])
-            temp = lowest_common(int(s[i]),temp)
-        if int(temp) == 0:
-            continue
-        if index % int(temp) == 0:
-            num.append(index)
-    return num
+# 判断1个数是否是自然数
+def is_natural_number(item):
+    temp = get_loc_num(item)
+    for inner_item in temp:
+        if int(inner_item) == 0 or item % int(inner_item) != 0:
+            is_natural = False
+            break
+        else:
+            is_natural = True
+    return is_natural
+
+def selfDividingNumbers(left, right):
+    natural_list = []
+    if left != right:
+        for item in range(left, right+1):
+            if is_natural_number(item):
+                natural_list.append(item)
+    else:
+        if is_natural_number(left):
+            natural_list.append(left)
+    return natural_list
 
 print(selfDividingNumbers(1,22))
-
 

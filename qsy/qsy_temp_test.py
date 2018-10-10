@@ -1,33 +1,9 @@
-
-# 获取一个数各个位置上的字数,转为字符串后再强转为list
-def get_loc_num(num):
-    num_str = str(num)
-    loc_list = list(num_str)
-    return loc_list
-
-def selfDividingNumbers(left, right):
-    """
-    :type left: int
-    :type right: int
-    :rtype: List[int]
-    """
-    natural_list = []
-    if left != right:
-        pass
-        # for i in range(left, right):
+# 当我们的返回值为bool时，直接可以把if中的 condition 作为 返回值 来处理
+def can_win_nim(n):#用时：44ms
+    if n % 4 == 0:
+        return False
     else:
-        temp = get_loc_num(left)
-        is_natural = False
-        for i in temp:
-            if left%i != 0:
-                is_natural = False
-                break
+        return True
 
-
-
-
-
-
-
-
-print(selfDividingNumbers(123,123))
+def can_win_nim(n): # 用时：40 ms
+    return n%4 !=0
