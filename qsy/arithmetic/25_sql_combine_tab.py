@@ -33,8 +33,5 @@ FirstName, LastName, City, State
 # 合并重复数据：select * from Person union select * from Address
 # 不和并重复数据：select * from Person union all select * from Address
 
-#search_sql = 'select p.FirstName, p.LastName, p.City, p.State from Person p left join Address
-# a on p.PersonId = a.PersonId'
-
-
+#search_sql = 'select p.FirstName, p.LastName, a.City, a.State from Person p left join Address a on p.PersonId = a.PersonId';
 

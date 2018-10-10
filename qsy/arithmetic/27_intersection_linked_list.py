@@ -120,6 +120,7 @@ class Linked_list(object): # 链表类：链表表头和链表长度
         self.head = None
         self.length = 0
 
+# 2表相交
 def get_intersection_node(head_a,head_b,head_a_length,head_b_length):
     if head_a is None or head_b is None:
         return None
