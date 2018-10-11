@@ -31,5 +31,6 @@
     对象remove前
     [self.timer invalidate];
     self.timer = nil;
+#     jjjj
 '''
 
