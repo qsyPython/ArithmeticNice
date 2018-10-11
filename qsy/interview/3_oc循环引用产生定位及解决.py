@@ -1,12 +1,12 @@
 '''
     循环引用产生、查询和解决
 
-    如何验证是否循环引用？dealloc是否被执行
+    如何查询是否循环引用？ dealloc是否被执行
 
     1、delegate: 使用strong ，而非weak会导致
     self.delegate = self;
     代理持有 self，self同时持有该delegate，就会导致无法释放
-    解决：采用weak弱引用delegate
+    解决：采用weak弱引用delegate，weak修饰的变量在释放后自动指向nil，防止野指针存在。
 
     2、block
     若是某对象持有该block，在block中直接使用对象 / 对象的变量，该对象就会被block持有，这样也会导致循环引用
