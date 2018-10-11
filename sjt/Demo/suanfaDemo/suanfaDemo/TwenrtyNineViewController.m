@@ -23,7 +23,7 @@
 @implementation TwenrtyNineViewController
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
+    [super viewDidLoad];  //ddd
     NSLog(@"%@ ==== %ld",@"12345",[self sendStr:@"12345"]);
 }
 
@@ -36,6 +36,9 @@
     if (num>9) {
         return [self sendStr:[NSString stringWithFormat:@"%ld",num]];
     }else{
+        
+        
+        
         return num;
     }
 }
