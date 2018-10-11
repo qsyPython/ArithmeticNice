@@ -44,6 +44,7 @@
     <SUITE FILE_PATH="coverage/czy$find.coverage" NAME="find Coverage Results" MODIFIED="1535541672674" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/L4" />
     <SUITE FILE_PATH="coverage/czy$matlab_reshape.coverage" NAME="matlab_reshape Coverage Results" MODIFIED="1538984850351" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/L26" />
     <SUITE FILE_PATH="coverage/czy$single_linked_list_intersect.coverage" NAME="single_linked_list_intersect Coverage Results" MODIFIED="1539067045024" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/L27" />
+    <SUITE FILE_PATH="coverage/czy$num.coverage" NAME="num Coverage Results" MODIFIED="1539226712990" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/L29" />
     <SUITE FILE_PATH="coverage/czy$robotMove.coverage" NAME="robotMove Coverage Results" MODIFIED="1536646281567" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/L14" />
     <SUITE FILE_PATH="coverage/czy$sort.coverage" NAME="sort Coverage Results" MODIFIED="1535629840388" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/L6" />
     <SUITE FILE_PATH="coverage/czy$lowerCase.coverage" NAME="lowerCase Coverage Results" MODIFIED="1535354833422" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/L3" />
@@ -118,11 +119,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="1.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="1.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/面试题/1.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="230">
-              <caret line="117" column="4" lean-forward="true" selection-start-line="117" selection-start-column="4" selection-end-line="117" selection-end-column="4" />
+              <caret line="124" column="12" lean-forward="true" selection-start-line="124" selection-start-column="12" selection-end-line="124" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="num.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/L29/num.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="280">
+              <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -131,8 +142,8 @@
       <file leaf-file-name="excel_read_row.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/L28/excel_read_row.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+            <state relative-caret-position="295">
+              <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="42" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -143,16 +154,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="10200">
               <caret line="680" column="0" lean-forward="false" selection-start-line="680" selection-start-column="0" selection-end-line="680" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="function_base.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/venv/lib/python3.6/site-packages/numpy/lib/function_base.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="33675">
-              <caret line="2277" column="0" lean-forward="false" selection-start-line="2277" selection-start-column="0" selection-end-line="2277" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -238,6 +239,7 @@
         <option value="$PROJECT_DIR$/L27/single_linked_list_intersect.py" />
         <option value="$PROJECT_DIR$/L28/excel_read_row.py" />
         <option value="$PROJECT_DIR$/面试题/1.py" />
+        <option value="$PROJECT_DIR$/L29/num.py" />
       </list>
     </option>
   </component>
@@ -248,8 +250,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="415" />
-    <option name="y" value="23" />
+    <option name="x" value="181" />
+    <option name="y" value="40" />
     <option name="width" value="1321" />
     <option name="height" value="678" />
   </component>
@@ -335,27 +337,12 @@
             <path>
               <item name="czy" type="b2602c69:ProjectViewProjectNode" />
               <item name="czy" type="462c0819:PsiDirectoryNode" />
-              <item name="L25" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="czy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="czy" type="462c0819:PsiDirectoryNode" />
-              <item name="L26" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="czy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="czy" type="462c0819:PsiDirectoryNode" />
-              <item name="L27" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="czy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="czy" type="462c0819:PsiDirectoryNode" />
               <item name="L28" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="czy" type="b2602c69:ProjectViewProjectNode" />
               <item name="czy" type="462c0819:PsiDirectoryNode" />
-              <item name="面试题" type="462c0819:PsiDirectoryNode" />
+              <item name="L29" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -386,7 +373,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.excel_read_row">
+  <component name="RunManager" selected="Python.num">
     <configuration name="excel_read_row" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -444,6 +431,25 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="num" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/venv/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/L29" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="czy" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/L29/num.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="single_linked_list_intersect" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -463,39 +469,20 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="sql_person" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="$USER_HOME$/venv/bin/python" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/L25" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="czy" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/L25/sql_person.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.sql_person" />
-      <item index="1" class="java.lang.String" itemvalue="Python.matlab_reshape" />
-      <item index="2" class="java.lang.String" itemvalue="Python.multinomial_operate" />
-      <item index="3" class="java.lang.String" itemvalue="Python.single_linked_list_intersect" />
-      <item index="4" class="java.lang.String" itemvalue="Python.excel_read_row" />
+      <item index="0" class="java.lang.String" itemvalue="Python.matlab_reshape" />
+      <item index="1" class="java.lang.String" itemvalue="Python.multinomial_operate" />
+      <item index="2" class="java.lang.String" itemvalue="Python.single_linked_list_intersect" />
+      <item index="3" class="java.lang.String" itemvalue="Python.excel_read_row" />
+      <item index="4" class="java.lang.String" itemvalue="Python.num" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.excel_read_row" />
-        <item index="1" class="java.lang.String" itemvalue="Python.single_linked_list_intersect" />
-        <item index="2" class="java.lang.String" itemvalue="Python.multinomial_operate" />
-        <item index="3" class="java.lang.String" itemvalue="Python.matlab_reshape" />
-        <item index="4" class="java.lang.String" itemvalue="Python.sql_person" />
+        <item index="0" class="java.lang.String" itemvalue="Python.num" />
+        <item index="1" class="java.lang.String" itemvalue="Python.excel_read_row" />
+        <item index="2" class="java.lang.String" itemvalue="Python.single_linked_list_intersect" />
+        <item index="3" class="java.lang.String" itemvalue="Python.multinomial_operate" />
+        <item index="4" class="java.lang.String" itemvalue="Python.matlab_reshape" />
       </list>
     </recent_temporary>
   </component>
@@ -516,14 +503,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="415" y="23" width="1321" height="678" extended-state="0" />
+    <frame x="181" y="40" width="1321" height="678" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18181819" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18181819" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3273453" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21032056" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -689,13 +676,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/venv/lib/python3.6/site-packages/pymysql/err.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="108" column="0" lean-forward="false" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/L4/zqxt_custom_fields_project/zqxt_custom_fields_project/settings.py" />
     <entry file="file://$PROJECT_DIR$/L3/lowerCase.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -1082,18 +1062,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/L28/excel_read_row.py">
+    <entry file="file://$PROJECT_DIR$/面试题/1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+        <state relative-caret-position="230">
+          <caret line="124" column="12" lean-forward="true" selection-start-line="124" selection-start-column="12" selection-end-line="124" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/面试题/1.py">
+    <entry file="file://$PROJECT_DIR$/L28/excel_read_row.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="117" column="4" lean-forward="true" selection-start-line="117" selection-start-column="4" selection-end-line="117" selection-end-column="4" />
+        <state relative-caret-position="295">
+          <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="42" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/L29/num.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding />
         </state>
       </provider>
