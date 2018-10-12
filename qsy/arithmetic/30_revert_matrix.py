@@ -9,11 +9,15 @@
 
 输入：[[1,2,3],[4,5,6],[7,8,9]]
 输出：[[1,4,7],[2,5,8],[3,6,9]]
+[1,2,3]
+[4,5,6]
+[7,8,9]
 示例 2：
 
 输入：[[1,2,3],[4,5,6]]
 输出：[[1,4],[2,5],[3,6]]
-
+[1,2,3]
+[4,5,6]
 
 提示：
 
@@ -21,14 +25,15 @@
 1 <= A[0].length <= 1000
 '''
 
+# 行数和列数交换：for range 2次遍历
 def revert_matrix(two_dimensional_array):
     des_arry = []
-    for index,item in enumerate(two_dimensional_array):
+    row = len(two_dimensional_array) #获取总行数：决定每个新1维list的len
+    column = len(two_dimensional_array[0]) #获取总列数：决定一维list的个数
+    for i in range(column):
         one_dimensional_array = []
-        for inner_index,inner_item in enumerate(item):
-            one_dimensional_array.append(item)
+        for j in range(row):
+            one_dimensional_array.append(two_dimensional_array[j][i])
         des_arry.append(one_dimensional_array)
-
-
-
-print(revert_matrix([[1,3,5,7],[2,4,6,8]]))
+    return des_arry
+print(revert_matrix([[1,2,3],[4,5,6],[7,8,9]]))
