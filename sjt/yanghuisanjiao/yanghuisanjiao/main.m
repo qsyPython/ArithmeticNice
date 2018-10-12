@@ -160,13 +160,26 @@ void yanghuisanjiao(int num){
     }
 }
 
+void jiaohuanJuzhen(int num){
+    int old[2][6]= {{1,2,3,4,5,6},{7,8,9,10,11,12}};
+    int hang = sizeof(old[0])/sizeof(int);
+    int lie = sizeof(old)/sizeof(int)/hang;
+    int new[lie][hang];
+    int someNum;
+
+    
+    
+}
+
+
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        printf("魔方矩阵\n");
-        sendNum(5);
-        printf("杨辉三角\n");
-        yanghuisanjiao(5);
-        
+//        printf("魔方矩阵\n");
+//        sendNum(5);
+//        printf("杨辉三角\n");
+//        yanghuisanjiao(5);
+        printf("翻转");
+        jiaohuanJuzhen(0);
         
     }
     return 0;

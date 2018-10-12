@@ -14,6 +14,7 @@
 		7F08DA89213D0C8F001C3331 /* ThreeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F08DA88213D0C8F001C3331 /* ThreeModel.m */; };
 		7F1991BF215CB598002A4A73 /* TwenrtyfiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F1991BE215CB598002A4A73 /* TwenrtyfiveViewController.m */; };
 		7F344CF9214655670082CBA0 /* Thirteen ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F344CF8214655670082CBA0 /* Thirteen ViewController.m */; };
+		7F36AC8121708BB500446118 /* ThityOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F36AC8021708BB500446118 /* ThityOneViewController.m */; };
 		7F36B64D213501B8000B719E /* FourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F36B64C213501B8000B719E /* FourViewController.m */; };
 		7F4F4F0D2148F92400993AEF /* SixteenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F4F4F0C2148F92400993AEF /* SixteenViewController.m */; };
 		7F4FF7EE21549BB4001F9329 /* TwenrtytwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F4FF7ED21549BB4001F9329 /* TwenrtytwoViewController.m */; };
@@ -87,6 +88,8 @@
 		7F1991BE215CB598002A4A73 /* TwenrtyfiveViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TwenrtyfiveViewController.m; sourceTree = "<group>"; };
 		7F344CF7214655670082CBA0 /* Thirteen ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Thirteen ViewController.h"; sourceTree = "<group>"; };
 		7F344CF8214655670082CBA0 /* Thirteen ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Thirteen ViewController.m"; sourceTree = "<group>"; };
+		7F36AC7F21708BB500446118 /* ThityOneViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThityOneViewController.h; sourceTree = "<group>"; };
+		7F36AC8021708BB500446118 /* ThityOneViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThityOneViewController.m; sourceTree = "<group>"; };
 		7F36B64B213501B8000B719E /* FourViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FourViewController.h; sourceTree = "<group>"; };
 		7F36B64C213501B8000B719E /* FourViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FourViewController.m; sourceTree = "<group>"; };
 		7F4F4F0B2148F92400993AEF /* SixteenViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SixteenViewController.h; sourceTree = "<group>"; };
@@ -296,6 +299,8 @@
 				7F795FC2216DD3FD0055EF07 /* TwenrtyEightViewController.m */,
 				7F9DC87D216EEC5000F92E0E /* TwenrtyNineViewController.h */,
 				7F9DC87E216EEC5000F92E0E /* TwenrtyNineViewController.m */,
+				7F36AC7F21708BB500446118 /* ThityOneViewController.h */,
+				7F36AC8021708BB500446118 /* ThityOneViewController.m */,
 				7F08DA87213D0C8F001C3331 /* ThreeModel.h */,
 				7F08DA88213D0C8F001C3331 /* ThreeModel.m */,
 				7F0804DD216C8C59004823F1 /* ChainModel.h */,
@@ -473,6 +478,7 @@
 				7F1991BF215CB598002A4A73 /* TwenrtyfiveViewController.m in Sources */,
 				7FE0952C212E9B4100E1F498 /* ViewController.m in Sources */,
 				7FC3A483215B555B00468A79 /* TwenrtyfourViewController.m in Sources */,
+				7F36AC8121708BB500446118 /* ThityOneViewController.m in Sources */,
 				7F08DA86213D0C57001C3331 /* EightViewController.m in Sources */,
 				7F5D04BE2159FD60000A9343 /* TwenrtythreeViewController.m in Sources */,
 				7FBC56BC212FA5D800632EE2 /* OneViewController.m in Sources */,
