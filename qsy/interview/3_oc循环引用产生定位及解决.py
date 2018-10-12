@@ -28,9 +28,8 @@
 
     4、timer 当一个对象中持有timer时，该对象若是被销毁前未进，停止timer和置为nil处理，该对象和timer之间就会造成循环引用。
     解决：
-    对象remove前
+    对象self remove前
     [self.timer invalidate];
     self.timer = nil;
-#     jjjj
 '''
 

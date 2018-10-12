@@ -20,3 +20,15 @@
 1 <= A.length <= 1000
 1 <= A[0].length <= 1000
 '''
+
+def revert_matrix(two_dimensional_array):
+    des_arry = []
+    for index,item in enumerate(two_dimensional_array):
+        one_dimensional_array = []
+        for inner_index,inner_item in enumerate(item):
+            one_dimensional_array.append(item)
+        des_arry.append(one_dimensional_array)
+
+
+
+print(revert_matrix([[1,3,5,7],[2,4,6,8]]))
