@@ -11,17 +11,52 @@
    尽量避免多线程抢夺同一资源；
    尽量将加锁、资源抢夺的业务逻辑交给服务器端处理，减小移动客户端的压力
    线程安全问题：当多个线程访问同1块资源时，很容易引发数据错乱和数据安全问题.
+    举例：
+    NSInteger total = 0;
+    # NSLock *lock = [NSLock new];
+    - (void)threadNotSafe {
+        for (NSInteger index = 0; index < 3; index++) {
+            dispatch_async(dispatch_get_global_queue(0, 0), ^{
+                # [lock lock];
+                total += 1;
+                NSLog(@"total: %ld", total);
+                total -= 1;
+                NSLog(@"total: %ld", total);
+                # [lock unlock];
+            });
+        }
+    }
 
-   线程安全问题的解决办法：
-   1、自旋锁：使用原子属性atomic，新的线程来了，会进入死循环，直到旧线程完成
+线程安全问题的解决办法：(按照执行效率从低到高)
+   1、自旋锁：使用原子属性atomic就是自旋锁，新的线程来了，会进入死循环，直到旧线程完成
    使用原子属性atomic，但atomic不是绝对的线程安全，假设有3个线程，一个线程进行写入操作，一个线程进行读取操作，最后一个线程进行写入操作。
    如果使用atomic，在读取完成之前，值可能会被篡改。这时候，可以使用栅栏块（dispatch_barrier_async）解决。
+
+   OSSpinLock *lock = OS_SPINLOCK_INIT;
+   OSSpinLockLock(&lock);
+   // 需要执行的代码
+   OSSpinLockUnlock(&lock);
+
    2、互斥锁: @synchronized，新的线程来了，会休眠。
-   @synchronized(锁对象self){
+   NSObject *object = [NSObject new];
+   @synchronized(object){
         // 需要锁定的代码
    }
 
-    # 对线程可进行的操作：
+   3、线程锁：列出3种实现
+   NSLock *lock = [NSLock new] 或 NSCondition *lock = [NSCondition new];
+   [lock lock];
+   // 需要锁定的代码
+   [lock unlock];
+
+    或
+   dispatch_semaphore_t lock = dispatch_semaphore_create(1);    //传入的参数必须大于或者等于0，否则会返回Null
+   long wait = dispatch_semaphore_wait(lock, DISPATCH_TIME_FOREVER);    //wait = 0，则表示不需要等待，直接执行后续代码；wait != 0，则表示需要等待信号或者超时，才能继续执行后续代码。lock信号量减一，判断是否大于0，如果大于0则继续执行后续代码；lock信号量减一少于或者等于0，则等待信号量或者超时。
+   //需要锁定的代码
+   long signal = dispatch_semaphore_signal(lock);    //signal = 0，则表示没有线程需要其处理的信号量，换句话说，没有需要唤醒的线程；signal != 0，则表示有一个或者多个线程需要唤醒，则唤醒一个线程。（如果线程有优先级，则唤醒优先级最高的线程，否则，随机唤醒一个线程。）
+
+
+# 对线程可进行的操作：
     1、获取当前线程
     [NSThread currentThread]; number为1，name为main表示主线程。
     [NSThread mainThread];获取主线程
