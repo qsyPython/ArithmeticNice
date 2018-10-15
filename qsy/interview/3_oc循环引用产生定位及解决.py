@@ -9,7 +9,8 @@
     解决：采用weak弱引用delegate，weak修饰的变量在释放后自动指向nil，防止野指针存在。
 
     2、block
-    若是某对象持有该block，在block中直接使用对象 / 对象的变量，该对象就会被block持有，这样也会导致循环引用
+    循环引用：若是调用该block的某对象持有该block + 在block中直接使用该对象 / 对象的变量 == 这样就会导致循环引用！！！
+
     typedef void(^MyBlock)() myBlock
     @property(nonomatic,copy)myBlock *myBlock;
     self.myBlock = ^(){
