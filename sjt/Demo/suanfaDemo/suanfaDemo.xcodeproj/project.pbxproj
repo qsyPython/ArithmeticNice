@@ -46,6 +46,7 @@
 		7FBC56BC212FA5D800632EE2 /* OneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FBC56BB212FA5D800632EE2 /* OneViewController.m */; };
 		7FC3A483215B555B00468A79 /* TwenrtyfourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FC3A482215B555B00468A79 /* TwenrtyfourViewController.m */; };
 		7FD93E1F216B2B3C00F09B94 /* TwenrtySixViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD93E1E216B2B3C00F09B94 /* TwenrtySixViewController.m */; };
+		7FDC6D56217581820083CE06 /* ThityTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FDC6D55217581820083CE06 /* ThityTwoViewController.m */; };
 		7FE09529212E9B4100E1F498 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE09528212E9B4100E1F498 /* AppDelegate.m */; };
 		7FE0952C212E9B4100E1F498 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE0952B212E9B4100E1F498 /* ViewController.m */; };
 		7FE0952F212E9B4100E1F498 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FE0952D212E9B4100E1F498 /* Main.storyboard */; };
@@ -151,6 +152,8 @@
 		7FC3A482215B555B00468A79 /* TwenrtyfourViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TwenrtyfourViewController.m; sourceTree = "<group>"; };
 		7FD93E1D216B2B3C00F09B94 /* TwenrtySixViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TwenrtySixViewController.h; sourceTree = "<group>"; };
 		7FD93E1E216B2B3C00F09B94 /* TwenrtySixViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TwenrtySixViewController.m; sourceTree = "<group>"; };
+		7FDC6D54217581820083CE06 /* ThityTwoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThityTwoViewController.h; sourceTree = "<group>"; };
+		7FDC6D55217581820083CE06 /* ThityTwoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThityTwoViewController.m; sourceTree = "<group>"; };
 		7FE09524212E9B4100E1F498 /* suanfaDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = suanfaDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FE09527212E9B4100E1F498 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7FE09528212E9B4100E1F498 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -301,6 +304,8 @@
 				7F9DC87E216EEC5000F92E0E /* TwenrtyNineViewController.m */,
 				7F36AC7F21708BB500446118 /* ThityOneViewController.h */,
 				7F36AC8021708BB500446118 /* ThityOneViewController.m */,
+				7FDC6D54217581820083CE06 /* ThityTwoViewController.h */,
+				7FDC6D55217581820083CE06 /* ThityTwoViewController.m */,
 				7F08DA87213D0C8F001C3331 /* ThreeModel.h */,
 				7F08DA88213D0C8F001C3331 /* ThreeModel.m */,
 				7F0804DD216C8C59004823F1 /* ChainModel.h */,
@@ -474,6 +479,7 @@
 				7FB08CE32137E8E700F37F19 /* SixViewController.m in Sources */,
 				7F36B64D213501B8000B719E /* FourViewController.m in Sources */,
 				7F795FC3216DD3FD0055EF07 /* TwenrtyEightViewController.m in Sources */,
+				7FDC6D56217581820083CE06 /* ThityTwoViewController.m in Sources */,
 				7F865AD121479D5200B6CC6A /* FourteenViewController.m in Sources */,
 				7F1991BF215CB598002A4A73 /* TwenrtyfiveViewController.m in Sources */,
 				7FE0952C212E9B4100E1F498 /* ViewController.m in Sources */,
