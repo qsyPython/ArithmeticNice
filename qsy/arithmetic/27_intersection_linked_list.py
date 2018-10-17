@@ -25,6 +25,7 @@ B:     b1 → b2 → b3
 '''
 # 思路1：首部链接，若成环，则有相交，若没有，则平行。
 # 思路2：记录2个链表的长度；长度大的链表先移动，当剩余长度和长度短的链表长度相同，此后一起移动，判断后续节点是否相同
+#
 class Node(object): # 节点类
     def __init__(self,item):
         super(Node,self).__init__()
@@ -97,7 +98,7 @@ class Linked_list(object): # 链表类：链表表头和链表长度
         while node.next and j < index:
             node = node.next
             j += 1
-        return node.data
+        return node.item
 
     # 根据item查找index
     def getIndex(self, item):
@@ -147,14 +148,28 @@ if __name__ == '__main__':
     common_list = ['c1','c2','c3']
     linked_list1 = Linked_list()
     linked_list2 = Linked_list()
-    # 创建公共的链表，拼接到其他2个链表后
-    linked_list_common = Linked_list()
+    linked_list_common = Linked_list() # 创建公共的链表，拼接到其他2个链表后
 
     [linked_list1.add(item) for item in list1]
     [linked_list2.add(item) for item in list2]
     [linked_list_common.add(item) for item in common_list]
-    linked_list1.head.next = linked_list_common.head
-    linked_list2.head.next = linked_list_common.head
+
+    # linked_list1.head.next = linked_list_common.head
+    # linked_list2.head.next = linked_list_common.head
+
+    # 注意：必须获取链表中最后1个节点，才能拼接新的； 同时处理链表的length
+    temp1 = linked_list1.head
+    while temp1.next:
+        temp1 = temp1.next
+    temp1.next = linked_list_common.head
+    linked_list1.length += linked_list_common.length
+
+    temp2 = linked_list2.head
+    while temp2.next:
+        temp2 = temp2.next
+    temp2.next = linked_list_common.head
+    linked_list2.length += linked_list_common.length
+
     result_head = get_intersection_node(linked_list1.head,linked_list2.head,linked_list1.length,linked_list2.length)
     print(result_head)
 
