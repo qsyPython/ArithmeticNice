@@ -6,6 +6,8 @@
    主线程: 处理UI，所有更新UI的操作都必须在主线程上执行。
    多线程的目的：1、耗时操作后台处理；2、CPU高效率使用
 
+   多线程使用:NSThread、GCD、NSOperation。
+
    线程处理的基本原则：
    所有属性都是nonatomic；
    尽量避免多线程抢夺同一资源；
@@ -13,7 +15,7 @@
    线程安全问题：当多个线程访问同1块资源时，很容易引发数据错乱和数据安全问题.
     举例：
     NSInteger total = 0;
-    # NSLock *lock = [NSLock new];
+    # c *lock = [NLock new];
     - (void)threadNotSafe {
         for (NSInteger index = 0; index < 3; index++) {
             dispatch_async(dispatch_get_global_queue(0, 0), ^{

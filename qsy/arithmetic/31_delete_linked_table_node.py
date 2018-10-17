@@ -1,5 +1,5 @@
 '''
-    删除链表中的节点
+    删除链表中的节点：
 请编写一个函数，使其可以删除某个链表中给定的（非末尾）节点，你将只被给定要求被删除的节点。
 
 现有一个链表 -- head = [4,5,1,9]，它可以表示为:
@@ -80,7 +80,7 @@ class Linked_tab(object):
                 self.head = temp_left_node
         return self.head
 
-    ##  删除节点:index
+    #  删除节点:index
     def delete_node_from_index(self,index):
         if self.length > 0:
             if index >= 0 and index < self.length: #index在节点范围内
@@ -122,15 +122,6 @@ class Linked_tab(object):
             else:
                 print("所删节点超出范围")
         return self.head
-
-    # 根据index获取item
-    def get_item(self,index):
-        if self.length <= 0 or index :
-            print('不再可选范围内')
-        else:
-            temp_node = self.head
-
-
 
 if __name__ == '__main__':
     node_list = [1,3,3,5,6]
