@@ -12,6 +12,8 @@
 		7F0804E2216C90DF004823F1 /* TwenrtySevenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F0804E1216C90DF004823F1 /* TwenrtySevenViewController.m */; };
 		7F08DA86213D0C57001C3331 /* EightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F08DA85213D0C57001C3331 /* EightViewController.m */; };
 		7F08DA89213D0C8F001C3331 /* ThreeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F08DA88213D0C8F001C3331 /* ThreeModel.m */; };
+		7F15B19B21772A4D008EF091 /* ThityThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F15B19A21772A4D008EF091 /* ThityThreeViewController.m */; };
+		7F15B19E21772AA5008EF091 /* TernaryTreeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F15B19D21772AA5008EF091 /* TernaryTreeModel.m */; };
 		7F1991BF215CB598002A4A73 /* TwenrtyfiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F1991BE215CB598002A4A73 /* TwenrtyfiveViewController.m */; };
 		7F344CF9214655670082CBA0 /* Thirteen ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F344CF8214655670082CBA0 /* Thirteen ViewController.m */; };
 		7F36AC8121708BB500446118 /* ThityOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F36AC8021708BB500446118 /* ThityOneViewController.m */; };
@@ -85,6 +87,10 @@
 		7F08DA85213D0C57001C3331 /* EightViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EightViewController.m; sourceTree = "<group>"; };
 		7F08DA87213D0C8F001C3331 /* ThreeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreeModel.h; sourceTree = "<group>"; };
 		7F08DA88213D0C8F001C3331 /* ThreeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreeModel.m; sourceTree = "<group>"; };
+		7F15B19921772A4C008EF091 /* ThityThreeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThityThreeViewController.h; sourceTree = "<group>"; };
+		7F15B19A21772A4D008EF091 /* ThityThreeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThityThreeViewController.m; sourceTree = "<group>"; };
+		7F15B19C21772AA5008EF091 /* TernaryTreeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TernaryTreeModel.h; sourceTree = "<group>"; };
+		7F15B19D21772AA5008EF091 /* TernaryTreeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TernaryTreeModel.m; sourceTree = "<group>"; };
 		7F1991BD215CB598002A4A73 /* TwenrtyfiveViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TwenrtyfiveViewController.h; sourceTree = "<group>"; };
 		7F1991BE215CB598002A4A73 /* TwenrtyfiveViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TwenrtyfiveViewController.m; sourceTree = "<group>"; };
 		7F344CF7214655670082CBA0 /* Thirteen ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Thirteen ViewController.h"; sourceTree = "<group>"; };
@@ -306,10 +312,14 @@
 				7F36AC8021708BB500446118 /* ThityOneViewController.m */,
 				7FDC6D54217581820083CE06 /* ThityTwoViewController.h */,
 				7FDC6D55217581820083CE06 /* ThityTwoViewController.m */,
+				7F15B19921772A4C008EF091 /* ThityThreeViewController.h */,
+				7F15B19A21772A4D008EF091 /* ThityThreeViewController.m */,
 				7F08DA87213D0C8F001C3331 /* ThreeModel.h */,
 				7F08DA88213D0C8F001C3331 /* ThreeModel.m */,
 				7F0804DD216C8C59004823F1 /* ChainModel.h */,
 				7F0804DE216C8C59004823F1 /* ChainModel.m */,
+				7F15B19C21772AA5008EF091 /* TernaryTreeModel.h */,
+				7F15B19D21772AA5008EF091 /* TernaryTreeModel.m */,
 				7FBC56B5212FA47400632EE2 /* zuoyePng */,
 				7FE0952D212E9B4100E1F498 /* Main.storyboard */,
 				7FE09530212E9B4300E1F498 /* Assets.xcassets */,
@@ -480,9 +490,11 @@
 				7F36B64D213501B8000B719E /* FourViewController.m in Sources */,
 				7F795FC3216DD3FD0055EF07 /* TwenrtyEightViewController.m in Sources */,
 				7FDC6D56217581820083CE06 /* ThityTwoViewController.m in Sources */,
+				7F15B19E21772AA5008EF091 /* TernaryTreeModel.m in Sources */,
 				7F865AD121479D5200B6CC6A /* FourteenViewController.m in Sources */,
 				7F1991BF215CB598002A4A73 /* TwenrtyfiveViewController.m in Sources */,
 				7FE0952C212E9B4100E1F498 /* ViewController.m in Sources */,
+				7F15B19B21772A4D008EF091 /* ThityThreeViewController.m in Sources */,
 				7FC3A483215B555B00468A79 /* TwenrtyfourViewController.m in Sources */,
 				7F36AC8121708BB500446118 /* ThityOneViewController.m in Sources */,
 				7F08DA86213D0C57001C3331 /* EightViewController.m in Sources */,

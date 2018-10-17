@@ -10,5 +10,5 @@
 
 @interface ChainModel : NSObject
 @property (nonatomic , strong) ChainModel * nextModel;
-@property (nonatomic , strong) NSString * title;
+@property (nonatomic , copy) NSString * title;
 @end
