@@ -51,7 +51,8 @@
     [self createModelWithArray:name1 withModel:modelc];
     
    ChainModel * newModel = [self sendNode:@"5" withModel:modelc];
-   NSLog(@"%@",newModel);
+    ChainModel * newModelIndex = [self sendNodeIndex:1 withModel:modelc];
+   NSLog(@"%@%@",newModel,newModelIndex);
 }
 
 - (ChainModel *)sendNode:(NSString *)node withModel:(ChainModel *)chainModel{
@@ -71,6 +72,29 @@
             supperModel = currentModel;
             currentModel = currentModel.nextModel;
         }
+    }
+    return chainModel;
+}
+
+- (ChainModel *)sendNodeIndex:(NSInteger)index withModel:(ChainModel *)chainModel{
+    
+    ChainModel * supperModel = nil;
+    ChainModel * currentModel = chainModel;
+    NSInteger i =0;
+    while (currentModel!=nil) {
+        if (i == index) {
+            ChainModel * nextModel = currentModel.nextModel;
+            if (supperModel!=nil) {
+                supperModel.nextModel = nextModel;
+            }else{
+                return currentModel.nextModel;
+            }
+            break;
+        }else{
+            supperModel = currentModel;
+            currentModel = currentModel.nextModel;
+        }
+        i++;
     }
     return chainModel;
 }
