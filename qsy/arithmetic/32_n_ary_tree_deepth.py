@@ -53,7 +53,6 @@ class N_ary_tree(object):
                      for item in temp.list:
                          if item.val is not None and len(item.list)<n:
                              queue.append(item)
-                             break
 
     # 深度遍历
     # def wide_travel(self):
@@ -65,6 +64,7 @@ class N_ary_tree(object):
     def max_deepth(self,root,n):
         if root and len(root.list)>0:
             for item in root.list:
+                if item
                 return max(self.max_deepth(root.left), self.max_deepth(root.right)) + 1
         else:
             return 0

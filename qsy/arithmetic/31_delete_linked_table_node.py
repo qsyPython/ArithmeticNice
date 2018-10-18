@@ -123,6 +123,15 @@ class Linked_tab(object):
                 print("所删节点超出范围")
         return self.head
 
+# 删除链条中某个节点: 参考
+def delete_node(self, node):
+    if node == None:
+        return node
+    if node.next == None:
+        node = None
+    node.val = node.next.val
+    node.next = node.next.next
+
 if __name__ == '__main__':
     node_list = [1,3,3,5,6]
     linked_tab = Linked_tab()
