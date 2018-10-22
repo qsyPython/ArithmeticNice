@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7F01D5EB21421CF2003DE8AC /* TwelveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F01D5EA21421CF2003DE8AC /* TwelveViewController.m */; };
+		7F03B23B217D6F770017DCD7 /* ThitySixViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F03B23A217D6F770017DCD7 /* ThitySixViewController.m */; };
 		7F0804DF216C8C59004823F1 /* ChainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F0804DE216C8C59004823F1 /* ChainModel.m */; };
 		7F0804E2216C90DF004823F1 /* TwenrtySevenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F0804E1216C90DF004823F1 /* TwenrtySevenViewController.m */; };
 		7F08DA86213D0C57001C3331 /* EightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F08DA85213D0C57001C3331 /* EightViewController.m */; };
@@ -81,6 +82,8 @@
 /* Begin PBXFileReference section */
 		7F01D5E921421CF2003DE8AC /* TwelveViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TwelveViewController.h; sourceTree = "<group>"; };
 		7F01D5EA21421CF2003DE8AC /* TwelveViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TwelveViewController.m; sourceTree = "<group>"; };
+		7F03B239217D6F770017DCD7 /* ThitySixViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThitySixViewController.h; sourceTree = "<group>"; };
+		7F03B23A217D6F770017DCD7 /* ThitySixViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThitySixViewController.m; sourceTree = "<group>"; };
 		7F0804DD216C8C59004823F1 /* ChainModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChainModel.h; sourceTree = "<group>"; };
 		7F0804DE216C8C59004823F1 /* ChainModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChainModel.m; sourceTree = "<group>"; };
 		7F0804E0216C90DF004823F1 /* TwenrtySevenViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TwenrtySevenViewController.h; sourceTree = "<group>"; };
@@ -324,6 +327,8 @@
 				7F72C69D217890DB00E2274A /* ThityfourViewController.m */,
 				7F521AD2217976B90007C2F7 /* ThityFiveViewController.h */,
 				7F521AD3217976B90007C2F7 /* ThityFiveViewController.m */,
+				7F03B239217D6F770017DCD7 /* ThitySixViewController.h */,
+				7F03B23A217D6F770017DCD7 /* ThitySixViewController.m */,
 				7F08DA87213D0C8F001C3331 /* ThreeModel.h */,
 				7F08DA88213D0C8F001C3331 /* ThreeModel.m */,
 				7F0804DD216C8C59004823F1 /* ChainModel.h */,
@@ -508,6 +513,7 @@
 				7FC3A483215B555B00468A79 /* TwenrtyfourViewController.m in Sources */,
 				7F36AC8121708BB500446118 /* ThityOneViewController.m in Sources */,
 				7F08DA86213D0C57001C3331 /* EightViewController.m in Sources */,
+				7F03B23B217D6F770017DCD7 /* ThitySixViewController.m in Sources */,
 				7F5D04BE2159FD60000A9343 /* TwenrtythreeViewController.m in Sources */,
 				7FBC56BC212FA5D800632EE2 /* OneViewController.m in Sources */,
 				7F01D5EB21421CF2003DE8AC /* TwelveViewController.m in Sources */,
