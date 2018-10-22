@@ -32,7 +32,6 @@ widths[i] 值的范围在 [2, 10]。
 '''
 
 letters_list = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
-
 def get_letter_loc(widths_list):
     des_dic = {}
     for index,item in enumerate(widths_list):
@@ -41,29 +40,20 @@ def get_letter_loc(widths_list):
 
 def nums_of_lines(widths,s_list):
     des_list = []
-    total_lines = 0
+    total_lines = 1
     single_line_sum = 0
-    letter_loc_dict = get_letter_loc(widths)
+    # letter_loc_dict = get_letter_loc(widths) 手动通过字典建立映射
     for index,item in enumerate(s_list):
-        current_num = letter_loc_dict[item]
+        # current_num = letter_loc_dict[item] 手动通过字典建立映射
+        current_num = widths[ord(item)-97]
         single_line_sum +=current_num
         if index < len(s_list):
-            if single_line_sum>=100:
+            if single_line_sum>100:
                 total_lines += 1
-                if index == len(s_list)-1:
-                    single_line_sum = current_num
-                else:
-                    single_line_sum = 0
-            else:
-
-    des_list.insert(total_lines,0)
+                single_line_sum = current_num
+    des_list.append(total_lines)
+    des_list.append(single_line_sum)
     return des_list
-
-
-
-
-
-
 
 print(nums_of_lines([4,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10],"bbbcccdddaaa"))
 
