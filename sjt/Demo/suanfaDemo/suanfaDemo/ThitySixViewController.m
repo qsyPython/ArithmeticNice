@@ -85,8 +85,6 @@
     }
     lastWidthCount= sum;
     NSLog(@"至少%ld行能放下S，以及最后一行使用的宽度是%ld个单位\n整数列表返回[%ld,%ld]",hang,lastWidthCount,hang,lastWidthCount);
-    
-    
 }
 
 - (void)didReceiveMemoryWarning {
