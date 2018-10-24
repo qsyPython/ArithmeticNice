@@ -42,7 +42,6 @@
 - (NSInteger)loadMaxCandies:(NSArray *)array{
     NSInteger maxZhonglei = 0;//总共的种类数
     NSArray * newArray = [self class5:[NSMutableArray arrayWithArray:array]];
-    
     NSString * temp = @"";
     NSInteger i =0;
     while (i<newArray.count) {

@@ -18,7 +18,7 @@ Employee 表包含所有员工，他们的经理也属于员工。每个员工�
 | Joe      |
 +----------+
 '''
-
+select * from Employee
 # select_sql = 'select e1.Name as Employee from Employee as e1, Employee as e2 where e1.Salary> e2.Salary and e1.ManagerId=e2.Id'
 
 # as的作用：（上面sql中的as就是重命名）

@@ -31,4 +31,4 @@ def distribution_candy(item_list):
         max_count = count_list // 2
     return max_count
 
-print(distribution_candy([1,1,2,2,3,3]))
+print(distribution_candy([1,1,2,2,2,2]))
