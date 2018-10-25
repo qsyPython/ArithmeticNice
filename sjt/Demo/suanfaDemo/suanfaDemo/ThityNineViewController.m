@@ -97,7 +97,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _allArray=@[@"1",@"2",@"3",@"4",@"5"];
+    _allArray=@[@"1",@"2",@"3",@"4",@"5",@"6",@"7"];
     _numsArray =[NSMutableArray arrayWithCapacity:0];
     NSLog(@"%@",[self sendArray:_allArray]);
 }
