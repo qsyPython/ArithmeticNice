@@ -122,8 +122,48 @@
 
 7、减少subviews的数量
 
-8、在heightForRowAtIndexPath:中尽量不使用cellForRowAtIndexPath:，如果你需要用到它，只用一次然后缓存结果
+8、在heightForRowAtIndexPath:中尽量不使用cellForRowAtIndexPath:
 
 
-9、
+9、cell中异步线程加载的图片，随滑动时，异步操作过多时：
+# 在scrollerView的代理方法中，didEndDragging,didEndDeceleratiing方法中去完成图片异步加载的操作，tableView滑动的时候不做加载。
+# didReceiveMemoryWarning方法中释放掉所有的子线程
+# 在dealloc方法中将所有的delegate手动设置nil
+
+10、iOS中cell图片圆角处理改成CPU：操作执行 ---> 一般图片处理都是在CGPU完成，GPU会在当前的在屏幕缓冲区外新开辟一个缓冲区
+imageView.layer.cornerRadius = 10;
+imageView.layer.masksToBounds = YES;
+
+方案是：改为CPU完成切圆角工作（如下）或 imageview控件重载drawRect:方法
+
+CGSize size = self.bounds.size;
+
+CGFloat scale = [UIScreen mainScreen].scale;
+
+CGSize cornerRadii = CGSizeMake(cornerRadius, cornerRadius);
+
+UIGraphicsBeginImageContextWithOptions(size, NO, scale);
+
+if(nil == UIGraphicsGetCurrentContext()) {
+
+return;
+
+}
+
+UIBezierPath *cornerPath = [UIBezierPath bezierPathWithRoundedRect:self.bounds byRoundingCorners:rectCornerType cornerRadii:cornerRadii];
+
+[cornerPath addClip];
+
+[image drawInRect:self.bounds];
+
+self.image = UIGraphicsGetImageFromCurrentImageContext();
+
+UIGraphicsEndImageContext();
+
+}
+
+10、尽量使用代码，而不是xib
+
+11、不透明的控件设定opaque = YES，这样子可以避免无用的alpha通道合成，降低GPU负载
+
 '''
