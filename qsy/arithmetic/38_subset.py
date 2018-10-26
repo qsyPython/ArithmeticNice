@@ -37,48 +37,15 @@ import itertools
 #     subset_nums.append(empty_num)
 #     return subset_nums
 
-# 获取Cn m，条件：n>=m,且n不为0。如C4 1 = 4/1 = 6
-def deal_factorial(n,m):
-    if m == 0:
-        return 1
-    else:
-        numerator = 1
-        denominator = 1
-        for index in range(n-m,n):
-            numerator *= index+1
-        for index in range(m):
-            denominator *=index+1
-        return numerator//denominator
-
-# def get_total_nums(nums,single_list_count,total_list_num):
-#     total_list = []
-#     total_nums_list = single_list_count #single_list_count 代表list中元素数目
-#     for index in range(total_list_num): #index 代表第几个list
-#         single_list = []
-#         for item in nums:
-#             if item not in single_list:
-#                 single_list.append(item)
-#                 total_nums_list -= 1
-#                 if total_nums_list == 0:
-#                     break
-#         total_list.append(single_list)
-#     return total_list
-# print(get_total_nums([1,2,3,4],1,4))
-
+# 双层循环和拷贝：res=[] res[:]  temp=[] temp[:]
 def subset(nums):
-    subset_nums = []
-    for index in range(len(nums)):
-        single_list_count = index+1
-        total_count = deal_factorial(len(nums),single_list_count)
-        while total_count:
-            subset = []
-            for item in range(single_list_count):
-                subset.append(nums[total_count - 1 - item])
-            subset_nums.append(subset)
-            total_count -=1
-    empty_num = []
-    subset_nums.append(empty_num)
-    return subset_nums
+    res = [[]]
+    for num in nums:
+        for temp in res[:]:
+            x = temp[:]
+            x.append(num)
+            res.append(x)
+    return res
 
-print(subset([1,2,3,4]))
-[1, 2], [1, 3], [1, 4], [2, 3], [2, 4], [3, 4]
+
+print(subset([1,2,3,4,5]))
