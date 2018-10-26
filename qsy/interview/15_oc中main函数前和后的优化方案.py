@@ -37,11 +37,24 @@
         如何查看dyld（动态链接器）的执行过程？
         dyld 是开源的，可以对照源码 https://github.com/opensource-apple/dyld 查看不同函数
         给项目添加符号断点：_objc_init 运行项目就ok
-        结果：在栈底的dyldbootstrap::start()方法，继而调用了dyld::_main()方法
+        结果：
+        在栈底的dyldbootstrap::start()方法，继而调用了dyld::_main()方法
+        栈中imageLoader：作用是将这些文件加载进内存，且每一个文件对应一个imageLoader实例来负责加载
+        栈顶中各种初始化：libSystem_initializer（系统基础若干库初始化）后，调用libdispatch_init（GCD库初始化），再到_objc_init初始化runtime
 
         如何给mach-o插入动态库？
-        获取插入的库：在项目中设置环境变量 DYLD_PRINT_ENV为1，来打印该sEnv的值，搜索：DYLD_INSERT_LIBRARIES 可获取插入的库
+        获取已经插入的库：在项目中设置环境变量 DYLD_PRINT_ENV为1，来打印该sEnv的值，搜索：DYLD_INSERT_LIBRARIES 可获取插入的库
         那我们想要插入对应的动态库，只需要修改：DYLD_INSERT_LIBRARIES，就可以实现代码注入，hook
+
+        如何解释dyld（动态链接器）担当了runtime和imageLoader中间的协调者？
+            当新image加载进来后交由runtime去解析这个二进制文件的符号表和代码
+            1. dyld开始将程序二进制文件初始化
+            2. 交由imageLoader读取image，其中包含了我们的类，方法等各种符号
+            3.由于runtime向dyld绑定了回调，当image加载到内存后，dyld会通知runtime进行处理
+            4. runtime接手后调用map_images做解析和处理，接下来load_images中调用call_load_methods方法，遍历所有加载进来的Class，按继承层级依次调用Class的+load方法和Category的+load方法。
+
+
+
 
 
 
