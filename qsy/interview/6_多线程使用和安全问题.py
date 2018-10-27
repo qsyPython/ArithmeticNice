@@ -1,22 +1,23 @@
 '''
    线程安全的问题：
-   进程：运行中的应用程序，主要管理资源
-   线程：进程的基本执行单位
+   进程：运行中的 应用程序，主要管理资源
+   线程：进程的基本 执行单位
    多线程：在同一时刻，一个CPU只能处理1条线程，但CPU可以在多条线程之间快速的切换，只要切换的足够快，就造成了多线程一同执行的假象。
    主线程: 处理UI，所有更新UI的操作都必须在主线程上执行。
-   多线程的目的：1、耗时操作后台处理；2、CPU高效率使用
+   多线程的目的：1、耗时操作后台处理；2、CPU高效率使用，4核
 
    多线程使用:NSThread、GCD、NSOperation。
 
    线程处理的基本原则：
-   所有属性都是nonatomic；
+   所有属性都是nonatomic（非线程安全）；
    尽量避免多线程抢夺同一资源；
    尽量将加锁、资源抢夺的业务逻辑交给服务器端处理，减小移动客户端的压力
    线程安全问题：当多个线程访问同1块资源时，很容易引发数据错乱和数据安全问题.
     举例：
-    NSInteger total = 0;
-    # c *lock = [NLock new];
+
     - (void)threadNotSafe {
+    NSInteger total = 0;
+    # c *lock = [NSLock new];
         for (NSInteger index = 0; index < 3; index++) {
             dispatch_async(dispatch_get_global_queue(0, 0), ^{
                 # [lock lock];

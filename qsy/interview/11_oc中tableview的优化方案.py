@@ -166,4 +166,5 @@ UIGraphicsEndImageContext();
 
 11、不透明的控件设定opaque = YES，这样子可以避免无用的alpha通道合成，降低GPU负载
 
+12定点刷新。
 '''
