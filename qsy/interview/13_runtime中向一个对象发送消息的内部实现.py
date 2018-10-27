@@ -5,7 +5,7 @@
 
 # 例如：[objc sendMessage:param1];
 # 先转换为 runtime 的 objc_msgSend(id,SEL...)
-# 1、先通过isa指针确定该对象（动态类型）
+# 1、先通过isa指针确定该对象（动态类型）分类优先级高于本类
 # 2、获取到具体某动态类后，根据SEL，获取到对应的method，然后根据method从该类的 常用methods缓存 中寻找该method，若有就执行该method的IMP；没有见3
 # 3、若没有，就会去该类的methodslist查找，若有执行找到的method的IMP；没有见4
 # 4、若没有，会从该类的父类中，按2和3的查找顺序开始查找，若有就执行，若没有就会继续找该父类的父类，重复2和3，直到NSObject，若到NSObject时，就执行；没有见5

@@ -130,7 +130,7 @@
 # didReceiveMemoryWarning方法中释放掉所有的子线程
 # 在dealloc方法中将所有的delegate手动设置nil
 
-10、iOS中cell图片圆角处理改成CPU：操作执行 ---> 一般图片处理都是在CGPU完成，GPU会在当前的在屏幕缓冲区外新开辟一个缓冲区
+10、iOS中cell图片圆角处理改成CPU：操作执行 ---> 一般图片处理都是在GPU完成，GPU会在当前的在屏幕缓冲区外新开辟一个缓冲区
 imageView.layer.cornerRadius = 10;
 imageView.layer.masksToBounds = YES;
 
@@ -164,7 +164,7 @@ UIGraphicsEndImageContext();
 
 10、尽量使用代码，而不是xib
 
-11、不透明的控件设定opaque = YES，这样子可以避免无用的alpha通道合成，降低GPU负载
+11、不透明的控件：设定opaque = YES，这样子可以避免无用的alpha通道合成，降低GPU负载
 
-12定点刷新。
+12、根据也许需求，局部刷新，而不是整体刷新。
 '''

@@ -22,12 +22,12 @@ iOS最实用的13种设计模式
     # 3、优缺点：降低数据层和视图层（对象）的耦合度，使之使用更加广泛；适应复杂多变的变化
     # 缺点：可读性差；代码量增加
 # 踩坑：
-# .h中实现@property jitein时，本质上：变量 + setter + getter。处理这么多就会报错，.m中不可以同时重写setter和getter。若同时重写，系统不会帮你自动生成这个成员变量！
+# .h中声明@property，本质上：变量 + setter + getter。处理这么多就会报错，.m中不可以同时重写setter和getter。若同时重写，系统不会帮你自动生成这个成员变量！
 # 只能实现1个setter和getter方法； 系统会生成自动变量。
 # 使用@synthesize name = _name;  可以同时重写setter和getter。系统会自动生成变量。
 #
 # 使用@dynamic name; 可以同时重写setter和getter方法。系统也没自动生成变量：可使用objc——runtime绑定方法
-# 类别创建属性。
+# 类别创建属性时使用。
 
 # 8、策略
 
