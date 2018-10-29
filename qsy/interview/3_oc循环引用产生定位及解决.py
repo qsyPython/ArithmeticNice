@@ -4,9 +4,8 @@
     如何查询是否循环引用？ dealloc是否被执行
 
     1、delegate: 使用strong ，而非weak会导致
-    self.tableView.delegate = self;
-
-    代理持有 self，self同时持有该delegate，就会导致无法释放
+    如：self.tableView.delegate = self;
+    self持有该delegate，同时代理若持有 self，就会导致无法释放
     解决：采用weak弱引用delegate，weak修饰的变量在释放后自动指向nil，防止野指针存在。
 
     2、block
@@ -28,11 +27,11 @@
     对象self remove前
     [self.timer invalidate];
     self.timer = nil;
-    runloop 的 timer?。
+
     4、单例内部持有某控制器：
     单例本身是一个会一旦创建，一直存在的。当持有某控制器时，控制器被pop后，仍无法持有。
     解决：
     单例中不要持有控制器，哈哈哈
-    持有控制器，用name。
+    持有控制器，用name，通过Class的反射机制，获取某控制器。
 '''
 

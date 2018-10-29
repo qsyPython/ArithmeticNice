@@ -1,7 +1,6 @@
 # 1、为什么说OC是一门动态语言？并写出对应代码对应来解释。
 # runtime：
 # 动态类型：只有在运行时才会确定真正的类型，如id
-[self viedidLoad];
 # id obj = someInstance;
 # if [obj isKindOfClass:someclass] { #isKindOfClass 类和子类；isMemberOfClass 当前类
 #    someClass *classSpecifiedInstance = (someClass *)obj;

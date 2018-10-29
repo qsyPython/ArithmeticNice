@@ -1,9 +1,18 @@
 ''' 解决问题：
-    1、MVVM设计模式解决瘦身MVC：
-    2、多线程安全的处理问题：客户端采用线程锁（NSLock、NSCondition和信号量）、自旋锁（OSSpinLock） 和 互斥锁（@synchronized）
+    2、5、8、9、10、
+    14、15
+    1、MVVM设计模式解决瘦身MVC中C：
+       MVVM
+
+    2、多线程安全的处理问题：
+       客户端采用线程锁（NSLock、NSCondition和信号量）、自旋锁（OSSpinLock、atomic） 和 互斥锁（@synchronized）
        尽量将加锁、资源抢夺的业务逻辑交给服务器端处理，减小移动客户端的压力
+
     3、项目中图片的缓存策略设计：
-    内存缓存 + 本地缓存
+        内存缓存 + 本地缓存
+
+    4、项目中遇到较难的bug和对应解决方案：
+
 
 
 '''

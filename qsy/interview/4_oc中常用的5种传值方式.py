@@ -1,7 +1,7 @@
 '''
     传值涉及到从前到后 / 从后到前。
-    用前到后传值：前VC声明delegate、notification和block；
-    从后到前传值：后VC声明delegate、notification和block
+    用前到后传值：在前VC，声明delegate、notification和block；
+    从后到前传值：在后VC，声明delegate、notification和block；
 
     都可以使用:5种
     property
