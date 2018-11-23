@@ -12,10 +12,12 @@
             3、让线程定时执行某任务：timer
             4、监听Observer达到一些目的：
 
-    3、runloop和线程的关系：runloop和thread是一对一的关系，保存在全局字典中。
-            thread本身不会自动创建runloop；对应线程结束时，runloop会被销毁。
-            主线程 默认 开启runloop
-            子线程没有，需要我们手动获取runloop以后，将子线程添加到runloop中。
+    3、runloop和线程的关系：runloop和thread是一对一的关系，保存在全局字典中。主线程 默认 开启runloop
+            thread本身不会自动创建runloop；
+            子线程没有，懒加载时，需要我们手动获取runloop以后，将子线程添加到runloop中。
+            对应线程结束时，runloop会被销毁。
+
+
 
     4、为什么把NSTimer对象以NSDefaultRunLoopMode模式 添加到主运行循环以后，
       滑动scrollview的时候，NSTimer却不动了？
